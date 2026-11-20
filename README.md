@@ -56,6 +56,7 @@ This project researches the control architecture for an autonomous mobile robot 
 - [Architecture and interfaces](docs/ARCHITECTURE.md)
 - [Sources and inventory](docs/FILES_AND_SOURCES.md)
 - [Phase 0 hash inventory](docs/INVENTORY.md)
+- [Actually executed validation and blockers](docs/VALIDATION_REPORT.md)
 
 ## Project participants
 

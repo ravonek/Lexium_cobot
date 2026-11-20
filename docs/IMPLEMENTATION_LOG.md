@@ -25,6 +25,14 @@ handoff copy.
   disabled hardware contracts. No Isaac, ROS, camera, or robot process ran.
 - Current final offline commands and outputs are recorded by the latest Git
   revision and must be rerun after every change.
+- Final verification on this revision: handoff `valid=true` with zero changed
+  preserved source artifacts; Ruff passed; mypy passed for 18 source files;
+  pytest reported `30 passed`; compileall exited 0; dry-run emitted only
+  `SYNTHETIC_OFFLINE_EXAMPLE_NOT_EXPERIMENT` with `mode=offline_dry_run`.
+- A targeted local search found only duplicate Stage 6 screenshots/transcriptions
+  and the archived early `lexium_pick_place` prototype. No
+  `LEXIUM_CURRENT_WORKSPACE_CODEX.zip`, current Phase 10 source, or current Stage 6
+  controller was available on this Mac.
 
 ## Checklist
 
