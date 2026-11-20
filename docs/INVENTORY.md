@@ -20,8 +20,10 @@ Run the repeatable verification from the repository root:
 ```
 
 The verifier checks byte size and SHA-256 for every declared file, tests all
-four nested ZIPs, and reports a conservative provenance class. The classes are
-path-based labels, not claims about authorship, licensing, or scientific validity.
+four nested ZIPs, and reports a conservative provenance class. It fails on a
+changed preserved artifact but reports expected scaffold evolution separately.
+The classes are path-based labels, not claims about authorship, licensing, or
+scientific validity.
 
 ## Provenance boundaries
 

@@ -32,7 +32,7 @@ def classify(path: str) -> str:
         return "preserved_historical_material"
     if path.startswith("legacy/original_isaaclab_prototype/"):
         return "preserved_legacy_prototype"
-    if path.startswith("media/") or path.startswith("evidence/screenshots/"):
+    if path.startswith(("media/", "evidence/screenshots/")):
         return "user_supplied_media_or_screenshot"
     if path.startswith("evidence/measurements/"):
         return "transcribed_evidence_not_raw"
@@ -46,7 +46,8 @@ def classify(path: str) -> str:
 def verify(root: Path, manifest_path: Path) -> dict[str, Any]:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     missing: list[str] = []
-    changed: list[dict[str, Any]] = []
+    changed_source: list[dict[str, Any]] = []
+    changed_scaffold: list[dict[str, Any]] = []
     classes: Counter[str] = Counter()
     archives: list[dict[str, Any]] = []
 
@@ -60,15 +61,15 @@ def verify(root: Path, manifest_path: Path) -> dict[str, Any]:
         actual_size = path.stat().st_size
         actual_hash = sha256(path)
         if actual_size != item["bytes"] or actual_hash != item["sha256"]:
-            changed.append(
-                {
-                    "path": relative,
-                    "expected_bytes": item["bytes"],
-                    "actual_bytes": actual_size,
-                    "expected_sha256": item["sha256"],
-                    "actual_sha256": actual_hash,
-                }
-            )
+            mismatch = {
+                "path": relative,
+                "expected_bytes": item["bytes"],
+                "actual_bytes": actual_size,
+                "expected_sha256": item["sha256"],
+                "actual_sha256": actual_hash,
+            }
+            target = changed_scaffold if classify(relative) == "handoff_scaffold" else changed_source
+            target.append(mismatch)
 
         if relative.startswith("legacy/archives/") and path.suffix == ".zip":
             try:
@@ -94,11 +95,12 @@ def verify(root: Path, manifest_path: Path) -> dict[str, Any]:
         "manifest_declared_files": manifest["file_count_excluding_manifest"],
         "verified_files": manifest["file_count_excluding_manifest"] - len(missing),
         "missing": missing,
-        "changed": changed,
+        "changed_source_artifacts": changed_source,
+        "changed_scaffold": changed_scaffold,
         "provenance_classes": dict(sorted(classes.items())),
         "archives": archives,
         "valid": not missing
-        and not changed
+        and not changed_source
         and all(item["integrity"] == "ok" for item in archives),
         "warning": (
             "Integrity is not experimental validation; current Stage 6/Phase 10 "
