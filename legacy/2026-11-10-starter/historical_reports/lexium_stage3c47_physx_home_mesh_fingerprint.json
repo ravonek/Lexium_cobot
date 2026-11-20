@@ -1,0 +1,288 @@
+{
+  "stage": "3C47",
+  "mode": "physx_home_runtime_geometry_provenance",
+  "sim_only": true,
+  "explicit_home_state_written": true,
+  "physics_steps": 1,
+  "pregrasp_motion_commanded": false,
+  "candidate1_replayed": false,
+  "usd_assets_modified": false,
+  "self_collisions_modified": false,
+  "table_cube_present": false,
+  "home_joint_q_physx_rad": [
+    0.00037739682011306286,
+    -0.7884405255317688,
+    1.5690439939498901,
+    -0.7870295643806458,
+    1.5711983442306519,
+    3.0880470148986205e-05
+  ],
+  "home_arm_q_error_from_default_rad": 0.0030405521392822266,
+  "finger_joint_readings": {
+    "gripper_Revolute_1": {
+      "physx_rad": -0.5499959588050842,
+      "default_rad": -0.550000011920929,
+      "delta_rad": 4.0531158447265625e-06
+    },
+    "gripper_Revolute_2": {
+      "physx_rad": -0.3403351306915283,
+      "default_rad": -0.3402999937534332,
+      "delta_rad": -3.5136938095092773e-05
+    },
+    "gripper_Revolute_5": {
+      "physx_rad": -0.34020066261291504,
+      "default_rad": -0.3402999937534332,
+      "delta_rad": 9.933114051818848e-05
+    },
+    "gripper_Revolute_6": {
+      "physx_rad": -0.3401181697845459,
+      "default_rad": -0.3402999937534332,
+      "delta_rad": 0.0001818239688873291
+    }
+  },
+  "urdf_runtime_rigid_body_fk_errors": {
+    "base_link": {
+      "position_error_mm": 0.0,
+      "orientation_error_deg": 0.0
+    },
+    "link1_1": {
+      "position_error_mm": 4.531600235238736e-05,
+      "orientation_error_deg": 1.2013660097101191e-05
+    },
+    "link2_1": {
+      "position_error_mm": 5.225145343281927e-05,
+      "orientation_error_deg": 1.1706354451251847e-05
+    },
+    "link3_1": {
+      "position_error_mm": 5.1058006189251183e-05,
+      "orientation_error_deg": 1.9692396034153755e-05
+    },
+    "link4_1": {
+      "position_error_mm": 0.00011479876836713101,
+      "orientation_error_deg": 2.1327258847706145e-05
+    },
+    "LINK5_1": {
+      "position_error_mm": 0.00013605321894257625,
+      "orientation_error_deg": 1.9014441926092368e-05
+    },
+    "gripper_base_1": {
+      "position_error_mm": 0.00011157496893790487,
+      "orientation_error_deg": 1.878302021753515e-05
+    },
+    "gripper_finger_1_1": {
+      "position_error_mm": 6.982522201409557e-05,
+      "orientation_error_deg": 2.080826967304219e-05
+    },
+    "gripper_finger_2_1": {
+      "position_error_mm": 0.00010556557014990435,
+      "orientation_error_deg": 1.3606912857609226e-05
+    },
+    "gripper_finger_3_1": {
+      "position_error_mm": 0.00012257261241247527,
+      "orientation_error_deg": 2.002276682850205e-05
+    },
+    "gripper_finger_4_1": {
+      "position_error_mm": 7.956919689872998e-05,
+      "orientation_error_deg": 1.4688877218970437e-05
+    }
+  },
+  "max_urdf_runtime_position_error_mm_all_bodies": 0.00013605321894257625,
+  "max_urdf_runtime_orientation_error_deg_all_bodies": 2.1327258847706145e-05,
+  "reference_stage40_candidate1_is_inferred_only": true,
+  "reference_baseline_gripper_base_xyz_m": [
+    0.2356655895709992,
+    -0.4585351943969727,
+    0.14871652424335483
+  ],
+  "home_runtime_gripper_base_xyz_m": [
+    -0.11754993349313736,
+    -0.464271605014801,
+    0.11290381103754044
+  ],
+  "frozen_gripper_geometry_home_comparison": {
+    "gripper_base_1": {
+      "reference_vertices": 5640,
+      "runtime_home_vertices": 5640,
+      "actual_runtime_mesh_parts": [
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_base_1_1/gripper_base_1",
+          "vertex_count": 5640
+        }
+      ],
+      "max_vertex_delta_mm": 1.6653345369377348e-13,
+      "mean_vertex_delta_mm": 9.12923242537834e-14,
+      "centroid_delta_mm": 1.2177709378935646e-13,
+      "reference_frozen_geometry_matches_home_within_0_5mm": true
+    },
+    "gripper_finger_1_1": {
+      "reference_vertices": 1620,
+      "runtime_home_vertices": 1620,
+      "actual_runtime_mesh_parts": [
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_1_1/gripper_finger_1_1_1/gripper_finger_1_1",
+          "vertex_count": 1620
+        }
+      ],
+      "max_vertex_delta_mm": 0.0006113252895671167,
+      "mean_vertex_delta_mm": 0.0001756469833708738,
+      "centroid_delta_mm": 0.0001540080461783829,
+      "reference_frozen_geometry_matches_home_within_0_5mm": true
+    },
+    "gripper_finger_2_1": {
+      "reference_vertices": 1629,
+      "runtime_home_vertices": 1629,
+      "actual_runtime_mesh_parts": [
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_2_1/gripper_finger_2_1_1/gripper_finger_2_1",
+          "vertex_count": 1629
+        }
+      ],
+      "max_vertex_delta_mm": 0.014345049420176179,
+      "mean_vertex_delta_mm": 0.0034317781811929967,
+      "centroid_delta_mm": 0.002772253289322148,
+      "reference_frozen_geometry_matches_home_within_0_5mm": true
+    },
+    "gripper_finger_3_1": {
+      "reference_vertices": 1625,
+      "runtime_home_vertices": 1625,
+      "actual_runtime_mesh_parts": [
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_3_1/gripper_finger_3_1_1/gripper_finger_3_1",
+          "vertex_count": 1625
+        }
+      ],
+      "max_vertex_delta_mm": 0.03494602399011888,
+      "mean_vertex_delta_mm": 0.008368303383797779,
+      "centroid_delta_mm": 0.00676322542255664,
+      "reference_frozen_geometry_matches_home_within_0_5mm": true
+    },
+    "gripper_finger_4_1": {
+      "reference_vertices": 1625,
+      "runtime_home_vertices": 1625,
+      "actual_runtime_mesh_parts": [
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_4_1/gripper_finger_4_1_1/gripper_finger_4_1",
+          "vertex_count": 1625
+        }
+      ],
+      "max_vertex_delta_mm": 0.021374794693956253,
+      "mean_vertex_delta_mm": 0.0051014663654781025,
+      "centroid_delta_mm": 0.004094029508331731,
+      "reference_frozen_geometry_matches_home_within_0_5mm": true
+    }
+  },
+  "finger_reference_geometry_matches_home_at_0_5mm": true,
+  "articulation_self_collision_policies": [
+    {
+      "path": "/World/envs/env_0/Robot/Geometry",
+      "enabled_self_collisions": false
+    }
+  ],
+  "usd_authored_collision_mesh_schema_summary": {
+    "gripper_finger_1_1": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    },
+    "gripper_finger_2_1": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    },
+    "gripper_finger_3_1": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    },
+    "gripper_finger_4_1": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    },
+    "gripper_base_1": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    },
+    "LINK5_1": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    },
+    "link4_1": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    },
+    "link3_1": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    },
+    "link2_1": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    },
+    "link1_1": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    },
+    "base_link": {
+      "mesh_collision_prims": 1,
+      "mesh_approximations": {
+        "convexHull": 1
+      },
+      "collision_enabled_counts": {
+        "True": 1
+      }
+    }
+  },
+  "actual_physx_narrowphase_contact_validated": false,
+  "full_robot_contact_free_path_validated": false,
+  "gripper_cube_40mm_opening_validated": false,
+  "motion_permission": false,
+  "grasp_permission": false,
+  "disclaimer": "This stage tests only HOME via a one-step PhysX snapshot and authored USD mesh fingerprint. It does not test active PhysX convex shapes, contact manifold or self-collision narrowphase. If enabledSelfCollisions=false, zero PhysX self-contact is not proof of clearance. No cube/table, no trajectory or physical approach tested."
+}

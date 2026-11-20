@@ -1,0 +1,132 @@
+aybergen@aybergen-Z790-D-AX:~/Desktop/adi/lexium_rl_workspace/lexium_pick_place$ PROJECT="$HOME/Desktop/adi/lexium_rl_workspace/lexium_pick_place"
+WORK="$HOME/Desktop/adi/lexium_rl_workspace"
+ISAACLAB="$HOME/IsaacLab-3.0-EA"
+D="$HOME/Downloads"
+
+SCRIPT="$PROJECT/lexium_stage3c73_physx_two_finger_precontact_trial.py"
+REPORT="$D/lexium_stage3c73_physx_two_finger_precontact_trial.json"
+LOG="$D/lexium_stage3c73_physx_two_finger_precontact_trial.log"
+
+cd "$ISAACLAB" || exit 1
+
+set -o pipefail
+
+PYTHONPATH="$WORK" uv run isaaclab -p "$SCRIPT" \
+  --num-envs 1 \
+  --visualizer none \
+  --warmup-steps 150 \
+  --waypoint-steps 600 \
+  --preapproach-steps 2400 \
+  --settle-steps 180 \
+  --motion-steps 3600 \
+  --hold-steps 240 \
+  --finger-steps 1200 \
+echo "STAGE73_EXIT_CODE=$STATUS"OG"o_finger_precontact_report.json" \\
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793947698.128645    8197 descriptor_database.cc:633] File already exists in database: grpc/health/v1/health.proto
+W0000 00:00:1793947698.128664    8197 message.cc:301] Protobuf GeneratedMessageFactory: File is already registered: grpc/health/v1/health.proto
+[ISAACLAB] AppLauncher initialization complete
+[ISAACLAB] Kit version: 110.3.0+feature.371399.00c488ae.gl
+[ISAACLAB] Kit kernel:  210.3.2+release.14366.2926fc80.gl
+[ISAACLAB] Kit hash:    00c488ae
+Warp 1.16.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5080" (15 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /home/aybergen/.cache/warp/1.16.0
+STAGE=3C73 MODE=ISAAC_LAB_TWO_FINGER_PRECONTACT_TRIAL
+STAGE73_SIMULATION_ONLY=True HARDWARE_CONNECTED=False
+STAGE73_FINGER_COMMANDS=FINGERS_1_AND_3_PRECONTACT_ONLY CUBE_GRASP_COMMANDED=False
+STAGE73_USD_ASSETS_MODIFIED=False SELF_COLLISION_POLICY_CHANGED=False
+STAGE73_SELF_COLLISIONS_NOT_VALIDATED=True
+STAGE73_PRIOR_SELF_HULL_OVERLAP_PAIRS_IN_HOME=2
+STAGE73_PREREQ_HOME_CUBE_CONTACT_N=0.981000
+STAGE73_WAYPOINT_Q_RAD=[0.0, -0.7854, 1.5708, -0.4854, 1.5708, 0.0]
+STAGE73_PREAPPROACH_Q_RAD=[-2.9125384128446337, -0.6264205578019355, 1.0326600691890113, 0.23236956751851073, 2.5140830271136263, -1.062703624467968]
+STAGE73_STAGE63_Q_RAD=[-2.9127368927001953, -0.6294942498207092, 1.0330970287322998, 0.22897346317768097, 2.51407790184021, -1.062697410583496]
+STAGE73_TARGET_Q_RAD=[-0.45606015974245784, 3.025605114974399, 1.511635397942826, 0.010568149995465619, 0.07632272043734843, -0.37356972265903043]
+[INFO]: Registered backend 'physx' for factory Articulation.
+[INFO]: Creating a fixed joint for the articulation: '/World/envs/env_0/Robot/Geometry/base_link'.
+[INFO]: Registered backend 'physx' for factory RigidObject.
+[INFO]: Registered backend 'physx' for factory ContactSensor.
+[INFO]: Physics scene prim path: /physicsScene
+[INFO]: Simulation parameters for joints in /World/envs/env_[^/]+/Robot:
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                     Simulation Joint Information (Prim path: /World/envs/env_[^/]+/Robot)                                                     |
++-------+--------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+| Index | Name                     | Stiffness | Damping | Armature | Static Friction | Dynamic Friction | Viscous Friction | Position Limits | Velocity Limits | Effort Limits |
++-------+--------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+|   0   | joint_1                  |  400.000  |  40.000 |  0.000   |      0.000      |      0.000       |      0.000       | [-3.142, 3.142] |      1.000      |    100.000    |
+|   1   | joint_2                  |  800.000  |  60.000 |  0.000   |      0.000      |      0.000       |      0.000       | [-3.142, 3.142] |      1.000      |    100.000    |
+|   2   | joint_3                  |  800.000  |  60.000 |  0.000   |      0.000      |      0.000       |      0.000       | [-3.142, 3.142] |      1.000      |    100.000    |
+|   3   | joint_4                  |  400.000  |  40.000 |  0.000   |      0.000      |      0.000       |      0.000       | [-3.142, 3.142] |      1.000      |    100.000    |
+|   4   | joint_5                  |  400.000  |  40.000 |  0.000   |      0.000      |      0.000       |      0.000       | [-3.142, 3.142] |      1.000      |    100.000    |
+|   5   | joint_6_gripper_rotation |  400.000  |  40.000 |  0.000   |      0.000      |      0.000       |      0.000       | [-3.142, 3.142] |      1.000      |    100.000    |
+|   6   | gripper_Revolute_1       |  2.0e+03  | 100.000 |  0.000   |      0.000      |      0.000       |      0.000       | [-1.780, 0.131] |     100.000     |    100.000    |
+|   7   | gripper_Revolute_2       |  2.0e+03  | 100.000 |  0.000   |      0.000      |      0.000       |      0.000       | [-1.571, 0.340] |     100.000     |    100.000    |
+|   8   | gripper_Revolute_5       |  2.0e+03  | 100.000 |  0.000   |      0.000      |      0.000       |      0.000       | [-0.349, 1.571] |     100.000     |    100.000    |
+|   9   | gripper_Revolute_6       |  2.0e+03  | 100.000 |  0.000   |      0.000      |      0.000       |      0.000       | [-0.340, 1.571] |     100.000     |    100.000    |
++-------+--------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+STAGE73_FINGER_HOME_Q_RAD=[-0.550000011920929, -0.3402999937534332, -0.3402999937534332, -0.3402999937534332]
+STAGE73_FINGER_PRECONTACT_GOAL_Q_RAD=[-0.27003297090530387, -0.3402999937534332, 0.05059081435203561, -0.3402999937534332]
+STAGE73_MIN_GRAVITY_COMPENSATED_COMMAND_MARGIN_RAD=0.20475
+STAGE73_OFFLINE_GRAVITY_PEAK_NM=[0.0, 83.1341, 31.8004, 8.8557, 3.7155, 0.0001]
+STAGE73_EXPECTED_GRIPPER_BASE_WORLD_XYZ_M=[0.230486, -0.1943446, 0.1421158]
+STAGE73_EXPECTED_TCP_WORLD_XYZ_M=[0.2863501, -0.3158834, 0.0237286]
+STAGE73_SIM_MOTION_PLANNED_STEPS=3600 REPLAY_WAYPOINT=600 REPLAY_PREAPPROACH=2400 REPLAY_SETTLE=180 WARMUP=150 HOLD=240 CONTACT_ABORT_N=0.5
+STAGE73_SAMPLE step=1 phase=WARMUP progress=0.000 tracking_rad=0.00012 effort_nm=60.233 speed_rad_s=0.0082 robot_contact_n=0.00000 cube_contact_n=0.00000
+STAGE73_SAMPLE step=30 phase=WARMUP progress=0.000 tracking_rad=0.00120 effort_nm=61.193 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=60 phase=WARMUP progress=0.000 tracking_rad=0.00120 effort_nm=61.195 speed_rad_s=0.0000 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=90 phase=WARMUP progress=0.000 tracking_rad=0.00120 effort_nm=61.195 speed_rad_s=0.0000 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_HOME_SENSOR_BASELINE_PASS=True CUBE_CONTACT_N=0.981000
+STAGE73_SAMPLE step=150 phase=WARMUP progress=0.000 tracking_rad=0.00120 effort_nm=61.195 speed_rad_s=0.0000 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SIM_WRIST_CLEAR_STARTED=True
+STAGE73_SAMPLE step=151 phase=WRIST_CLEAR progress=0.002 tracking_rad=0.00120 effort_nm=61.195 speed_rad_s=0.0000 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=450 phase=WRIST_CLEAR progress=0.500 tracking_rad=0.00600 effort_nm=60.556 speed_rad_s=0.0534 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=750 phase=WRIST_CLEAR progress=1.000 tracking_rad=0.00127 effort_nm=60.092 speed_rad_s=0.0002 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SIM_PREAPPROACH_STARTED=True
+STAGE73_SAMPLE step=751 phase=PREAPPROACH progress=0.000 tracking_rad=0.00127 effort_nm=60.092 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=1950 phase=PREAPPROACH progress=0.500 tracking_rad=0.01237 effort_nm=68.290 speed_rad_s=0.1358 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=3150 phase=PREAPPROACH progress=1.000 tracking_rad=0.00340 effort_nm=75.984 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_REPLAY_STAGE63_ACTUAL_GATE_PASS=True
+STAGE73_SAMPLE step=3330 phase=STAGE63_SETTLE progress=1.000 tracking_rad=0.00340 effort_nm=75.984 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SIM_STAGE67_TARGET_MOVE_STARTED=True
+STAGE73_SAMPLE step=3331 phase=TARGET_MOVE progress=0.000 tracking_rad=0.00038 effort_nm=73.380 speed_rad_s=0.0260 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=4230 phase=TARGET_MOVE progress=0.250 tracking_rad=0.00690 effort_nm=85.405 speed_rad_s=0.0634 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=5130 phase=TARGET_MOVE progress=0.500 tracking_rad=0.00784 effort_nm=24.851 speed_rad_s=0.1130 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=6030 phase=TARGET_MOVE progress=0.750 tracking_rad=0.00444 effort_nm=70.507 speed_rad_s=0.0638 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=6930 phase=TARGET_MOVE progress=1.000 tracking_rad=0.00089 effort_nm=71.688 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_ARM_ENDPOINT_GATE_PASS=True
+STAGE73_SAMPLE step=7170 phase=ARM_HOLD progress=1.000 tracking_rad=0.00089 effort_nm=71.688 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_FINGER_PRECONTACT_STARTED=True
+STAGE73_SAMPLE step=7171 phase=FINGER_PRECONTACT progress=0.001 tracking_rad=0.00089 effort_nm=71.688 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=7470 phase=FINGER_PRECONTACT progress=0.250 tracking_rad=0.00089 effort_nm=71.688 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=7770 phase=FINGER_PRECONTACT progress=0.500 tracking_rad=0.00088 effort_nm=71.688 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=8070 phase=FINGER_PRECONTACT progress=0.750 tracking_rad=0.00086 effort_nm=71.690 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=8370 phase=FINGER_PRECONTACT progress=1.000 tracking_rad=0.00086 effort_nm=71.690 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=8371 phase=FINGER_HOLD progress=1.000 tracking_rad=0.00086 effort_nm=71.690 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=8490 phase=FINGER_HOLD progress=1.000 tracking_rad=0.00086 effort_nm=71.690 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=8520 phase=FINGER_HOLD progress=1.000 tracking_rad=0.00086 effort_nm=71.690 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_SAMPLE step=8550 phase=FINGER_HOLD progress=1.000 tracking_rad=0.00086 effort_nm=71.690 speed_rad_s=0.0001 robot_contact_n=0.00000 cube_contact_n=0.98100
+STAGE73_REPORT_JSON=/home/aybergen/Downloads/lexium_stage3c73_physx_two_finger_precontact_trial.json
+STAGE73_FINAL_ARM_Q_RAD=[-0.45621180534362793, 3.0264475345611572, 1.511157751083374, 0.011427643708884716, 0.07677706331014633, -0.3735889792442322]
+STAGE73_FINAL_GRIPPER_WORLD_XYZ_M=[0.2304246723651886, -0.19433051347732544, 0.14179770648479462]
+STAGE73_FINAL_TOOL_ERROR_MM=0.32423 ORI_DEG=0.03513
+STAGE73_PEAK_EXTERNAL_CONTACT_N=0.000000
+STAGE73_PEAK_EFFORT_NM=85.6813 PEAK_TRACKING_RAD=0.01237
+STAGE73_SIM_MOTION_PASS=True
+STAGE73_FINGER_PRECONTACT_FINAL_Q_RAD=[-0.27003243565559387, -0.3404558598995209, 0.05108384042978287, -0.3394470512866974]
+STAGE73_FINGER_PRECONTACT_ERROR_RAD=0.000853
+STAGE73_PEAK_FINGER_EFFORT_NM=4.9467
+STAGE73_FINGER_PRECONTACT_PASS=True
+STAGE73_SELF_COLLISIONS_UNTESTED=True NO_HARDWARE_MOTION_PERMISSION=True
+STAGE73_GRASP_EXECUTED=False
+LEXIUM_STAGE3C73_PHYSX_TWO_FINGER_PRECONTACT_COMPLETE=True
+RESULT=STAGE3C73_ENDPOINT_TRACKING_PASSED_SELF_COLLISIONS_NOT_VALIDATED
+Loading user config located at: '/home/aybergen/IsaacLab-3.0-EA/.venv/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/user.config.json'
+2026-11-06T06:48:18Z [0ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-06T06:48:20Z [2,596ms] [Warning] [usdrt.population.plugin] Last global time was not created. Did you call setEnableUsdNoticeHandling?
+[INFO] Using Python: "/home/aybergen/IsaacLab-3.0-EA/.venv/bin/python"
+STAGE73_EXIT_CODE=0

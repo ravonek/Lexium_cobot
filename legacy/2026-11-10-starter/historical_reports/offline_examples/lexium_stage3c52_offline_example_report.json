@@ -1,0 +1,571 @@
+{
+  "stage": "3C52",
+  "mode": "offline_corrected_frozen_gripper_base_frame_collision_recheck",
+  "no_isaac_lab": true,
+  "no_motion": true,
+  "original_assets_modified": false,
+  "bug": "Stage3C41..49 load_frozen_gripper returns gripper_base-local vertices for ALL gripper bodies, but old collision screens transformed finger vertices using the individual finger FK frames instead of gripper_base FK.",
+  "stage47_reference_finger_geometry_validated": true,
+  "old_vs_corrected_home_max_vertex_mm": {
+    "gripper_base_1": 0.0,
+    "gripper_finger_1_1": 125.86296456939819,
+    "gripper_finger_2_1": 108.1666481553945,
+    "gripper_finger_3_1": 111.31644995696614,
+    "gripper_finger_4_1": 108.16222219234969
+  },
+  "original_stage49_home_proxy_pairs": [
+    "base_link / link2_1",
+    "link1_1 / gripper_finger_1_1",
+    "link1_1 / gripper_finger_2_1",
+    "link3_1 / LINK5_1",
+    "link3_1 / gripper_base_1"
+  ],
+  "original_stage49_endpoint_proxy_pairs": [],
+  "corrected_home_proxy_pairs": [
+    "base_link / link2_1",
+    "link3_1 / LINK5_1",
+    "link3_1 / gripper_base_1"
+  ],
+  "corrected_endpoint_proxy_pairs": [],
+  "corrected_frames_with_any_self_proxy_overlap": 13,
+  "corrected_frames_with_new_vs_home_self_proxy_overlap": 1,
+  "corrected_frames_with_table_proxy_overlap": 0,
+  "corrected_frames_with_cube_proxy_overlap": 0,
+  "inconclusive_lp_queries": 0,
+  "poses_sampled": 41,
+  "frames": [
+    {
+      "index": 0,
+      "fraction": 0.0,
+      "self_proxy_pairs": [
+        "base_link / link2_1",
+        "link3_1 / LINK5_1",
+        "link3_1 / gripper_base_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 1,
+      "fraction": 0.025,
+      "self_proxy_pairs": [
+        "base_link / link2_1",
+        "link3_1 / LINK5_1",
+        "link3_1 / gripper_base_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 2,
+      "fraction": 0.05,
+      "self_proxy_pairs": [
+        "base_link / link2_1",
+        "link3_1 / LINK5_1",
+        "link3_1 / gripper_base_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 3,
+      "fraction": 0.075,
+      "self_proxy_pairs": [
+        "link3_1 / LINK5_1",
+        "link3_1 / gripper_base_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 4,
+      "fraction": 0.1,
+      "self_proxy_pairs": [
+        "link3_1 / LINK5_1",
+        "link3_1 / gripper_base_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 5,
+      "fraction": 0.125,
+      "self_proxy_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 6,
+      "fraction": 0.15,
+      "self_proxy_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 7,
+      "fraction": 0.175,
+      "self_proxy_pairs": [
+        "link1_1 / gripper_finger_2_1",
+        "link3_1 / LINK5_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": [
+        "link1_1 / gripper_finger_2_1"
+      ]
+    },
+    {
+      "index": 8,
+      "fraction": 0.2,
+      "self_proxy_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 9,
+      "fraction": 0.225,
+      "self_proxy_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 10,
+      "fraction": 0.25,
+      "self_proxy_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 11,
+      "fraction": 0.275,
+      "self_proxy_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 12,
+      "fraction": 0.3,
+      "self_proxy_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 13,
+      "fraction": 0.325,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 14,
+      "fraction": 0.35,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 15,
+      "fraction": 0.375,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 16,
+      "fraction": 0.4,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 17,
+      "fraction": 0.425,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 18,
+      "fraction": 0.45,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 19,
+      "fraction": 0.475,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 20,
+      "fraction": 0.5,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 21,
+      "fraction": 0.525,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 22,
+      "fraction": 0.55,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 23,
+      "fraction": 0.575,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 24,
+      "fraction": 0.6,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 25,
+      "fraction": 0.625,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 26,
+      "fraction": 0.65,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 27,
+      "fraction": 0.675,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 28,
+      "fraction": 0.7,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 29,
+      "fraction": 0.725,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 30,
+      "fraction": 0.75,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 31,
+      "fraction": 0.775,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 32,
+      "fraction": 0.8,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 33,
+      "fraction": 0.825,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 34,
+      "fraction": 0.85,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 35,
+      "fraction": 0.875,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 36,
+      "fraction": 0.9,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 37,
+      "fraction": 0.925,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 38,
+      "fraction": 0.95,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 39,
+      "fraction": 0.975,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    },
+    {
+      "index": 40,
+      "fraction": 1.0,
+      "self_proxy_pairs": [],
+      "table_proxy_bodies": [],
+      "cube_proxy_bodies": [],
+      "inconclusive": [],
+      "new_self_pairs_vs_corrected_home": []
+    }
+  ],
+  "stage51_sim_motion_passed": true,
+  "stage51_final_q_rad": [
+    0.5117752552032471,
+    1.6692626476287842,
+    2.3215785026550293,
+    1.4633383750915527,
+    1.440481185913086,
+    0.26586663722991943
+  ],
+  "stage51_actual_final_gripper_base_pose_xyzw": [
+    0.2021496742963791,
+    -0.30605435371398926,
+    0.22730572521686554,
+    -0.28334707021713257,
+    0.5722696185112,
+    -0.005732642952352762,
+    0.7695382237434387
+  ],
+  "stage51_measured_cube_center_xyz_m": [
+    0.29999902844429016,
+    -0.3000020682811737,
+    0.019998935982584953
+  ],
+  "stage51_final_tcp_xyz_m": [
+    0.3021259557918216,
+    -0.15921361735389067,
+    0.20858297745997725
+  ],
+  "stage51_tcp_cube_delta_xyz_mm": [
+    2.1269273475314487,
+    140.78845092728304,
+    188.5840414773923
+  ],
+  "stage51_tcp_cube_distance_mm": 235.3504884940596,
+  "cube_in_gripper_base_local_xyz_m": [
+    0.21365233832969752,
+    0.06597584828064919,
+    0.05086351244901666
+  ],
+  "stage51_final_finger_min_z_m": 0.1400922645646671,
+  "stage51_final_cube_top_z_m": 0.03999893598258496,
+  "stage51_final_finger_vertical_gap_above_cube_top_mm": 100.09332858208215,
+  "stage51_final_mesh_body_proximity": {
+    "gripper_base_1": {
+      "world_min_xyz_m": [
+        0.17673461228015674,
+        -0.32588700616722244,
+        0.16786171225109026
+      ],
+      "world_max_xyz_m": [
+        0.29356964369334004,
+        -0.20866580314737765,
+        0.25803305526307696
+      ],
+      "min_mesh_vertex_to_cube_AABB_mm": 130.09559389735665,
+      "min_mesh_vertex_to_cube_XY_footprint_mm": 4.641685278903296,
+      "conservative_vertical_separation_above_cube_top_mm": 127.86277626850529
+    },
+    "gripper_finger_1_1": {
+      "world_min_xyz_m": [
+        0.270790161810207,
+        -0.2726504359115262,
+        0.17000189287476547
+      ],
+      "world_max_xyz_m": [
+        0.3591399951936448,
+        -0.20804408689482978,
+        0.224385178315638
+      ],
+      "min_mesh_vertex_to_cube_AABB_mm": 146.79580783641413,
+      "min_mesh_vertex_to_cube_XY_footprint_mm": 7.351632369647476,
+      "conservative_vertical_separation_above_cube_top_mm": 130.0029568921805
+    },
+    "gripper_finger_2_1": {
+      "world_min_xyz_m": [
+        0.2550246167335168,
+        -0.2691335735200228,
+        0.1400922645646671
+      ],
+      "world_max_xyz_m": [
+        0.3433641276345404,
+        -0.20450239278452575,
+        0.19446650907478355
+      ],
+      "min_mesh_vertex_to_cube_AABB_mm": 120.0588073155254,
+      "min_mesh_vertex_to_cube_XY_footprint_mm": 10.86849476115087,
+      "conservative_vertical_separation_above_cube_top_mm": 100.09332858208215
+    },
+    "gripper_finger_3_1": {
+      "world_min_xyz_m": [
+        0.22305798908281932,
+        -0.2268764518182947,
+        0.21874200193234658
+      ],
+      "world_max_xyz_m": [
+        0.27720560099265207,
+        -0.13153850134497064,
+        0.25412596528835685
+      ],
+      "min_mesh_vertex_to_cube_AABB_mm": 190.48242871818852,
+      "min_mesh_vertex_to_cube_XY_footprint_mm": 58.01414860144476,
+      "conservative_vertical_separation_above_cube_top_mm": 178.74306594976164
+    },
+    "gripper_finger_4_1": {
+      "world_min_xyz_m": [
+        0.20729923390757415,
+        -0.2233668336983749,
+        0.18882113952485838
+      ],
+      "world_max_xyz_m": [
+        0.2614619076986829,
+        -0.12803261016042014,
+        0.2242043693511921
+      ],
+      "min_mesh_vertex_to_cube_AABB_mm": 167.6512357897493,
+      "min_mesh_vertex_to_cube_XY_footprint_mm": 68.57573673473196,
+      "conservative_vertical_separation_above_cube_top_mm": 148.82220354227343
+    }
+  },
+  "previous_offline_collision_claims_require_revalidation": true,
+  "corrected_geometry_requires_new_candidate_search": true,
+  "actual_cooked_physx_self_collisions_validated": false,
+  "finger_opening_40mm_validated": false,
+  "grasp_center_validated": false,
+  "grasp_authorized": false,
+  "hardware_motion_authorized": false,
+  "disclaimer": "Frozen gripper meshes verified at HOME by Stage47 but in dynamic motion finger values may deviate. Stage52 uses corrected gripper_base rigid transform for all five meshes, 41 discrete proxy hull steps only. Reference Stage39 seed may be example. Simulation-only Stage51 external contacts do NOT prove self collision clearance. TCP is not necessarily the true grasp center; only offsets and mesh extents are measured. No descent/grasp or hardware actuation permission."
+}

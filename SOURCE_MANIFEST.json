@@ -1,0 +1,1078 @@
+{
+  "generated": "2026-11-20",
+  "purpose": "Codex repository handoff. NOT latest complete Ubuntu source workspace.",
+  "file_count_excluding_manifest": 214,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 454,
+      "sha256": "206d5701ed93cba5735a22794187ab4906b65180ebccdf06c1a09b2a8b8940f5"
+    },
+    {
+      "path": "CODEX_IMPLEMENTATION_PROMPT.md",
+      "bytes": 7343,
+      "sha256": "f099833a901736e574a67057ce5b81e8e7d13862011bfb0c31a3b811672bad8e"
+    },
+    {
+      "path": "LICENSE-NOTICE.md",
+      "bytes": 530,
+      "sha256": "b1f98790388ee6fef9ba7601d2a25b9398f85c364f4fd69276b50de5b558a6aa"
+    },
+    {
+      "path": "PROJECT_SPEC.md",
+      "bytes": 18014,
+      "sha256": "061c9f7b04671c6279e3f2c25e4aad77172cb4fd71f661f3d429cc08c9b4ee76"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4450,
+      "sha256": "45fc8aa360c4a8d89966f9c424c285b219a223caf0d6cb25ed3b24f903b90a18"
+    },
+    {
+      "path": "assets/robot/references/cobot_gripper_reference.step",
+      "bytes": 414170,
+      "sha256": "fd613adbfd205cf01653b81157b8f25eaf21212385cbdfdfd10736bcc6323438"
+    },
+    {
+      "path": "assets/robot/references/lexium_cobot.urdf",
+      "bytes": 12729,
+      "sha256": "247a231be8bce78c8f455ab1bb77ec6fa96f0571021d1a96732379578f2ac0d9"
+    },
+    {
+      "path": "assets/robot/references/lexium_cobot_older_reference.xrdf",
+      "bytes": 4961,
+      "sha256": "67f3094cee2a07d29774bcbedc0a602174448bbc6cf6e84f0e71213b90f6ffa4"
+    },
+    {
+      "path": "assets/robot/references/robot_cfg.py",
+      "bytes": 3663,
+      "sha256": "4bc8a1121ab64de5e2a9a226f51f921e251507b27b2dfd8236929c41275c0d6c"
+    },
+    {
+      "path": "configs/default.yaml",
+      "bytes": 439,
+      "sha256": "83ea2b26674b416eb7183940c992b41fc3386c6684badc2785238a6ac5fd1329"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 4031,
+      "sha256": "1abaaa0be66b42a8bcfb4bbffebcaf833d07ef3fbf5ad8c76ed115b44d17da10"
+    },
+    {
+      "path": "docs/FILES_AND_SOURCES.md",
+      "bytes": 1930,
+      "sha256": "37e8a82de02f7b3e4ecb098792715193c9305470030b97e5b14491cd69a5cef2"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_LOG.md",
+      "bytes": 698,
+      "sha256": "c58bb54e89175123a4a3d14e0dd2a40282c1a4cd0646b2a72863e0feed35c079"
+    },
+    {
+      "path": "docs/MIGRATION.md",
+      "bytes": 2514,
+      "sha256": "1f0bd7cc00a8e43c28546b3d2380ade78678f272c3ffed5eefd92869b02ab8e0"
+    },
+    {
+      "path": "docs/SAFETY.md",
+      "bytes": 2644,
+      "sha256": "59aee840ef1db06a7b6a6286b9c49a7b71274500a8fe8dbdc66a5ce82f2e1a5e"
+    },
+    {
+      "path": "docs/STATUS_AND_PROVENANCE.md",
+      "bytes": 3472,
+      "sha256": "a88612627ecf46db96a5214b6db777ae12258f8f4963137e8113c8b2f60ee54d"
+    },
+    {
+      "path": "docs/VERIFICATION_MATRIX.md",
+      "bytes": 2371,
+      "sha256": "38e58a5227784fd942787716e86e9cab9a874e19ebd17b817e0e418c7b4e60c0"
+    },
+    {
+      "path": "evidence/README.md",
+      "bytes": 482,
+      "sha256": "f9ca071a0cc727637f25c907b96c574d1ebd73ce41a1d82065535a9a244ce3ad"
+    },
+    {
+      "path": "evidence/measurements/phase10_transcribed.json",
+      "bytes": 2250,
+      "sha256": "8a88e274b9e8d33a2c9b939b17485e8390b357100fa1609fe6180d2e7e908bba"
+    },
+    {
+      "path": "evidence/measurements/stage6_transcribed.json",
+      "bytes": 674,
+      "sha256": "fab649665073de3f8c123cf777d7408860804bf8999ab6804c4f8a699be2fdf4"
+    },
+    {
+      "path": "evidence/screenshots/stage6_benchmark.png",
+      "bytes": 63066,
+      "sha256": "2b90c22eadd43a10e3a4c897b7f5c81a86f2051c083f9264ed8b4c167e182697"
+    },
+    {
+      "path": "evidence/screenshots/stage6_contact_forces.png",
+      "bytes": 136096,
+      "sha256": "cad030a9f16b508c5163ad98574df8be622d8dcd34beb9ba7ef7ab72e2735605"
+    },
+    {
+      "path": "evidence/screenshots/stage6_final_sorted.png",
+      "bytes": 509995,
+      "sha256": "85929f49207d42d2aad5aa674f38781708b992d090d1d46f68be13b30a59658b"
+    },
+    {
+      "path": "isaac_lab/README.md",
+      "bytes": 605,
+      "sha256": "9491c66116654090a463f5d6c589d0e6a56376f5cc74fa650ed83564e648fe86"
+    },
+    {
+      "path": "isaac_sim/README.md",
+      "bytes": 503,
+      "sha256": "aa9109b9737ba3e65cabf8e8ab3b2f8e8461d324a19da86ca41254272aa3a551"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/CURRENT_STATUS_AND_MISSING_FILES.md",
+      "bytes": 1665,
+      "sha256": "d122b9b36449f11435d98b01bc6b7a921b6a037295948ab224df77a7c03d1b09"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/LEXIUM_GEMINI_HANDOFF_2026-11-10.md",
+      "bytes": 34508,
+      "sha256": "82c0158eb4f87c2986dedbabc4be5487872918764b4977fc8c0be6aba0d6215b"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/MANIFEST.json",
+      "bytes": 26718,
+      "sha256": "1903c9a3ca7b474fff51618720ed2c7b84af8ecc5f2616a29a82e930b0b29fb4"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/README_FIRST.md",
+      "bytes": 4468,
+      "sha256": "658d3481f4f6069c0a361390e381f0fb27d9045f9c8559fa5cb10eeeb11897a9"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/collect_full_lexium_from_ubuntu.py",
+      "bytes": 8002,
+      "sha256": "de29d128abc025d621428b67da80a3831f5efad5cb1db7ee44a5153718442f56"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_logs/stage3c68_terminal_capture.txt",
+      "bytes": 11000,
+      "sha256": "644074d37c2b3b7d9c7144ba817bbfca2e6acaeaf86f8d9654984d6360a19119"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_logs/stage3c73_terminal_capture.txt",
+      "bytes": 12595,
+      "sha256": "dc6c10a21d3f48d42f3b41375bbddab5763bb94483b7fae54a209fd94b53d86a"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c31_gripper_geometry.json",
+      "bytes": 4568,
+      "sha256": "d8eb411e5508ae7402cf5ba972f8bb172b5845a982135cfbde98a557afc388c5"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c32b_limit_aware_probe(1).json",
+      "bytes": 11922,
+      "sha256": "19cd9499251adf189ba5c284dc821879b1dec4742ac058d63ef8e3d3c4b19edd"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c32b_limit_aware_probe.json",
+      "bytes": 11922,
+      "sha256": "19cd9499251adf189ba5c284dc821879b1dec4742ac058d63ef8e3d3c4b19edd"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c34_virtual_opening_audit.json",
+      "bytes": 25558,
+      "sha256": "d78a834f28262902a96fa18f2c5a1daf4ac23b75a6cb51ecc8852d00386d285b"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c35_bottleneck_axis_audit.json",
+      "bytes": 24111,
+      "sha256": "907523ae1cd5882a4e5a5415cfa214806ed40811312f6b1202539c3e6dcd02c5"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c36_local_aperture_report.json",
+      "bytes": 10640,
+      "sha256": "9f1c697b25687b35bcfa850ce4cb3f1bb1f971b8fdbbec5dd4d5edc98726ef58"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c37_full_collision_triangles.npz",
+      "bytes": 541108,
+      "sha256": "9a9bafed40868df91185275ae5768c235f84f73a9ebea647119123f36bb3638c"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c37_table_gate.json",
+      "bytes": 13988,
+      "sha256": "28773bb1af2ce3c5d65f87afb720118f7d0ce5678c03581875562c8f8614ba07"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c38_offline_pose_screen.json",
+      "bytes": 16309,
+      "sha256": "bcabed4e4929c84edd62eef7e3c64b23e664f5321ff6dc8d5b9b4f035f8bf9f4"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c40_ik_reachability_report.json",
+      "bytes": 20431,
+      "sha256": "8674ef1b700de4420d5aba29bff41e00f2a1a18248fff0fff861c1722a545265"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c43_physx_home_fk_report.json",
+      "bytes": 2199,
+      "sha256": "ea9b9b9f6feebfebd7ec45fbf110398ff0e9d9deb0f30bd9462f0aa54d84f4a4"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c44_explicit_home_fk_report.json",
+      "bytes": 2857,
+      "sha256": "b111e4fb0b4d1a89ffcd0fe61d3154dfb240c93e03e50a8198544d5194177f73"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c45_offline_pregrasp_report.json",
+      "bytes": 77983,
+      "sha256": "45d680883356998166d287197dea06d6a4e38ee248a3e24998bd5fd6d64e9aed"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c46_self_mesh_narrowphase_report.json",
+      "bytes": 25152,
+      "sha256": "12546c9f66fb4512ff2a0d8b2547e3e4e977ad3e62931572f0174ddd73b6e643"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c47_physx_home_mesh_fingerprint.json",
+      "bytes": 9076,
+      "sha256": "c80c1d9d6b41c36a9c21316fef3c191fb413fee50bcdabc0d37e4fb2963a27e0"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c48_orientation_branch_report.json",
+      "bytes": 20982,
+      "sha256": "35f47480f00a0f55ae4d0559181c327b05bd5f58d546db6a1360ff9f6a013c72"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c49_convex_hull_proxy_report.json",
+      "bytes": 14333,
+      "sha256": "271f8da8063754a51c1ae0b3dc623a4f59e0999969a01fc3282e1bb29308b7d8"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c50_physx_contact_preflight.json",
+      "bytes": 4091,
+      "sha256": "6cb6ae87085f0ad82bf8407354b8cd4548ad8cfced44fc1b6d1388485f679f0b"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/lexium_stage3c51_physx_pregrasp_motion_trial.json",
+      "bytes": 12272,
+      "sha256": "8ebba07ca8fdd2506ae40987c41e38e768ee5b406ea82c201e94182b194850b2"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/offline_examples/lexium_stage3c39_offline_example_report.json",
+      "bytes": 18666,
+      "sha256": "972b54fc20048cb3fb82a0bfa1a41d003ee64e99b563bd00f8bc24318793962c"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/offline_examples/lexium_stage3c40_example_report.json",
+      "bytes": 20358,
+      "sha256": "343e09fbb2cae31d18d68d4db806d0aae6363946c7d539ae709bc4893209f84b"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/offline_examples/lexium_stage3c41_offline_example_report(1).json",
+      "bytes": 40105,
+      "sha256": "43dac3a635b75b7d92dfb7d505e8ee33d8e20dbdb4ad57a161fcd28dac1275a3"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/offline_examples/lexium_stage3c41_offline_example_report.json",
+      "bytes": 40105,
+      "sha256": "43dac3a635b75b7d92dfb7d505e8ee33d8e20dbdb4ad57a161fcd28dac1275a3"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/offline_examples/lexium_stage3c42_offline_example_report.json",
+      "bytes": 11894,
+      "sha256": "854cae524951ee3c05fc5a63ce8539ddabaffff4f4fe74b0550daa59f00f6517"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/offline_examples/lexium_stage3c45_offline_example_report.json",
+      "bytes": 77993,
+      "sha256": "50cd3f77f3cba162df189cc607b29ef2f53bb1b82d62d5d08278fe5d80fb88d4"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/offline_examples/lexium_stage3c46_offline_example_report.json",
+      "bytes": 25157,
+      "sha256": "c376caedfb5bbbfe07a8b2c549d5e1361cf00bf2076e550bf33ce84d9418aaf2"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/offline_examples/lexium_stage3c48_offline_example_report.json",
+      "bytes": 20983,
+      "sha256": "7074e45f252d377b37c981c3ea7147d72433f241ef6f89e61a27de30cfb0e373"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/offline_examples/lexium_stage3c49_offline_example_report.json",
+      "bytes": 14333,
+      "sha256": "271f8da8063754a51c1ae0b3dc623a4f59e0999969a01fc3282e1bb29308b7d8"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_reports/offline_examples/lexium_stage3c52_offline_example_report.json",
+      "bytes": 15672,
+      "sha256": "25cb5488b891489c3f41f41e7befbfa13dc13708ad5b7178fce2d5820dfdaa37"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/README_STAGE3C42.txt",
+      "bytes": 1823,
+      "sha256": "d4f938176663be9e848cc148366c4a8c69241c601600d8d4dfad3b99b48232cb"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/README_STAGE3C46.txt",
+      "bytes": 1596,
+      "sha256": "89193d3341a4fd3852f0c056e674282873508ecd36696489f1448c41433cdd80"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/README_Stage3C39.txt",
+      "bytes": 1026,
+      "sha256": "fca0cc5040eb27849711ca42a5a77b73ec8ed63fe891ea35f830f4552adaee8a"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/README_lexium_stage3c40.txt",
+      "bytes": 2160,
+      "sha256": "18bb1cde939ffc56f35fa03aa3539d5ad36cbf80d47281965c9822458ffcf2f0"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/README_lexium_stage3c41.txt",
+      "bytes": 2216,
+      "sha256": "ca98b513ff31c69e35ae2395661a8a3ec7ece9eb2741a3c629b7f37d4d5fa6b5"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/README_lexium_stage3c45.txt",
+      "bytes": 2197,
+      "sha256": "13a7e138c4893c937a2197b5e89c37a9a746b27dff67e8382b1de1b54c26c76a"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/README_lexium_stage3c48.txt",
+      "bytes": 2147,
+      "sha256": "3fa698460089b150540fc286da0d03dc80d671f3f786b558ba6ad1dc9135cf10"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/README_lexium_stage3c49.txt",
+      "bytes": 1920,
+      "sha256": "42943d442b6d570da62fbfa09bb69e6a795e6c16dc9f410acbd93c00054fe0ae"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/README_lexium_stage3c51.txt",
+      "bytes": 2624,
+      "sha256": "de69383acfc81b5dc0f3f4b2a23ab18123787cb12a0ab131751fe407c4cb7e5d"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/README_lexium_stage3c52.txt",
+      "bytes": 2795,
+      "sha256": "a2be0fbc95c46dc22d5dbe76a7ed4d2324a675dcbd0e543b5b3600454769b4a8"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/STAGE3C51_README_REUPLOAD_20261103.txt",
+      "bytes": 2624,
+      "sha256": "de69383acfc81b5dc0f3f4b2a23ab18123787cb12a0ab131751fe407c4cb7e5d"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c22_urdf_gravity_torque_audit.py",
+      "bytes": 11971,
+      "sha256": "0790aae2ca389f9434d2c0338c48bb6b937703f5200674fe59705f2b6ac95832"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c31_gripper_collider_geometry.py",
+      "bytes": 31892,
+      "sha256": "000154e406f25bebc73d32cd74c5c92f82ca38aa981c0c68b819b7b889658e63"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c32_gripper_calibration.py",
+      "bytes": 48289,
+      "sha256": "480406838996ba8677e8c0408ae635d4fa28264731a140d05332c0f7aa732fd4"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c32b_limit_aware_calibration.py",
+      "bytes": 52674,
+      "sha256": "7bee25fc9b7432399ec11c134cca9f1fd788aae993d8bd7e52ac64e02bf01feb"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c33_static_gripper_geometry.py",
+      "bytes": 59507,
+      "sha256": "24d2d6b8c0b4b1485206d929737e49e2445db544141d142b9b0bee4257e7034e"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c34_virtual_opening_audit.py",
+      "bytes": 69977,
+      "sha256": "ca57a846980d7c4d48657c2d46d4dcd27b3028c2ea05f23ef5c02917b7c0d61d"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c35_bottleneck_axis_audit.py",
+      "bytes": 80075,
+      "sha256": "818943b972aec6bdb8980922c3476ae79781c891f5d6cdcc1ab98bb0ce4f56f6"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c36_local_aperture_audit.py",
+      "bytes": 89719,
+      "sha256": "6fdb7186b72bde1edff93896446efabc62f9a0f23f4e7cd19b61a0e49c5f7e32"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c37_collision_mesh_export_table_gate.py",
+      "bytes": 98593,
+      "sha256": "c0cd35c22a77eed947a1a0078689b69890ded6b00a24a0ce60f56eb89eea2bdc"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c38_offline_pose_screen.py",
+      "bytes": 13123,
+      "sha256": "50c49d2d75c19a2d97b02eca42ff8242175d29aab676531a7d941050cf844f2b"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c39_opposing_contact_screen.py",
+      "bytes": 11272,
+      "sha256": "cc855b7bbd684c80fd84a4ab3426755f7f56e1292edcfda84b79612d72fbc996"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c40_ik_reachability_audit.py",
+      "bytes": 21495,
+      "sha256": "2b6a2fe6764f3bd07ce7b2f3c71c6d19b8ffc60b30120514a2266fb089b41032"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c41_full_arm_collision_audit.py",
+      "bytes": 16117,
+      "sha256": "068a200c6ee10507276a6bafe06ba7ce7568ab96b86e282e9e0911a9c5e3a98d"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c42_all_ik_target_gates.py",
+      "bytes": 8384,
+      "sha256": "5b31731272163344b361e57ba57489bea00d599326747fe37ca31d0aa7b3ad8c"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c43_physx_home_fk_audit.py",
+      "bytes": 9069,
+      "sha256": "2228eb5bd86964fd43a1a054ee5b491cfd80884d28e253d6655ea09766e3f2e0"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c44_explicit_home_fk_audit.py",
+      "bytes": 11121,
+      "sha256": "45b9dcd21c434635f29125382c806af32f15b734c387d62f80e7a403b810ede4"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c44_explicit_home_fk_audit_RESEND.py",
+      "bytes": 11121,
+      "sha256": "45b9dcd21c434635f29125382c806af32f15b734c387d62f80e7a403b810ede4"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c45_offline_pregrasp_lift_screen.py",
+      "bytes": 15372,
+      "sha256": "363541fd0edef28e8f51b40c7c6ce673d5debb0d8a45a06fa08c2db47acdcdd3"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c46_self_mesh_narrowphase.py",
+      "bytes": 14436,
+      "sha256": "2b58f9b025242676d9d86155b97fd3ebaa44d39b43e56cfaa4923dd25cf7f4b2"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c47_physx_home_mesh_fingerprint.py",
+      "bytes": 16129,
+      "sha256": "c3a846fcb65a190439d452c4567efe2b0a49c6a8f9fc38d61c71a1e49c0743ee"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c48_orientation_branch_screen.py",
+      "bytes": 14875,
+      "sha256": "326655d93407a4920123a108952d43a994b466e91f2276d2b71453afaf33b333"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c49_convex_hull_proxy_audit.py",
+      "bytes": 10351,
+      "sha256": "4282a5f31552cd1d767c8a284c0cdcb07f875ceff3f00d79da89f8bed3d50d5e"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c50_physx_contact_preflight.py",
+      "bytes": 16902,
+      "sha256": "d8878449387e0aa40c78d3a8dfb562372a626626c642447b740df5fa180daccc"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c51_physx_pregrasp_motion_trial.py",
+      "bytes": 23889,
+      "sha256": "a325a6e524ddb5b2d737c99e3b06f1cdedf492ee7592e798efd9f05fa6d3fa1a"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/lexium_stage3c52_corrected_gripper_geometry_audit.py",
+      "bytes": 13850,
+      "sha256": "c5e229a0288f3af6d445589436f3f6a0e005bcf763b08d08154a7994557644de"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c31_gripper_geometry.sh",
+      "bytes": 3191,
+      "sha256": "acc11790a8a213100a0bfd81f2a01bc643ac38d082b92c589a4a47120a2409f9"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c32_gripper_calibration.sh",
+      "bytes": 4161,
+      "sha256": "7c5aff37254912736b3c40126f58f4217d14cdbef2dd2aece65a88f019a22d9e"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c32b_limit_aware.sh",
+      "bytes": 4238,
+      "sha256": "9ddbbc7edd58c4f2c73f877b8854dfb49f072afba234e6249d67fb70ef536f60"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c33_static_gripper_geometry.sh",
+      "bytes": 3626,
+      "sha256": "e541809846dd713fef05b8dec01ec9050b1081826bf319b4f777c9a0986d64aa"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c34_virtual_opening_audit.sh",
+      "bytes": 3631,
+      "sha256": "90e2d19b7901a41ef7c66df2cbca7d140b0b4f1414e422973467b3740c05c84e"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c35_bottleneck_axis_audit.sh",
+      "bytes": 4208,
+      "sha256": "666414b095277a22f53f75d855f541e572ade7ea462f75514c1dd226e375bc0b"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c36_local_aperture_audit.sh",
+      "bytes": 4815,
+      "sha256": "8dcd01b2aa35b3271735712f8000153815f22b62c7fbb4000092b85570d04f92"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c37_collision_mesh_export_table_gate.sh",
+      "bytes": 4233,
+      "sha256": "ce7190042c70b8588cd36e8069d3267ae0767dda042a64a55d8adef6ea279f6d"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c38_offline_pose_screen.sh",
+      "bytes": 1149,
+      "sha256": "f0d16c3971f5b4049b5b8eff7b6f81a0e93d61da059ff6b95078c5ee42d26d0e"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c39_opposing_contact_screen.sh",
+      "bytes": 811,
+      "sha256": "ebb621d2ab132b7579a3f0e2c043832ea1e0408477fbec039384519737496628"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c40_ik_reachability_audit.sh",
+      "bytes": 2570,
+      "sha256": "fd8d12a2a55ee9761fe82276618ccf2472cdd884f15c6b3076ea07fd8d451c88"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c41_full_arm_collision_audit.sh",
+      "bytes": 2614,
+      "sha256": "02e134b608541b6fa115c6f8fcc5994273de55c7fa818ab4a917e39fd7e0f751"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c42_all_ik_target_gates.sh",
+      "bytes": 2083,
+      "sha256": "d053e123662673af3e5cdba2b8d392ed6c156f5916996ec5d23ef687bc6c0bec"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c43_physx_home_fk_audit.sh",
+      "bytes": 2179,
+      "sha256": "fd91c19a795293bdf57ae9dabbd5ec97ba66acb5e1342886ad7e55f3c47ad0ef"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c44_explicit_home_fk_audit.sh",
+      "bytes": 2113,
+      "sha256": "0f4ca080d487b341ed8a7799cc63d4042b2ce060e77100f7309f771722a37f61"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c44_explicit_home_fk_audit_RESEND.sh",
+      "bytes": 2113,
+      "sha256": "0f4ca080d487b341ed8a7799cc63d4042b2ce060e77100f7309f771722a37f61"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c45_offline_pregrasp_lift_screen.sh",
+      "bytes": 1691,
+      "sha256": "cc0e5c35f8980be1cef6ce09dd83e3b89277bf3fc22fc46103591fca557b91d3"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c46_self_mesh_narrowphase.sh",
+      "bytes": 1951,
+      "sha256": "7bf18698b7f64f1e576822a4bf2a9904620b43431d299d1fb19b8b88cc1baeac"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c47_physx_home_mesh_fingerprint.sh",
+      "bytes": 2652,
+      "sha256": "e7d57d4085355a8a168fcdc27c8c0a36dea1966bcc140b6c20b275772413ab58"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c48_orientation_branch_screen.sh",
+      "bytes": 1725,
+      "sha256": "17db6a090491e655fefe178d5aaab3fbf3bfb023dba6e1756d713d9e1cb5511a"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c49_convex_hull_proxy_audit.sh",
+      "bytes": 1652,
+      "sha256": "837c093b8fbec887148ce46f2cea1e1c93cecbba91438a291b4381f221c5a2e0"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c50_physx_contact_preflight.sh",
+      "bytes": 2701,
+      "sha256": "2cf79a9402d53d1daa6f7705840c68faae300d6c8b1ed910b49eb1a4f5bdbb01"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c51_physx_pregrasp_motion_trial.sh",
+      "bytes": 3585,
+      "sha256": "339deb275f56acfc42e01684b9807436046dfe65ea6891bfbe12718890886d35"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/historical_sources/run_lexium_stage3c52_corrected_gripper_geometry_audit.sh",
+      "bytes": 1750,
+      "sha256": "8b25e031d093d5f87455c6d8ff2f94b2c1471adf57e5470a8a7ad434dd9b5f7a"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/model/assets/lexium_cobot.urdf",
+      "bytes": 12729,
+      "sha256": "247a231be8bce78c8f455ab1bb77ec6fa96f0571021d1a96732379578f2ac0d9"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/model/assets/meshes/LINK5_1.stl",
+      "bytes": 564284,
+      "sha256": "0c566600aa4217beba82791ee81aebc6f787e148f19c42802049cb1725f87c43"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/model/assets/meshes/base_link.stl",
+      "bytes": 208084,
+      "sha256": "13823e91cb362b1df5fa6595dad2d88ea2e1f0aa1281eaf4e06f7eb68f9b80a0"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/model/assets/meshes/link1_1.stl",
+      "bytes": 347384,
+      "sha256": "22648868d278a2f6877852954181bcd0dbb311a3bc2ebac2a547f76f3516ee21"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/model/assets/meshes/link2_1.stl",
+      "bytes": 916684,
+      "sha256": "693abdbad0677336ee59aac0ad63866cb6bc587dd689c6d47889ae73b5830b6e"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/model/assets/meshes/link3_1.stl",
+      "bytes": 740684,
+      "sha256": "7efde4b9081839569831bf0a3b0e6cb47ce1b372e7481447b33f08ca3b5b81a2"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/model/assets/meshes/link4_1.stl",
+      "bytes": 349184,
+      "sha256": "29d9ef182db547c694e7f57d00b192c7a0529bac90ab62e1bac70233fe334811"
+    },
+    {
+      "path": "legacy/2026-11-10-starter/model/robot_cfg.py",
+      "bytes": 3663,
+      "sha256": "4bc8a1121ab64de5e2a9a226f51f921e251507b27b2dfd8236929c41275c0d6c"
+    },
+    {
+      "path": "legacy/archives/LEXIUM_GEMINI_STARTER_2026-11-10.zip",
+      "bytes": 2140896,
+      "sha256": "cd1e106c3fdaa48b488524d23717b0e7c45f592ab5aa4ad20ec7ef142237fbdd"
+    },
+    {
+      "path": "legacy/archives/Thesis_Template_RaM_2027_original.zip",
+      "bytes": 43322,
+      "sha256": "179cc2ddf246543bcc56b4e9a436e1c82358901bdb7a823a703ab5fe12bdc6b7"
+    },
+    {
+      "path": "legacy/archives/lexium_antigravity_context.zip",
+      "bytes": 25800,
+      "sha256": "6d75c3db005977a64b18766c4c9fb35e8e880239ad3cc5d57fda3533d4242893"
+    },
+    {
+      "path": "legacy/archives/lexium_pick_place_gemini_original.zip",
+      "bytes": 23969,
+      "sha256": "c95327d8097b84c05c05ba340361973ab189ab6b5c2a316591ea07db6e711ed0"
+    },
+    {
+      "path": "legacy/extra_sources/cobot_gripper.step",
+      "bytes": 414170,
+      "sha256": "fd613adbfd205cf01653b81157b8f25eaf21212385cbdfdfd10736bcc6323438"
+    },
+    {
+      "path": "legacy/extra_sources/cobot_gripper_bracket_m.stl",
+      "bytes": 6604984,
+      "sha256": "80f8413bd6c2a48bb04a10ff2e4175a4d54a9fc212069f0a185a16ed739f78f6"
+    },
+    {
+      "path": "legacy/extra_sources/lexium_cobot.xrdf",
+      "bytes": 4961,
+      "sha256": "67f3094cee2a07d29774bcbedc0a602174448bbc6cf6e84f0e71213b90f6ffa4"
+    },
+    {
+      "path": "legacy/extra_sources/lexium_stage3c75b_finger_contact_probe.py",
+      "bytes": 28930,
+      "sha256": "93129454e7c16229710e9a3120914143f201b8ab4351cd97b81f60dadfac5a3b"
+    },
+    {
+      "path": "legacy/extra_sources/lexium_stage4b_vision_pick_place.py",
+      "bytes": 46334,
+      "sha256": "bf0fe5554e4fdcda4f9fcfb7c1bd08eeb3511d9c0df81af27a14ab48bc3c1880"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/README.md",
+      "bytes": 4818,
+      "sha256": "4446380e28cbe1f915a2c00048e4cf3d78caa47ab089f830537b4cdcc495bbd1"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/SETUP_RU.md",
+      "bytes": 3269,
+      "sha256": "f239fe5abbe3994ee9850cee743d1a930f327cbb93c0f9b245e09d801cc28148"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/__init__.py",
+      "bytes": 501,
+      "sha256": "bff12eca60d31935b59d6ae8a6b5aee421a5a9dea5142b49237eb3fb9599c78f"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/agents/__init__.py",
+      "bytes": 222,
+      "sha256": "fc0b761567bfe7c4fbe47c515085b9072de9279ae1eaa6f33bccbb888a36858f"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/agents/rsl_rl_ppo_cfg.py",
+      "bytes": 1649,
+      "sha256": "e3b9c26407416a468f39987a3ef56f6c615d43d6996b7e97328a7d8ae35d569b"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/assets/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/assets/meshes/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/assets/usd/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/check_assets.py",
+      "bytes": 2294,
+      "sha256": "f1a265410c59fc8321d9e80d67353c82b22a5bb6934751aaa14c3a029725ba32"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/check_robot.py",
+      "bytes": 4490,
+      "sha256": "02b99c987fa6d4c16a1613ec8a3b23096f16984b57679a4405365d2642f84391"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/convert_urdf.py",
+      "bytes": 1414,
+      "sha256": "9b4adbbb95e632e46e1f4b5586cd401d94be9361922818daffa1237f9058ea65"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/mdp/__init__.py",
+      "bytes": 1016,
+      "sha256": "7742faabf4f8f1575d6843199f42d20f0d69a3fc2c62607cb668c4cff5f488d0"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/mdp/actions.py",
+      "bytes": 4135,
+      "sha256": "2aad0fe4450c98a644d404d1ea61d807be13804fb3bf04ddb923b358feaae9a2"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/mdp/events.py",
+      "bytes": 3865,
+      "sha256": "170916f5f3fa14b47dc7682e1e910166e53e822f83a66c40f8434242ee0a6d82"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/mdp/observations.py",
+      "bytes": 3452,
+      "sha256": "f09db783884c9372dc70c466427f9563f31052924ba954e06c85254eff2bcc99"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/mdp/rewards.py",
+      "bytes": 6591,
+      "sha256": "44fc601394b31ad9a57bf7970c92118d5efb719fdeaf1b7ea4fa5b277aa8c573"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/mdp/terminations.py",
+      "bytes": 1617,
+      "sha256": "90ce76723260cef84aa0dc6ecd6d440face297e17c17feb47e590f8efea581c9"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/pick_place_env_cfg.py",
+      "bytes": 14336,
+      "sha256": "8d4f6e76ef0928ad29481f9f983f1a3004c612bb71de7ccd2ad37cf3a1f14a5c"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/play.py",
+      "bytes": 2536,
+      "sha256": "5a660f3bd8ad047a3b402efd70c861f14cce9d4289d55f31ac79a60d6c3420a0"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/robot_cfg.py",
+      "bytes": 4435,
+      "sha256": "26cf0eb7dfdad826345b351ffc33a4763b5e6e82c9675daf2851a7b0fc9cfbb9"
+    },
+    {
+      "path": "legacy/original_isaaclab_prototype/lexium_pick_place/train.py",
+      "bytes": 3092,
+      "sha256": "b829e0f75dcaa039280ad720a86152fd91ec56039cae2b8b55d218939ae3a456"
+    },
+    {
+      "path": "media/documents/Lexium_Agro_Progress_Speech_EN.txt",
+      "bytes": 3342,
+      "sha256": "c9147ebcca838e04a35665178c85d97dd6928f38b614d02c0477500d690f0cf4"
+    },
+    {
+      "path": "media/documents/Project_Summary_Lexium_Agro.docx",
+      "bytes": 13566,
+      "sha256": "37ce1e5cce9aae85d940373bfa11cf63554d640341e0f90ccf6c61e234ba4556"
+    },
+    {
+      "path": "media/documents/Thesis_Draft_Preview.pdf",
+      "bytes": 1007339,
+      "sha256": "107b517c27ef3a879d416c41834d9159cc265a4a2e56d517df7aa87cb17ca289"
+    },
+    {
+      "path": "media/photos/real_lexium_gripper.jpeg",
+      "bytes": 217285,
+      "sha256": "2c03c0bc223740e2fdb78bcf72af3959a27414a182779f131ec57f6d855489cf"
+    },
+    {
+      "path": "media/photos/robot_mount_view.jpeg",
+      "bytes": 263016,
+      "sha256": "a1bbb1f06232dcfbc2fc85025f352d49d3bc54d06e1135fcd1992ed745c01b3f"
+    },
+    {
+      "path": "media/photos/sim_display_workstation.jpeg",
+      "bytes": 510683,
+      "sha256": "7f422117d142ca119c887eedb21802543e60f18b5cc4e26eea0ca7ca86c8780b"
+    },
+    {
+      "path": "media/photos/upright_robot_mobile_base.jpeg",
+      "bytes": 241290,
+      "sha256": "d7901a68d2c80c8449a8fe4159a35fa778da35a37dd204225e76f54722cb21fe"
+    },
+    {
+      "path": "media/presentations/Lexium_Agro_Progress_2x_Videos.pptx",
+      "bytes": 7318838,
+      "sha256": "63ee5aa7ca30c415ae129868269d32c9c5d2e310961b9bd45b220c8a7f51d6ea"
+    },
+    {
+      "path": "media/presentations/Project_Progress_Original_Template.pptx",
+      "bytes": 49034,
+      "sha256": "baf4127beff6a7d8b27cf1ac294b2c8fb9104a11de38390ba88ffe5beffd96c4"
+    },
+    {
+      "path": "media/videos/Isaac_Lab_2x.mp4",
+      "bytes": 1126233,
+      "sha256": "ae532e691cc655494514d57bc3da9cc90c33ea3e7563a22886c9bd085e7ea719"
+    },
+    {
+      "path": "media/videos/Isaac_Lab_original_2026-11-18.mp4",
+      "bytes": 1485456,
+      "sha256": "1f0329a54cf8dfd80a6fbde0e08a056a16ba49ffbe98606cdf8f1df4d83dc9a1"
+    },
+    {
+      "path": "media/videos/Isaac_Sim_2x.mp4",
+      "bytes": 1784195,
+      "sha256": "ce501d0cf343a0798871c92b5c15d16a526be40892d0cd97b90cd600d7ec915a"
+    },
+    {
+      "path": "media/videos/Isaac_Sim_original_2026-11-18.mp4",
+      "bytes": 2318144,
+      "sha256": "a6e887e96f5050f1d682d527510f0079d2eb4c8aebed634ac5f9d66578e1febc"
+    },
+    {
+      "path": "media/videos/README.md",
+      "bytes": 750,
+      "sha256": "5a9e695de32e4b858e84daa91d54a8378c8f12d36ca75f379234845102a9b0a0"
+    },
+    {
+      "path": "media/videos/real_robot_phone_video.mp4",
+      "bytes": 4278360,
+      "sha256": "3c9951afb2d26fb7f3da3b2e74b2d0db76b42a7d47c069abbaf8095c6f05c8a1"
+    },
+    {
+      "path": "media/videos/screen_record_2026-11-17_1310.webm",
+      "bytes": 5190960,
+      "sha256": "1acb2bf62e5b6fa0626d2356f3341f356aed08e1a0235e1ff45a79b95e2129e0"
+    },
+    {
+      "path": "media/videos/screen_record_2026-11-17_1414.webm",
+      "bytes": 4122040,
+      "sha256": "5378d4edfa700e527e6e878afb25015f48fbf960c24d513c6136233a1e5652bf"
+    },
+    {
+      "path": "media/videos/screen_record_2026-11-17_1415.webm",
+      "bytes": 5279961,
+      "sha256": "bf15d5f2f237d4b10869589a7f210fc8cffbca38b8dbfea1252eff3bc9bc6762"
+    },
+    {
+      "path": "media/videos/screen_record_2026-11-18_1147.webm",
+      "bytes": 3803934,
+      "sha256": "c851c0ecc128fbff47128b7c6a73be6323db53bb18a82a5a411d2ae7f790c57d"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 749,
+      "sha256": "393b6dc46b24f40fe25ef1f75843d9c624bc94a787bf129fadab7f6d68d65193"
+    },
+    {
+      "path": "ros2/README.md",
+      "bytes": 504,
+      "sha256": "cf5f35675970d41a3ee1c65e31b7f81644d8328aab81c8b63d379e0e34f2255f"
+    },
+    {
+      "path": "scripts/README.md",
+      "bytes": 296,
+      "sha256": "f3fbfe74f7495d92d1bbc808a507cc197329b4658aff96661b1f59c0d9490438"
+    },
+    {
+      "path": "scripts/collect_workspace.py",
+      "bytes": 2992,
+      "sha256": "2545c0bc86ed00d25a822edc82e38a5b8e85490b3fe1c3134ac7c4e7e48bb267"
+    },
+    {
+      "path": "src/lexium_agro/__init__.py",
+      "bytes": 109,
+      "sha256": "e890e2923eadf0a640db2585a3ef7562a3eb3590f2032fc6cc047a203d373327"
+    },
+    {
+      "path": "src/lexium_agro/cli.py",
+      "bytes": 781,
+      "sha256": "95b0843ca1dc8fc77ecb5932b8cfa0f01639af083f733ea7f3d10065e22f2881"
+    },
+    {
+      "path": "src/lexium_agro/domain/__init__.py",
+      "bytes": 79,
+      "sha256": "797172a5e6ced6b7ae2c826231245eb5f2377f11fae8ae85d6d48df30b1e8138"
+    },
+    {
+      "path": "src/lexium_agro/domain/models.py",
+      "bytes": 967,
+      "sha256": "0a4dabab7c51232d69e76d800db6c99d7a1d6e5a3aee31b8bc671dc0d165b127"
+    },
+    {
+      "path": "src/lexium_agro/domain/safety.py",
+      "bytes": 795,
+      "sha256": "0a80cdd281110d11007b192ae04de957637a27f85429d74ec12f7050ceb2f727"
+    },
+    {
+      "path": "src/lexium_agro/domain/sorting.py",
+      "bytes": 1275,
+      "sha256": "8e3dc7ca77495940b12524f789ebf9b837e2085966bb4606601918e722e596a3"
+    },
+    {
+      "path": "tests/test_safety.py",
+      "bytes": 373,
+      "sha256": "4b9f5d00c32dd22fea576a68cc62902bafc59cdba219115490d979e110b6fdf0"
+    },
+    {
+      "path": "tests/test_sorting.py",
+      "bytes": 1181,
+      "sha256": "1360739a3bb2d90c2422def4f529d2410f80902020e727161223068ffaf5a710"
+    },
+    {
+      "path": "thesis/LICENSE",
+      "bytes": 1069,
+      "sha256": "916f7769ac9e237843bc94b90bfd3b37ea34a9e46a6b2103835c8a7e18986fd4"
+    },
+    {
+      "path": "thesis/README.md",
+      "bytes": 4368,
+      "sha256": "5e90e2bcd98c78ed3259af2f2aff368c42cb6fbda5321fcbced8cf1a51d250a3"
+    },
+    {
+      "path": "thesis/README_CODEX.md",
+      "bytes": 595,
+      "sha256": "68572a3e2d68ef9d1cb455de1bbbcb201319418f2dbe3e2af977ee811708c357"
+    },
+    {
+      "path": "thesis/README_PROGRESS.md",
+      "bytes": 3452,
+      "sha256": "3a2a4eff5df510903bd86adda8946fc419b6e15dc439bc8fa00596bd00fb7539"
+    },
+    {
+      "path": "thesis/chapters/01_introduction.tex",
+      "bytes": 15975,
+      "sha256": "b69571fba9abe040bac4a20b5ad97f87004ca9c9e66551aacc191de77a924384"
+    },
+    {
+      "path": "thesis/chapters/02_related_work.tex",
+      "bytes": 111,
+      "sha256": "7c8824ee7fa1b887a192f35bef561292578d81665c10bca6c0a2eb9bba421e41"
+    },
+    {
+      "path": "thesis/chapters/03_citations_equations_tables.tex",
+      "bytes": 124,
+      "sha256": "51746e1981ef7573cd81e87c64343e6acf5dc93d57a4c66a44c1e4b2156844ad"
+    },
+    {
+      "path": "thesis/chapters/04_figures_and_plots.tex",
+      "bytes": 119,
+      "sha256": "0bf94239c9b47f299d59f0f8d33561b86a029f18f3489ff6f48bc906ef142f01"
+    },
+    {
+      "path": "thesis/chapters/05_conclusion.tex",
+      "bytes": 109,
+      "sha256": "58a27197f41998e3a6676850405f4c29f47627c3ed08ff9c8e6c24313bde683f"
+    },
+    {
+      "path": "thesis/figures/lexium_gripper.jpg",
+      "bytes": 217285,
+      "sha256": "2c03c0bc223740e2fdb78bcf72af3959a27414a182779f131ec57f6d855489cf"
+    },
+    {
+      "path": "thesis/figures/mobile_platform.jpg",
+      "bytes": 241290,
+      "sha256": "d7901a68d2c80c8449a8fe4159a35fa778da35a37dd204225e76f54722cb21fe"
+    },
+    {
+      "path": "thesis/figures/stage6_benchmark.png",
+      "bytes": 63066,
+      "sha256": "2b90c22eadd43a10e3a4c897b7f5c81a86f2051c083f9264ed8b4c167e182697"
+    },
+    {
+      "path": "thesis/figures/stage6_forces.png",
+      "bytes": 136096,
+      "sha256": "cad030a9f16b508c5163ad98574df8be622d8dcd34beb9ba7ef7ab72e2735605"
+    },
+    {
+      "path": "thesis/figures/stage6_sorting_scene.png",
+      "bytes": 509995,
+      "sha256": "85929f49207d42d2aad5aa674f38781708b992d090d1d46f68be13b30a59658b"
+    },
+    {
+      "path": "thesis/frontmatter/abbreviations.tex",
+      "bytes": 590,
+      "sha256": "1332dbc4fc773db86dfaf26375e63cd64de9861254f40570de2ba80b6abba03d"
+    },
+    {
+      "path": "thesis/frontmatter/abstract.tex",
+      "bytes": 1558,
+      "sha256": "a57862bd7a8e43ad3839a1e7d5c1a9d04cc7d57ff8bb5e6eae52ffaee0d84da8"
+    },
+    {
+      "path": "thesis/frontmatter/abstract_kk.tex",
+      "bytes": 157,
+      "sha256": "b45c79b15be88f8bce9c7615fd5662a5d58d3e8da6563eaacde48a725e12dfa7"
+    },
+    {
+      "path": "thesis/frontmatter/abstract_ru.tex",
+      "bytes": 158,
+      "sha256": "116d6a5d72176968085a5f3c2b3ea40b41dd85fa9528651a74845fc857bc2b76"
+    },
+    {
+      "path": "thesis/frontmatter/assignment.tex",
+      "bytes": 308,
+      "sha256": "da13036e3c453bbeb32e898d07bb502e39e2006d62e94a8fed00945b04fcf97c"
+    },
+    {
+      "path": "thesis/frontmatter/project_sheet.tex",
+      "bytes": 142,
+      "sha256": "2a46c7aa8cf5dc34e1d086afa322c2e456f7c94cb1d104df8fa9b99580641057"
+    },
+    {
+      "path": "thesis/kbtufront.sty",
+      "bytes": 13399,
+      "sha256": "31e035058f3fdcb7d58f2688f09341b5c6a1b31a14d8ecf4ddd29f2c4a62d11f"
+    },
+    {
+      "path": "thesis/main.tex",
+      "bytes": 2516,
+      "sha256": "7d24bf75470532629676c3749a653dd7a1a22e744df07f40ea837def0d7367f0"
+    },
+    {
+      "path": "thesis/references.bib",
+      "bytes": 1297,
+      "sha256": "d09dbe54d4eaa48e4eb528ad39ae4ad20acb3c33306f9022430e10fbb8b11fd5"
+    },
+    {
+      "path": "thesis/trentthesis.cls",
+      "bytes": 6354,
+      "sha256": "71400a7bf7ea7eafb7fd0f8cfa49813c36dceb03804ca72d296567753b19b55b"
+    }
+  ],
+  "important_missing": "Latest Stage 6 and Phase10 source and original JSON remain on the user Ubuntu host."
+}

@@ -1,0 +1,329 @@
+{
+  "stage": "3C36",
+  "mode": "static_hinge_frame_matched_slice_aperture",
+  "no_finger_motion": true,
+  "no_arm_descent": true,
+  "self_collisions_enabled": false,
+  "grasp_validated": false,
+  "opening_40mm_validated": false,
+  "approach_trajectory_validated": false,
+  "reference": "Stage 3C35 verified physical HOLD after HOME->Candidate1",
+  "hinge_frame_world_origin_m": [
+    0.2752287790802549,
+    -0.384229222033029,
+    0.1763101947080837
+  ],
+  "hinge_frame_world_u_v_h": {
+    "u": [
+      -0.8913753574569758,
+      0.4470101208473999,
+      0.07504614566013165
+    ],
+    "v": [
+      -0.452611988702362,
+      -0.8689145171770616,
+      -0.2003246103748782
+    ],
+    "h": [
+      -0.02433844287010989,
+      -0.21253120641201578,
+      0.9768511281150837
+    ]
+  },
+  "cube_center_world_m": [
+    0.29999902844429016,
+    -0.3000020980834961,
+    0.019998935982584953
+  ],
+  "cube_center_in_hinge_frame_uvh_m": [
+    0.0038402294835119637,
+    -0.05308449056373801,
+    -0.17119659098772574
+  ],
+  "cube_width_best_yaw_along_u": {
+    "yaw_delta_deg": 63,
+    "width_u_m": 0.043139662515655375,
+    "width_v_m": 0.04755023301037687,
+    "width_h_m": 0.050077335699730906
+  },
+  "cube_width_yaw_0_along_u": {
+    "yaw_delta_deg": 0,
+    "width_u_m": 0.05653736680677948,
+    "width_v_m": 0.060870698596399216,
+    "width_h_m": 0.04854364271950837
+  },
+  "matched_axial_slice_width_m": 0.01,
+  "matched_transverse_band_width_m": 0.025,
+  "matched_slice_candidate_count": 178,
+  "matched_slice_best_gap_m": 0.11419964832958286,
+  "candidate_aperture_centers_top_10": [
+    {
+      "local_center_uvh_m": [
+        1.794397054007829e-05,
+        -0.08578307488339956,
+        -0.0035998897313543263
+      ],
+      "virtual_cube_center_world_m": [
+        0.3141268480976449,
+        -0.3089179528947616,
+        0.18997944604152323
+      ],
+      "local_gap_m": 0.11419964832958286,
+      "sampled_support_a": 15,
+      "sampled_support_b": 15,
+      "sample_count_total": 1336,
+      "gap_exceeds_best_cube_width_u": true,
+      "virtual_cube_yaw0_sampled_vertices_inside": 0,
+      "virtual_cube_yaw0_sampled_vertices_inside_2mm_margin": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside_2mm_margin": 0,
+      "hypothetical_translation_to_cube_world_m": [
+        -0.014127819653354745,
+        0.0089158548112655,
+        -0.16998051005893827
+      ]
+    },
+    {
+      "local_center_uvh_m": [
+        1.794397054007829e-05,
+        -0.08078307488339956,
+        -0.0035998897313543263
+      ],
+      "virtual_cube_center_world_m": [
+        0.3118637881541331,
+        -0.3132625254806469,
+        0.18897782298964882
+      ],
+      "local_gap_m": 0.11419964832958286,
+      "sampled_support_a": 22,
+      "sampled_support_b": 22,
+      "sample_count_total": 1336,
+      "gap_exceeds_best_cube_width_u": true,
+      "virtual_cube_yaw0_sampled_vertices_inside": 0,
+      "virtual_cube_yaw0_sampled_vertices_inside_2mm_margin": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside_2mm_margin": 0,
+      "hypothetical_translation_to_cube_world_m": [
+        -0.011864759709842965,
+        0.013260427397150831,
+        -0.16897888700706387
+      ]
+    },
+    {
+      "local_center_uvh_m": [
+        1.794397054007829e-05,
+        -0.08578307488339956,
+        0.0014001102686456712
+      ],
+      "virtual_cube_center_world_m": [
+        0.31400515588329436,
+        -0.30998060892682167,
+        0.19486370168209863
+      ],
+      "local_gap_m": 0.11419964832958286,
+      "sampled_support_a": 17,
+      "sampled_support_b": 17,
+      "sample_count_total": 986,
+      "gap_exceeds_best_cube_width_u": true,
+      "virtual_cube_yaw0_sampled_vertices_inside": 0,
+      "virtual_cube_yaw0_sampled_vertices_inside_2mm_margin": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside_2mm_margin": 0,
+      "hypothetical_translation_to_cube_world_m": [
+        -0.014006127439004201,
+        0.009978510843325572,
+        -0.17486476569951367
+      ]
+    },
+    {
+      "local_center_uvh_m": [
+        1.794397054007829e-05,
+        -0.08078307488339956,
+        0.0014001102686456712
+      ],
+      "virtual_cube_center_world_m": [
+        0.3117420959397825,
+        -0.31432518151270694,
+        0.19386207863022423
+      ],
+      "local_gap_m": 0.11419964832958286,
+      "sampled_support_a": 26,
+      "sampled_support_b": 26,
+      "sample_count_total": 986,
+      "gap_exceeds_best_cube_width_u": true,
+      "virtual_cube_yaw0_sampled_vertices_inside": 0,
+      "virtual_cube_yaw0_sampled_vertices_inside_2mm_margin": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside_2mm_margin": 0,
+      "hypothetical_translation_to_cube_world_m": [
+        -0.011743067495492365,
+        0.014323083429210848,
+        -0.17386314264763927
+      ]
+    },
+    {
+      "local_center_uvh_m": [
+        1.7956505900865866e-05,
+        -0.08578304033539387,
+        0.01140011026864568
+      ],
+      "virtual_cube_center_world_m": [
+        0.31376174464404,
+        -0.3121059454067724,
+        0.2046322069831642
+      ],
+      "local_gap_m": 0.11419962021304561,
+      "sampled_support_a": 17,
+      "sampled_support_b": 17,
+      "sample_count_total": 1291,
+      "gap_exceeds_best_cube_width_u": true,
+      "virtual_cube_yaw0_sampled_vertices_inside": 0,
+      "virtual_cube_yaw0_sampled_vertices_inside_2mm_margin": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside_2mm_margin": 0,
+      "hypothetical_translation_to_cube_world_m": [
+        -0.013762716199749836,
+        0.012103847323276296,
+        -0.18463327100057925
+      ]
+    },
+    {
+      "local_center_uvh_m": [
+        1.7956505900865866e-05,
+        -0.08078304033539387,
+        0.01140011026864568
+      ],
+      "virtual_cube_center_world_m": [
+        0.3114986847005282,
+        -0.31645051799265767,
+        0.20363058393128983
+      ],
+      "local_gap_m": 0.11419962021304561,
+      "sampled_support_a": 26,
+      "sampled_support_b": 26,
+      "sample_count_total": 1291,
+      "gap_exceeds_best_cube_width_u": true,
+      "virtual_cube_yaw0_sampled_vertices_inside": 0,
+      "virtual_cube_yaw0_sampled_vertices_inside_2mm_margin": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside_2mm_margin": 0,
+      "hypothetical_translation_to_cube_world_m": [
+        -0.011499656256238056,
+        0.01644841990916157,
+        -0.18363164794870487
+      ]
+    },
+    {
+      "local_center_uvh_m": [
+        1.7956505900865866e-05,
+        -0.08578304033539387,
+        0.016400110268645678
+      ],
+      "virtual_cube_center_world_m": [
+        0.31364005242968945,
+        -0.31316860143883246,
+        0.20951646262373963
+      ],
+      "local_gap_m": 0.11419962021304561,
+      "sampled_support_a": 15,
+      "sampled_support_b": 15,
+      "sample_count_total": 1338,
+      "gap_exceeds_best_cube_width_u": true,
+      "virtual_cube_yaw0_sampled_vertices_inside": 0,
+      "virtual_cube_yaw0_sampled_vertices_inside_2mm_margin": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside_2mm_margin": 0,
+      "hypothetical_translation_to_cube_world_m": [
+        -0.013641023985399292,
+        0.013166503355336368,
+        -0.18951752664115468
+      ]
+    },
+    {
+      "local_center_uvh_m": [
+        1.7956505900865866e-05,
+        -0.08078304033539387,
+        0.016400110268645678
+      ],
+      "virtual_cube_center_world_m": [
+        0.3113769924861776,
+        -0.3175131740247178,
+        0.20851483957186523
+      ],
+      "local_gap_m": 0.11419962021304561,
+      "sampled_support_a": 22,
+      "sampled_support_b": 22,
+      "sample_count_total": 1338,
+      "gap_exceeds_best_cube_width_u": true,
+      "virtual_cube_yaw0_sampled_vertices_inside": 0,
+      "virtual_cube_yaw0_sampled_vertices_inside_2mm_margin": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside_2mm_margin": 0,
+      "hypothetical_translation_to_cube_world_m": [
+        -0.011377964041887456,
+        0.0175110759412217,
+        -0.18851590358928028
+      ]
+    },
+    {
+      "local_center_uvh_m": [
+        2.386067643443679e-05,
+        -0.08578877132315887,
+        -0.03359988973135433
+      ],
+      "virtual_cube_center_world_m": [
+        0.3148543056548446,
+        -0.3025344221557812,
+        0.16067549736111839
+      ],
+      "local_gap_m": 0.1141534855558422,
+      "sampled_support_a": 17,
+      "sampled_support_b": 17,
+      "sample_count_total": 1452,
+      "gap_exceeds_best_cube_width_u": true,
+      "virtual_cube_yaw0_sampled_vertices_inside": 0,
+      "virtual_cube_yaw0_sampled_vertices_inside_2mm_margin": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside_2mm_margin": 0,
+      "hypothetical_translation_to_cube_world_m": [
+        -0.014855277210554463,
+        0.002532324072285097,
+        -0.14067656137853343
+      ]
+    },
+    {
+      "local_center_uvh_m": [
+        2.386067643443679e-05,
+        -0.08078877132315887,
+        -0.03359988973135433
+      ],
+      "virtual_cube_center_world_m": [
+        0.31259124571133284,
+        -0.30687899474166647,
+        0.15967387430924398
+      ],
+      "local_gap_m": 0.1141534855558422,
+      "sampled_support_a": 26,
+      "sampled_support_b": 26,
+      "sample_count_total": 1452,
+      "gap_exceeds_best_cube_width_u": true,
+      "virtual_cube_yaw0_sampled_vertices_inside": 0,
+      "virtual_cube_yaw0_sampled_vertices_inside_2mm_margin": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside": 0,
+      "virtual_cube_yaw63_sampled_vertices_inside_2mm_margin": 0,
+      "hypothetical_translation_to_cube_world_m": [
+        -0.012592217267042682,
+        0.006876896658170373,
+        -0.13967493832665903
+      ]
+    }
+  ],
+  "sampled_finger_points_per_body": {
+    "gripper_finger_1_1": 1620,
+    "gripper_finger_2_1": 1629,
+    "gripper_finger_3_1": 1625,
+    "gripper_finger_4_1": 1625
+  },
+  "note": "A maximum gap in a 10-mm axial / 25-mm transverse sampled band is NOT a 40-mm-high continuous aperture.",
+  "disclaimer": "VERTEX-ONLY/SLAB PROXIES. All candidate centers and virtual cube translations are hypothetical. No swept mesh intersection, exact surface clearance, IK, self-collision, reachable pose, physical opening, cube insertion, or grasp validated. NO DESCENT AUTHORIZED."
+}

@@ -1,0 +1,624 @@
+{
+  "snapshot_note": "Partial upload-backed snapshot; use collector on Ubuntu for complete copy",
+  "file_count": 103,
+  "files": [
+    {
+      "path": "CURRENT_STATUS_AND_MISSING_FILES.md",
+      "bytes": 1665,
+      "sha256": "d122b9b36449f11435d98b01bc6b7a921b6a037295948ab224df77a7c03d1b09",
+      "source": "created"
+    },
+    {
+      "path": "LEXIUM_GEMINI_HANDOFF_2026-11-10.md",
+      "bytes": 34508,
+      "sha256": "82c0158eb4f87c2986dedbabc4be5487872918764b4977fc8c0be6aba0d6215b",
+      "source": "previously generated handoff"
+    },
+    {
+      "path": "README_FIRST.md",
+      "bytes": 4468,
+      "sha256": "658d3481f4f6069c0a361390e381f0fb27d9045f9c8559fa5cb10eeeb11897a9",
+      "source": "created"
+    },
+    {
+      "path": "collect_full_lexium_from_ubuntu.py",
+      "bytes": 8002,
+      "sha256": "de29d128abc025d621428b67da80a3831f5efad5cb1db7ee44a5153718442f56",
+      "source": "created collection script"
+    },
+    {
+      "path": "historical_logs/stage3c68_terminal_capture.txt",
+      "bytes": 11000,
+      "sha256": "644074d37c2b3b7d9c7144ba817bbfca2e6acaeaf86f8d9654984d6360a19119",
+      "source": "Pasted text(20261106-054328).txt"
+    },
+    {
+      "path": "historical_logs/stage3c73_terminal_capture.txt",
+      "bytes": 12595,
+      "sha256": "dc6c10a21d3f48d42f3b41375bbddab5763bb94483b7fae54a209fd94b53d86a",
+      "source": "Pasted text(20261106-064910).txt"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c31_gripper_geometry.json",
+      "bytes": 4568,
+      "sha256": "d8eb411e5508ae7402cf5ba972f8bb172b5845a982135cfbde98a557afc388c5",
+      "source": "lexium_stage3c31_gripper_geometry.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c32b_limit_aware_probe(1).json",
+      "bytes": 11922,
+      "sha256": "19cd9499251adf189ba5c284dc821879b1dec4742ac058d63ef8e3d3c4b19edd",
+      "source": "lexium_stage3c32b_limit_aware_probe(1).json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c32b_limit_aware_probe.json",
+      "bytes": 11922,
+      "sha256": "19cd9499251adf189ba5c284dc821879b1dec4742ac058d63ef8e3d3c4b19edd",
+      "source": "lexium_stage3c32b_limit_aware_probe.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c34_virtual_opening_audit.json",
+      "bytes": 25558,
+      "sha256": "d78a834f28262902a96fa18f2c5a1daf4ac23b75a6cb51ecc8852d00386d285b",
+      "source": "lexium_stage3c34_virtual_opening_audit.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c35_bottleneck_axis_audit.json",
+      "bytes": 24111,
+      "sha256": "907523ae1cd5882a4e5a5415cfa214806ed40811312f6b1202539c3e6dcd02c5",
+      "source": "lexium_stage3c35_bottleneck_axis_audit.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c36_local_aperture_report.json",
+      "bytes": 10640,
+      "sha256": "9f1c697b25687b35bcfa850ce4cb3f1bb1f971b8fdbbec5dd4d5edc98726ef58",
+      "source": "lexium_stage3c36_local_aperture_report.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c37_full_collision_triangles.npz",
+      "bytes": 541108,
+      "sha256": "9a9bafed40868df91185275ae5768c235f84f73a9ebea647119123f36bb3638c",
+      "source": "lexium_stage3c37_full_collision_triangles.npz"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c37_table_gate.json",
+      "bytes": 13988,
+      "sha256": "28773bb1af2ce3c5d65f87afb720118f7d0ce5678c03581875562c8f8614ba07",
+      "source": "lexium_stage3c37_table_gate.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c38_offline_pose_screen.json",
+      "bytes": 16309,
+      "sha256": "bcabed4e4929c84edd62eef7e3c64b23e664f5321ff6dc8d5b9b4f035f8bf9f4",
+      "source": "lexium_stage3c38_offline_pose_screen.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c40_ik_reachability_report.json",
+      "bytes": 20431,
+      "sha256": "8674ef1b700de4420d5aba29bff41e00f2a1a18248fff0fff861c1722a545265",
+      "source": "lexium_stage3c40_ik_reachability_report.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c43_physx_home_fk_report.json",
+      "bytes": 2199,
+      "sha256": "ea9b9b9f6feebfebd7ec45fbf110398ff0e9d9deb0f30bd9462f0aa54d84f4a4",
+      "source": "lexium_stage3c43_physx_home_fk_report.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c44_explicit_home_fk_report.json",
+      "bytes": 2857,
+      "sha256": "b111e4fb0b4d1a89ffcd0fe61d3154dfb240c93e03e50a8198544d5194177f73",
+      "source": "lexium_stage3c44_explicit_home_fk_report.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c45_offline_pregrasp_report.json",
+      "bytes": 77983,
+      "sha256": "45d680883356998166d287197dea06d6a4e38ee248a3e24998bd5fd6d64e9aed",
+      "source": "lexium_stage3c45_offline_pregrasp_report.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c46_self_mesh_narrowphase_report.json",
+      "bytes": 25152,
+      "sha256": "12546c9f66fb4512ff2a0d8b2547e3e4e977ad3e62931572f0174ddd73b6e643",
+      "source": "lexium_stage3c46_self_mesh_narrowphase_report.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c47_physx_home_mesh_fingerprint.json",
+      "bytes": 9076,
+      "sha256": "c80c1d9d6b41c36a9c21316fef3c191fb413fee50bcdabc0d37e4fb2963a27e0",
+      "source": "lexium_stage3c47_physx_home_mesh_fingerprint.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c48_orientation_branch_report.json",
+      "bytes": 20982,
+      "sha256": "35f47480f00a0f55ae4d0559181c327b05bd5f58d546db6a1360ff9f6a013c72",
+      "source": "lexium_stage3c48_orientation_branch_report.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c49_convex_hull_proxy_report.json",
+      "bytes": 14333,
+      "sha256": "271f8da8063754a51c1ae0b3dc623a4f59e0999969a01fc3282e1bb29308b7d8",
+      "source": "lexium_stage3c49_convex_hull_proxy_report.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c50_physx_contact_preflight.json",
+      "bytes": 4091,
+      "sha256": "6cb6ae87085f0ad82bf8407354b8cd4548ad8cfced44fc1b6d1388485f679f0b",
+      "source": "lexium_stage3c50_physx_contact_preflight.json"
+    },
+    {
+      "path": "historical_reports/lexium_stage3c51_physx_pregrasp_motion_trial.json",
+      "bytes": 12272,
+      "sha256": "8ebba07ca8fdd2506ae40987c41e38e768ee5b406ea82c201e94182b194850b2",
+      "source": "lexium_stage3c51_physx_pregrasp_motion_trial.json"
+    },
+    {
+      "path": "historical_reports/offline_examples/lexium_stage3c39_offline_example_report.json",
+      "bytes": 18666,
+      "sha256": "972b54fc20048cb3fb82a0bfa1a41d003ee64e99b563bd00f8bc24318793962c",
+      "source": "lexium_stage3c39_offline_example_report.json"
+    },
+    {
+      "path": "historical_reports/offline_examples/lexium_stage3c40_example_report.json",
+      "bytes": 20358,
+      "sha256": "343e09fbb2cae31d18d68d4db806d0aae6363946c7d539ae709bc4893209f84b",
+      "source": "lexium_stage3c40_example_report.json"
+    },
+    {
+      "path": "historical_reports/offline_examples/lexium_stage3c41_offline_example_report(1).json",
+      "bytes": 40105,
+      "sha256": "43dac3a635b75b7d92dfb7d505e8ee33d8e20dbdb4ad57a161fcd28dac1275a3",
+      "source": "lexium_stage3c41_offline_example_report(1).json"
+    },
+    {
+      "path": "historical_reports/offline_examples/lexium_stage3c41_offline_example_report.json",
+      "bytes": 40105,
+      "sha256": "43dac3a635b75b7d92dfb7d505e8ee33d8e20dbdb4ad57a161fcd28dac1275a3",
+      "source": "lexium_stage3c41_offline_example_report.json"
+    },
+    {
+      "path": "historical_reports/offline_examples/lexium_stage3c42_offline_example_report.json",
+      "bytes": 11894,
+      "sha256": "854cae524951ee3c05fc5a63ce8539ddabaffff4f4fe74b0550daa59f00f6517",
+      "source": "lexium_stage3c42_offline_example_report.json"
+    },
+    {
+      "path": "historical_reports/offline_examples/lexium_stage3c45_offline_example_report.json",
+      "bytes": 77993,
+      "sha256": "50cd3f77f3cba162df189cc607b29ef2f53bb1b82d62d5d08278fe5d80fb88d4",
+      "source": "lexium_stage3c45_offline_example_report.json"
+    },
+    {
+      "path": "historical_reports/offline_examples/lexium_stage3c46_offline_example_report.json",
+      "bytes": 25157,
+      "sha256": "c376caedfb5bbbfe07a8b2c549d5e1361cf00bf2076e550bf33ce84d9418aaf2",
+      "source": "lexium_stage3c46_offline_example_report.json"
+    },
+    {
+      "path": "historical_reports/offline_examples/lexium_stage3c48_offline_example_report.json",
+      "bytes": 20983,
+      "sha256": "7074e45f252d377b37c981c3ea7147d72433f241ef6f89e61a27de30cfb0e373",
+      "source": "lexium_stage3c48_offline_example_report.json"
+    },
+    {
+      "path": "historical_reports/offline_examples/lexium_stage3c49_offline_example_report.json",
+      "bytes": 14333,
+      "sha256": "271f8da8063754a51c1ae0b3dc623a4f59e0999969a01fc3282e1bb29308b7d8",
+      "source": "lexium_stage3c49_offline_example_report.json"
+    },
+    {
+      "path": "historical_reports/offline_examples/lexium_stage3c52_offline_example_report.json",
+      "bytes": 15672,
+      "sha256": "25cb5488b891489c3f41f41e7befbfa13dc13708ad5b7178fce2d5820dfdaa37",
+      "source": "lexium_stage3c52_offline_example_report.json"
+    },
+    {
+      "path": "historical_sources/README_STAGE3C42.txt",
+      "bytes": 1823,
+      "sha256": "d4f938176663be9e848cc148366c4a8c69241c601600d8d4dfad3b99b48232cb",
+      "source": "nested lexium_stage3c42_all_ik_target_gates_bundle.zip"
+    },
+    {
+      "path": "historical_sources/README_STAGE3C46.txt",
+      "bytes": 1596,
+      "sha256": "89193d3341a4fd3852f0c056e674282873508ecd36696489f1448c41433cdd80",
+      "source": "nested lexium_stage3c46_self_mesh_narrowphase_bundle.zip"
+    },
+    {
+      "path": "historical_sources/README_Stage3C39.txt",
+      "bytes": 1026,
+      "sha256": "fca0cc5040eb27849711ca42a5a77b73ec8ed63fe891ea35f830f4552adaee8a",
+      "source": "nested lexium_stage3c39_opposing_contact_bundle.zip"
+    },
+    {
+      "path": "historical_sources/README_lexium_stage3c40.txt",
+      "bytes": 2160,
+      "sha256": "18bb1cde939ffc56f35fa03aa3539d5ad36cbf80d47281965c9822458ffcf2f0",
+      "source": "nested lexium_stage3c40_offline_ik_bundle.zip"
+    },
+    {
+      "path": "historical_sources/README_lexium_stage3c41.txt",
+      "bytes": 2216,
+      "sha256": "ca98b513ff31c69e35ae2395661a8a3ec7ece9eb2741a3c629b7f37d4d5fa6b5",
+      "source": "nested lexium_stage3c41_full_arm_audit_bundle.zip"
+    },
+    {
+      "path": "historical_sources/README_lexium_stage3c45.txt",
+      "bytes": 2197,
+      "sha256": "13a7e138c4893c937a2197b5e89c37a9a746b27dff67e8382b1de1b54c26c76a",
+      "source": "nested lexium_stage3c45_offline_pregrasp_bundle.zip"
+    },
+    {
+      "path": "historical_sources/README_lexium_stage3c48.txt",
+      "bytes": 2147,
+      "sha256": "3fa698460089b150540fc286da0d03dc80d671f3f786b558ba6ad1dc9135cf10",
+      "source": "nested lexium_stage3c48_orientation_branch_bundle.zip"
+    },
+    {
+      "path": "historical_sources/README_lexium_stage3c49.txt",
+      "bytes": 1920,
+      "sha256": "42943d442b6d570da62fbfa09bb69e6a795e6c16dc9f410acbd93c00054fe0ae",
+      "source": "nested lexium_stage3c49_convex_hull_proxy_bundle.zip"
+    },
+    {
+      "path": "historical_sources/README_lexium_stage3c51.txt",
+      "bytes": 2624,
+      "sha256": "de69383acfc81b5dc0f3f4b2a23ab18123787cb12a0ab131751fe407c4cb7e5d",
+      "source": "nested lexium_stage3c51_REUPLOAD_20261103.zip"
+    },
+    {
+      "path": "historical_sources/README_lexium_stage3c52.txt",
+      "bytes": 2795,
+      "sha256": "a2be0fbc95c46dc22d5dbe76a7ed4d2324a675dcbd0e543b5b3600454769b4a8",
+      "source": "nested lexium_stage3c52_corrected_gripper_geometry_bundle.zip"
+    },
+    {
+      "path": "historical_sources/STAGE3C51_README_REUPLOAD_20261103.txt",
+      "bytes": 2624,
+      "sha256": "de69383acfc81b5dc0f3f4b2a23ab18123787cb12a0ab131751fe407c4cb7e5d",
+      "source": "STAGE3C51_README_REUPLOAD_20261103.txt"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c22_urdf_gravity_torque_audit.py",
+      "bytes": 11971,
+      "sha256": "0790aae2ca389f9434d2c0338c48bb6b937703f5200674fe59705f2b6ac95832",
+      "source": "lexium_stage3c40_kinematics_inputs.tar.gz"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c31_gripper_collider_geometry.py",
+      "bytes": 31892,
+      "sha256": "000154e406f25bebc73d32cd74c5c92f82ca38aa981c0c68b819b7b889658e63",
+      "source": "nested lexium_stage3c31_sources.tar.gz"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c32_gripper_calibration.py",
+      "bytes": 48289,
+      "sha256": "480406838996ba8677e8c0408ae635d4fa28264731a140d05332c0f7aa732fd4",
+      "source": "lexium_stage3c32_gripper_calibration.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c32b_limit_aware_calibration.py",
+      "bytes": 52674,
+      "sha256": "7bee25fc9b7432399ec11c134cca9f1fd788aae993d8bd7e52ac64e02bf01feb",
+      "source": "nested lexium_stage3c32b_limit_aware_bundle.tar.gz"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c33_static_gripper_geometry.py",
+      "bytes": 59507,
+      "sha256": "24d2d6b8c0b4b1485206d929737e49e2445db544141d142b9b0bee4257e7034e",
+      "source": "lexium_stage3c33_static_gripper_geometry.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c34_virtual_opening_audit.py",
+      "bytes": 69977,
+      "sha256": "ca57a846980d7c4d48657c2d46d4dcd27b3028c2ea05f23ef5c02917b7c0d61d",
+      "source": "nested lexium_stage3c34_virtual_opening_bundle.tar.gz"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c35_bottleneck_axis_audit.py",
+      "bytes": 80075,
+      "sha256": "818943b972aec6bdb8980922c3476ae79781c891f5d6cdcc1ab98bb0ce4f56f6",
+      "source": "lexium_stage3c35_bottleneck_axis_audit.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c36_local_aperture_audit.py",
+      "bytes": 89719,
+      "sha256": "6fdb7186b72bde1edff93896446efabc62f9a0f23f4e7cd19b61a0e49c5f7e32",
+      "source": "lexium_stage3c36_local_aperture_audit.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c37_collision_mesh_export_table_gate.py",
+      "bytes": 98593,
+      "sha256": "c0cd35c22a77eed947a1a0078689b69890ded6b00a24a0ce60f56eb89eea2bdc",
+      "source": "lexium_stage3c37_collision_mesh_export_table_gate.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c38_offline_pose_screen.py",
+      "bytes": 13123,
+      "sha256": "50c49d2d75c19a2d97b02eca42ff8242175d29aab676531a7d941050cf844f2b",
+      "source": "lexium_stage3c38_offline_pose_screen.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c39_opposing_contact_screen.py",
+      "bytes": 11272,
+      "sha256": "cc855b7bbd684c80fd84a4ab3426755f7f56e1292edcfda84b79612d72fbc996",
+      "source": "nested lexium_stage3c39_opposing_contact_bundle.zip"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c40_ik_reachability_audit.py",
+      "bytes": 21495,
+      "sha256": "2b6a2fe6764f3bd07ce7b2f3c71c6d19b8ffc60b30120514a2266fb089b41032",
+      "source": "nested lexium_stage3c40_offline_ik_bundle.zip"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c41_full_arm_collision_audit.py",
+      "bytes": 16117,
+      "sha256": "068a200c6ee10507276a6bafe06ba7ce7568ab96b86e282e9e0911a9c5e3a98d",
+      "source": "lexium_stage3c41_full_arm_collision_audit.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c42_all_ik_target_gates.py",
+      "bytes": 8384,
+      "sha256": "5b31731272163344b361e57ba57489bea00d599326747fe37ca31d0aa7b3ad8c",
+      "source": "lexium_stage3c42_all_ik_target_gates.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c43_physx_home_fk_audit.py",
+      "bytes": 9069,
+      "sha256": "2228eb5bd86964fd43a1a054ee5b491cfd80884d28e253d6655ea09766e3f2e0",
+      "source": "lexium_stage3c43_physx_home_fk_audit.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c44_explicit_home_fk_audit.py",
+      "bytes": 11121,
+      "sha256": "45b9dcd21c434635f29125382c806af32f15b734c387d62f80e7a403b810ede4",
+      "source": "lexium_stage3c44_explicit_home_fk_audit.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c44_explicit_home_fk_audit_RESEND.py",
+      "bytes": 11121,
+      "sha256": "45b9dcd21c434635f29125382c806af32f15b734c387d62f80e7a403b810ede4",
+      "source": "lexium_stage3c44_explicit_home_fk_audit_RESEND.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c45_offline_pregrasp_lift_screen.py",
+      "bytes": 15372,
+      "sha256": "363541fd0edef28e8f51b40c7c6ce673d5debb0d8a45a06fa08c2db47acdcdd3",
+      "source": "lexium_stage3c45_offline_pregrasp_lift_screen.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c46_self_mesh_narrowphase.py",
+      "bytes": 14436,
+      "sha256": "2b58f9b025242676d9d86155b97fd3ebaa44d39b43e56cfaa4923dd25cf7f4b2",
+      "source": "lexium_stage3c46_self_mesh_narrowphase.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c47_physx_home_mesh_fingerprint.py",
+      "bytes": 16129,
+      "sha256": "c3a846fcb65a190439d452c4567efe2b0a49c6a8f9fc38d61c71a1e49c0743ee",
+      "source": "lexium_stage3c47_physx_home_mesh_fingerprint.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c48_orientation_branch_screen.py",
+      "bytes": 14875,
+      "sha256": "326655d93407a4920123a108952d43a994b466e91f2276d2b71453afaf33b333",
+      "source": "lexium_stage3c48_orientation_branch_screen.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c49_convex_hull_proxy_audit.py",
+      "bytes": 10351,
+      "sha256": "4282a5f31552cd1d767c8a284c0cdcb07f875ceff3f00d79da89f8bed3d50d5e",
+      "source": "lexium_stage3c49_convex_hull_proxy_audit.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c50_physx_contact_preflight.py",
+      "bytes": 16902,
+      "sha256": "d8878449387e0aa40c78d3a8dfb562372a626626c642447b740df5fa180daccc",
+      "source": "lexium_stage3c50_physx_contact_preflight.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c51_physx_pregrasp_motion_trial.py",
+      "bytes": 23889,
+      "sha256": "a325a6e524ddb5b2d737c99e3b06f1cdedf492ee7592e798efd9f05fa6d3fa1a",
+      "source": "lexium_stage3c51_physx_pregrasp_motion_trial.py"
+    },
+    {
+      "path": "historical_sources/lexium_stage3c52_corrected_gripper_geometry_audit.py",
+      "bytes": 13850,
+      "sha256": "c5e229a0288f3af6d445589436f3f6a0e005bcf763b08d08154a7994557644de",
+      "source": "lexium_stage3c52_corrected_gripper_geometry_audit.py"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c31_gripper_geometry.sh",
+      "bytes": 3191,
+      "sha256": "acc11790a8a213100a0bfd81f2a01bc643ac38d082b92c589a4a47120a2409f9",
+      "source": "nested lexium_stage3c31_sources.tar.gz"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c32_gripper_calibration.sh",
+      "bytes": 4161,
+      "sha256": "7c5aff37254912736b3c40126f58f4217d14cdbef2dd2aece65a88f019a22d9e",
+      "source": "run_lexium_stage3c32_gripper_calibration.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c32b_limit_aware.sh",
+      "bytes": 4238,
+      "sha256": "9ddbbc7edd58c4f2c73f877b8854dfb49f072afba234e6249d67fb70ef536f60",
+      "source": "nested lexium_stage3c32b_limit_aware_bundle.tar.gz"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c33_static_gripper_geometry.sh",
+      "bytes": 3626,
+      "sha256": "e541809846dd713fef05b8dec01ec9050b1081826bf319b4f777c9a0986d64aa",
+      "source": "run_lexium_stage3c33_static_gripper_geometry.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c34_virtual_opening_audit.sh",
+      "bytes": 3631,
+      "sha256": "90e2d19b7901a41ef7c66df2cbca7d140b0b4f1414e422973467b3740c05c84e",
+      "source": "nested lexium_stage3c34_virtual_opening_bundle.tar.gz"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c35_bottleneck_axis_audit.sh",
+      "bytes": 4208,
+      "sha256": "666414b095277a22f53f75d855f541e572ade7ea462f75514c1dd226e375bc0b",
+      "source": "run_lexium_stage3c35_bottleneck_axis_audit.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c36_local_aperture_audit.sh",
+      "bytes": 4815,
+      "sha256": "8dcd01b2aa35b3271735712f8000153815f22b62c7fbb4000092b85570d04f92",
+      "source": "run_lexium_stage3c36_local_aperture_audit.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c37_collision_mesh_export_table_gate.sh",
+      "bytes": 4233,
+      "sha256": "ce7190042c70b8588cd36e8069d3267ae0767dda042a64a55d8adef6ea279f6d",
+      "source": "run_lexium_stage3c37_collision_mesh_export_table_gate.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c38_offline_pose_screen.sh",
+      "bytes": 1149,
+      "sha256": "f0d16c3971f5b4049b5b8eff7b6f81a0e93d61da059ff6b95078c5ee42d26d0e",
+      "source": "run_lexium_stage3c38_offline_pose_screen.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c39_opposing_contact_screen.sh",
+      "bytes": 811,
+      "sha256": "ebb621d2ab132b7579a3f0e2c043832ea1e0408477fbec039384519737496628",
+      "source": "nested lexium_stage3c39_opposing_contact_bundle.zip"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c40_ik_reachability_audit.sh",
+      "bytes": 2570,
+      "sha256": "fd8d12a2a55ee9761fe82276618ccf2472cdd884f15c6b3076ea07fd8d451c88",
+      "source": "nested lexium_stage3c40_offline_ik_bundle.zip"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c41_full_arm_collision_audit.sh",
+      "bytes": 2614,
+      "sha256": "02e134b608541b6fa115c6f8fcc5994273de55c7fa818ab4a917e39fd7e0f751",
+      "source": "run_lexium_stage3c41_full_arm_collision_audit.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c42_all_ik_target_gates.sh",
+      "bytes": 2083,
+      "sha256": "d053e123662673af3e5cdba2b8d392ed6c156f5916996ec5d23ef687bc6c0bec",
+      "source": "run_lexium_stage3c42_all_ik_target_gates.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c43_physx_home_fk_audit.sh",
+      "bytes": 2179,
+      "sha256": "fd91c19a795293bdf57ae9dabbd5ec97ba66acb5e1342886ad7e55f3c47ad0ef",
+      "source": "run_lexium_stage3c43_physx_home_fk_audit.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c44_explicit_home_fk_audit.sh",
+      "bytes": 2113,
+      "sha256": "0f4ca080d487b341ed8a7799cc63d4042b2ce060e77100f7309f771722a37f61",
+      "source": "run_lexium_stage3c44_explicit_home_fk_audit.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c44_explicit_home_fk_audit_RESEND.sh",
+      "bytes": 2113,
+      "sha256": "0f4ca080d487b341ed8a7799cc63d4042b2ce060e77100f7309f771722a37f61",
+      "source": "run_lexium_stage3c44_explicit_home_fk_audit_RESEND.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c45_offline_pregrasp_lift_screen.sh",
+      "bytes": 1691,
+      "sha256": "cc0e5c35f8980be1cef6ce09dd83e3b89277bf3fc22fc46103591fca557b91d3",
+      "source": "run_lexium_stage3c45_offline_pregrasp_lift_screen.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c46_self_mesh_narrowphase.sh",
+      "bytes": 1951,
+      "sha256": "7bf18698b7f64f1e576822a4bf2a9904620b43431d299d1fb19b8b88cc1baeac",
+      "source": "run_lexium_stage3c46_self_mesh_narrowphase.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c47_physx_home_mesh_fingerprint.sh",
+      "bytes": 2652,
+      "sha256": "e7d57d4085355a8a168fcdc27c8c0a36dea1966bcc140b6c20b275772413ab58",
+      "source": "run_lexium_stage3c47_physx_home_mesh_fingerprint.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c48_orientation_branch_screen.sh",
+      "bytes": 1725,
+      "sha256": "17db6a090491e655fefe178d5aaab3fbf3bfb023dba6e1756d713d9e1cb5511a",
+      "source": "run_lexium_stage3c48_orientation_branch_screen.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c49_convex_hull_proxy_audit.sh",
+      "bytes": 1652,
+      "sha256": "837c093b8fbec887148ce46f2cea1e1c93cecbba91438a291b4381f221c5a2e0",
+      "source": "run_lexium_stage3c49_convex_hull_proxy_audit.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c50_physx_contact_preflight.sh",
+      "bytes": 2701,
+      "sha256": "2cf79a9402d53d1daa6f7705840c68faae300d6c8b1ed910b49eb1a4f5bdbb01",
+      "source": "run_lexium_stage3c50_physx_contact_preflight.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c51_physx_pregrasp_motion_trial.sh",
+      "bytes": 3585,
+      "sha256": "339deb275f56acfc42e01684b9807436046dfe65ea6891bfbe12718890886d35",
+      "source": "run_lexium_stage3c51_physx_pregrasp_motion_trial.sh"
+    },
+    {
+      "path": "historical_sources/run_lexium_stage3c52_corrected_gripper_geometry_audit.sh",
+      "bytes": 1750,
+      "sha256": "8b25e031d093d5f87455c6d8ff2f94b2c1471adf57e5470a8a7ad434dd9b5f7a",
+      "source": "run_lexium_stage3c52_corrected_gripper_geometry_audit.sh"
+    },
+    {
+      "path": "model/assets/lexium_cobot.urdf",
+      "bytes": 12729,
+      "sha256": "247a231be8bce78c8f455ab1bb77ec6fa96f0571021d1a96732379578f2ac0d9",
+      "source": "lexium_stage3c41_arm_meshes.tar.gz"
+    },
+    {
+      "path": "model/assets/meshes/LINK5_1.stl",
+      "bytes": 564284,
+      "sha256": "0c566600aa4217beba82791ee81aebc6f787e148f19c42802049cb1725f87c43",
+      "source": "lexium_stage3c41_arm_meshes.tar.gz"
+    },
+    {
+      "path": "model/assets/meshes/base_link.stl",
+      "bytes": 208084,
+      "sha256": "13823e91cb362b1df5fa6595dad2d88ea2e1f0aa1281eaf4e06f7eb68f9b80a0",
+      "source": "lexium_stage3c41_arm_meshes.tar.gz"
+    },
+    {
+      "path": "model/assets/meshes/link1_1.stl",
+      "bytes": 347384,
+      "sha256": "22648868d278a2f6877852954181bcd0dbb311a3bc2ebac2a547f76f3516ee21",
+      "source": "lexium_stage3c41_arm_meshes.tar.gz"
+    },
+    {
+      "path": "model/assets/meshes/link2_1.stl",
+      "bytes": 916684,
+      "sha256": "693abdbad0677336ee59aac0ad63866cb6bc587dd689c6d47889ae73b5830b6e",
+      "source": "lexium_stage3c41_arm_meshes.tar.gz"
+    },
+    {
+      "path": "model/assets/meshes/link3_1.stl",
+      "bytes": 740684,
+      "sha256": "7efde4b9081839569831bf0a3b0e6cb47ce1b372e7481447b33f08ca3b5b81a2",
+      "source": "lexium_stage3c41_arm_meshes.tar.gz"
+    },
+    {
+      "path": "model/assets/meshes/link4_1.stl",
+      "bytes": 349184,
+      "sha256": "29d9ef182db547c694e7f57d00b192c7a0529bac90ab62e1bac70233fe334811",
+      "source": "lexium_stage3c41_arm_meshes.tar.gz"
+    },
+    {
+      "path": "model/robot_cfg.py",
+      "bytes": 3663,
+      "sha256": "4bc8a1121ab64de5e2a9a226f51f921e251507b27b2dfd8236929c41275c0d6c",
+      "source": "lexium_stage3c41_arm_meshes.tar.gz"
+    }
+  ]
+}

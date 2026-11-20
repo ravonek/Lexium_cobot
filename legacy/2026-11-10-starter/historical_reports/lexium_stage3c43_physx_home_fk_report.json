@@ -1,0 +1,73 @@
+{
+  "stage": "3C43",
+  "mode": "physx_initial_home_fk_read_only",
+  "sim_only": true,
+  "arm_trajectory_commanded": false,
+  "finger_motion_commanded": false,
+  "candidate1_replayed": false,
+  "assets_modified": false,
+  "arm_joint_names": [
+    "joint_1",
+    "joint_2",
+    "joint_3",
+    "joint_4",
+    "joint_5",
+    "joint_6_gripper_rotation"
+  ],
+  "arm_q_initial_physx_rad": [
+    0.000258405227214098,
+    -0.01266568899154663,
+    -0.0003651106380857527,
+    -0.0009270256268791854,
+    -0.0002669552050065249,
+    -6.302520341705531e-05
+  ],
+  "arm_q_default_rad": [
+    0.0,
+    -0.7853999733924866,
+    1.5707999467849731,
+    -0.7853999733924866,
+    1.5707999467849731,
+    0.0
+  ],
+  "max_q_default_error_rad": 1.571165057423059,
+  "physx_root_link_pose_xyzw": [
+    4.067624104209244e-08,
+    -2.9802322387695312e-08,
+    0.0,
+    0.7071067094802856,
+    -1.288461604076474e-08,
+    -4.1815621187879515e-08,
+    0.7071068286895752
+  ],
+  "physx_gripper_base_pose_xyzw": [
+    -0.18373596668243408,
+    -0.7133347392082214,
+    0.2679884433746338,
+    0.7100300788879395,
+    -0.0031372581142932177,
+    0.0030480562709271908,
+    0.7041576504707336
+  ],
+  "urdf_gripper_base_predicted_xyz_m": [
+    -0.18373611582814975,
+    -0.7133347887176175,
+    0.2679883642288134
+  ],
+  "home_fk_position_error_mm": 0.00017595364640461924,
+  "home_fk_orientation_error_deg": 2.4832927846360672e-05,
+  "home_tcp_fk_error_mm": 0.00024178389768581113,
+  "robot_cfg_base_mount_position_error_mm": 5.042553921391947e-05,
+  "robot_cfg_base_mount_orientation_error_deg": 1.079947731352768e-05,
+  "home_physx_urdf_fk_match": false,
+  "robot_cfg_mount_matches_physx": true,
+  "observed_home_tcp_xyz_m": [
+    -0.18262410945780647,
+    -0.862160375707692,
+    0.3667694825169687
+  ],
+  "prior_candidate1_physx_q_recovered": false,
+  "stage40_baseline_independently_validated": false,
+  "physical_motion_permission": false,
+  "disclaimer": "Only the initial HOME state was read; Candidate1 was NOT replayed. A HOME FK match tests the URDF/PhysX chain in that configuration but does not independently validate Stage40 inferred Candidate1 q, motion paths, real collision shapes, gripper closure or grasp."
+}

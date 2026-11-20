@@ -1,0 +1,606 @@
+{
+  "stage": "3C39",
+  "mode": "offline_near_contact_opposite_group_screen",
+  "no_arm_motion": true,
+  "no_finger_motion": true,
+  "no_physics_simulation": true,
+  "cube_center_world_m": [
+    0.29999902844429016,
+    -0.3000020980834961,
+    0.019998935982584953
+  ],
+  "seed_orientation_count": 8,
+  "virtual_poses_screened": 31752,
+  "table_clear_5mm_prechecks": 31752,
+  "poses_with_bilateral_face_sampled_support": 7508,
+  "static_full_triangle_cube_checks": 250,
+  "static_cube_nonintersecting_of_shortlist": 236,
+  "qualified_bilateral_clearance_both_sides_at_most_10mm": 0,
+  "qualified_bilateral_clearance_both_sides_at_most_5mm": 0,
+  "top_static_candidates": [
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -30.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 11.399,
+      "sum_side_clearance_mm": 17.935,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 11.399,
+      "group_B_opposite_face_clearance_mm": 6.536,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 28.88,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        6.938893903907228e-18,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 12.421,
+      "sum_side_clearance_mm": 18.02,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 12.421,
+      "group_B_opposite_face_clearance_mm": 5.599,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 26.994,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -30.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.0063007715593094964
+      ],
+      "gripper_lowest_z_mm": 10.0,
+      "worst_side_clearance_mm": 13.383,
+      "sum_side_clearance_mm": 19.919,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 13.383,
+      "group_B_opposite_face_clearance_mm": 6.536,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 31.44,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 13.388,
+      "sum_side_clearance_mm": 18.16,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 13.388,
+      "group_B_opposite_face_clearance_mm": 4.772,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 30.081,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 14.772,
+      "sum_side_clearance_mm": 18.16,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 3.388,
+      "group_B_opposite_face_clearance_mm": 14.772,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 22.584,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 15.599,
+      "sum_side_clearance_mm": 18.02,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 2.421,
+      "group_B_opposite_face_clearance_mm": 15.599,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 23.473,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.0063007715593094964
+      ],
+      "gripper_lowest_z_mm": 10.0,
+      "worst_side_clearance_mm": 17.527,
+      "sum_side_clearance_mm": 29.428,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 11.901,
+      "group_B_opposite_face_clearance_mm": 17.527,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 26.816,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.02000000000000001,
+        6.938893903907228e-18,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 17.944,
+      "sum_side_clearance_mm": 30.04,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 17.944,
+      "group_B_opposite_face_clearance_mm": 12.097,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 35.669,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.02000000000000001,
+        0.010000000000000009,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 18.332,
+      "sum_side_clearance_mm": 31.72,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 13.388,
+      "group_B_opposite_face_clearance_mm": 18.332,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 32.762,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.0063007715593094964
+      ],
+      "gripper_lowest_z_mm": 10.0,
+      "worst_side_clearance_mm": 18.796,
+      "sum_side_clearance_mm": 27.728,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 8.932,
+      "group_B_opposite_face_clearance_mm": 18.796,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 26.132,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -60.0,
+        15.0,
+        -45.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.02000000000000001,
+        0.010000000000000009,
+        -0.0059308990807115875
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 18.85,
+      "sum_side_clearance_mm": 37.685,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 18.85,
+      "group_B_opposite_face_clearance_mm": 18.835,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 41.469,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.0063007715593094964
+      ],
+      "gripper_lowest_z_mm": 10.0,
+      "worst_side_clearance_mm": 18.932,
+      "sum_side_clearance_mm": 27.728,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 18.932,
+      "group_B_opposite_face_clearance_mm": 8.796,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 32.511,
+      "passes_static_authored_mesh_precheck": true
+    }
+  ],
+  "top_bilateral_candidates_regardless_of_triangle_hits": [
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -30.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.030000000000000013,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 6.471,
+      "sum_side_clearance_mm": 9.818,
+      "contact_axis_world": "x",
+      "group_A_cube_face_sign": 1,
+      "group_A_face_clearance_mm": 3.347,
+      "group_B_opposite_face_clearance_mm": 6.471,
+      "cube_triangle_hits": 1,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 23.545,
+      "passes_static_authored_mesh_precheck": false
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -30.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 11.399,
+      "sum_side_clearance_mm": 17.935,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 11.399,
+      "group_B_opposite_face_clearance_mm": 6.536,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 28.88,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        6.938893903907228e-18,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 12.421,
+      "sum_side_clearance_mm": 18.02,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 12.421,
+      "group_B_opposite_face_clearance_mm": 5.599,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 26.994,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -30.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.0063007715593094964
+      ],
+      "gripper_lowest_z_mm": 10.0,
+      "worst_side_clearance_mm": 13.383,
+      "sum_side_clearance_mm": 19.919,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 13.383,
+      "group_B_opposite_face_clearance_mm": 6.536,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 31.44,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 13.388,
+      "sum_side_clearance_mm": 18.16,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 13.388,
+      "group_B_opposite_face_clearance_mm": 4.772,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 30.081,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 14.772,
+      "sum_side_clearance_mm": 18.16,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 3.388,
+      "group_B_opposite_face_clearance_mm": 14.772,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 22.584,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 15.599,
+      "sum_side_clearance_mm": 18.02,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 2.421,
+      "group_B_opposite_face_clearance_mm": 15.599,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 23.473,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -30.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.02000000000000001,
+        0.030000000000000013,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 16.471,
+      "sum_side_clearance_mm": 16.82,
+      "contact_axis_world": "x",
+      "group_A_cube_face_sign": 1,
+      "group_A_face_clearance_mm": 0.349,
+      "group_B_opposite_face_clearance_mm": 16.471,
+      "cube_triangle_hits": 3,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 23.545,
+      "passes_static_authored_mesh_precheck": false
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -30.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.030000000000000013,
+        -0.0063007715593094964
+      ],
+      "gripper_lowest_z_mm": 10.0,
+      "worst_side_clearance_mm": 16.536,
+      "sum_side_clearance_mm": 19.919,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 3.383,
+      "group_B_opposite_face_clearance_mm": 16.536,
+      "cube_triangle_hits": 1,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 26.924,
+      "passes_static_authored_mesh_precheck": false
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.0063007715593094964
+      ],
+      "gripper_lowest_z_mm": 10.0,
+      "worst_side_clearance_mm": 17.527,
+      "sum_side_clearance_mm": 29.428,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 11.901,
+      "group_B_opposite_face_clearance_mm": 17.527,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 26.816,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.02000000000000001,
+        6.938893903907228e-18,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 17.944,
+      "sum_side_clearance_mm": 30.04,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 17.944,
+      "group_B_opposite_face_clearance_mm": 12.097,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 35.669,
+      "passes_static_authored_mesh_precheck": true
+    },
+    {
+      "seed_candidate_index": 8,
+      "world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "world_translation_offset_from_seed_m": [
+        0.02000000000000001,
+        0.010000000000000009,
+        -0.011300771559309496
+      ],
+      "gripper_lowest_z_mm": 5.0,
+      "worst_side_clearance_mm": 18.332,
+      "sum_side_clearance_mm": 31.72,
+      "contact_axis_world": "y",
+      "group_A_cube_face_sign": -1,
+      "group_A_face_clearance_mm": 13.388,
+      "group_B_opposite_face_clearance_mm": 18.332,
+      "cube_triangle_hits": 0,
+      "vertices_strictly_inside_cube": 0,
+      "palm_nearest_sampled_vertex_cube_mm": 32.762,
+      "passes_static_authored_mesh_precheck": true
+    }
+  ],
+  "grasp_validated": false,
+  "arm_ik_validated": false,
+  "continuous_collision_validated": false,
+  "actual_physx_colliders_validated": false,
+  "no_grasp_permission": true,
+  "disclaimer": "Only authored mesh static checks in a coarse, non-exhaustive local search; sampled vertex face proximity with 3mm patch margin; no tested pose is a robot command or a grasp. Finger joints frozen; no force closure, full robot links, IK, PhysX shape, self-collision or swept path certified."
+}

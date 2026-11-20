@@ -1,0 +1,709 @@
+{
+  "stage": "3C40",
+  "mode": "offline_urdf_ik_gripper_mesh_discrete_precheck",
+  "no_isaac_lab": true,
+  "no_physics_simulation": true,
+  "no_robot_motion": true,
+  "no_finger_motion": true,
+  "self_collisions_enabled": false,
+  "urdf_used": "/home/aybergen/Desktop/adi/lexium_rl_workspace/lexium_pick_place/assets/lexium_cobot.urdf",
+  "robot_cfg_used": "/home/aybergen/Desktop/adi/lexium_rl_workspace/lexium_pick_place/robot_cfg.py",
+  "arm_joint_names": [
+    "joint_1",
+    "joint_2",
+    "joint_3",
+    "joint_4",
+    "joint_5",
+    "joint_6_gripper_rotation"
+  ],
+  "arm_urdf_limits_rad": [
+    [
+      -3.141593,
+      3.141593
+    ],
+    [
+      -3.141593,
+      3.141593
+    ],
+    [
+      -3.141593,
+      3.141593
+    ],
+    [
+      -3.141593,
+      3.141593
+    ],
+    [
+      -3.141593,
+      3.141593
+    ],
+    [
+      -3.141593,
+      3.141593
+    ]
+  ],
+  "q_home_rad": [
+    0.0,
+    -0.7854,
+    1.5708,
+    -0.7854,
+    1.5708,
+    0.0
+  ],
+  "baseline_estimated_q_rad": [
+    -1.121863029875895,
+    -0.5894972455808124,
+    1.6584673483070018,
+    -0.896014650339387,
+    0.016390692354269182,
+    -0.11565149535279995
+  ],
+  "logged_arm_q_used": false,
+  "logged_q_to_measured_pose_calibrated": false,
+  "measured_baseline_gripper_base_world_xyz_m": [
+    0.2356655895709992,
+    -0.4585351943969727,
+    0.14871652424335483
+  ],
+  "measured_baseline_gripper_base_world_quat_xyzw": [
+    -0.2589622428435319,
+    0.32022237660006403,
+    0.026876058330691722,
+    0.9108643498318835
+  ],
+  "measured_baseline_tcp_world_xyz_m": [
+    0.30004824285467957,
+    -0.2999579338804157,
+    0.19986460732783992
+  ],
+  "baseline_hinge_reconstruction_max_error_mm": 8.326672684688674e-14,
+  "baseline_hinge_axis_discrepancy_deg": 0.0,
+  "baseline_tcp_crosscheck_error_mm": 1.1102230246251565e-13,
+  "cube_center_world_m": [
+    0.29999902844429016,
+    -0.3000020980834961,
+    0.019998935982584953
+  ],
+  "input_stage39": "/home/aybergen/Desktop/adi/lexium_rl_workspace/lexium_pick_place/stage40_inputs/lexium_stage3c39_offline_example_report.json",
+  "input_stage39_may_be_example": true,
+  "candidates_checked": 12,
+  "ik_pose_matches": 8,
+  "gripper_only_discrete_path_precheck_passes": 1,
+  "candidate_results": [
+    {
+      "index": 0,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -30.0
+      ],
+      "stage39_translation_offset_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.011300771559309496
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.2272033492726072,
+        -0.35779154286127285,
+        0.1275760907076998
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.4716189514361402,
+        0.5409144484573806,
+        -0.19963345736568677,
+        0.6671833382186234
+      ],
+      "q_candidate_rad": [
+        -1.2037123869171102,
+        -1.3453102894684017,
+        2.9260613659299466,
+        -1.8571123733383632,
+        -0.1381502101746423,
+        1.0779192374865922
+      ],
+      "urdf_fk_position_error_mm": 0.0,
+      "urdf_fk_orientation_error_deg": 0.0,
+      "min_joint_limit_margin_deg": 12.3491,
+      "ik_pose_match": true,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": {
+        "samples": 19,
+        "minimum_gripper_vertex_z_mm": -12.688,
+        "poses_below_5mm_table_clearance": 8,
+        "max_static_mesh_triangle_cube_hits": 3,
+        "poses_with_cube_surface_intersection": 4,
+        "gripper_only_discrete_screen_pass": false
+      },
+      "geometry_stage39_bilateral_clearance_mm": [
+        11.399,
+        6.536
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 1,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "stage39_translation_offset_m": [
+        0.030000000000000013,
+        6.938893903907228e-18,
+        -0.011300771559309496
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.20208063649344948,
+        -0.31597189382149604,
+        0.12757609070769976
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.31554996432764176,
+        0.6445472022408448,
+        -0.3655108667669507,
+        0.592780676449221
+      ],
+      "q_candidate_rad": [
+        -1.0580730196720256,
+        -1.1600403059540054,
+        2.3839631766219336,
+        0.41324281914179045,
+        -1.4208088022838674,
+        -1.429490329392938
+      ],
+      "urdf_fk_position_error_mm": 0.0,
+      "urdf_fk_orientation_error_deg": 0.0,
+      "min_joint_limit_margin_deg": 43.409,
+      "ik_pose_match": true,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": {
+        "samples": 19,
+        "minimum_gripper_vertex_z_mm": 5.0,
+        "poses_below_5mm_table_clearance": 0,
+        "max_static_mesh_triangle_cube_hits": 3,
+        "poses_with_cube_surface_intersection": 1,
+        "gripper_only_discrete_screen_pass": false
+      },
+      "geometry_stage39_bilateral_clearance_mm": [
+        12.421,
+        5.599
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 2,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -30.0
+      ],
+      "stage39_translation_offset_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.0063007715593094964
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.2272033492726072,
+        -0.35779154286127285,
+        0.1325760907076998
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.4716189514361402,
+        0.5409144484573806,
+        -0.19963345736568677,
+        0.6671833382186234
+      ],
+      "q_candidate_rad": [
+        -1.2037123869174164,
+        -1.2511626290841016,
+        2.934783947458086,
+        -1.7542421314272931,
+        -0.1381502101747231,
+        1.077919237487847
+      ],
+      "urdf_fk_position_error_mm": 0.0,
+      "urdf_fk_orientation_error_deg": 0.0,
+      "min_joint_limit_margin_deg": 11.8493,
+      "ik_pose_match": true,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": {
+        "samples": 19,
+        "minimum_gripper_vertex_z_mm": -3.563,
+        "poses_below_5mm_table_clearance": 6,
+        "max_static_mesh_triangle_cube_hits": 2,
+        "poses_with_cube_surface_intersection": 4,
+        "gripper_only_discrete_screen_pass": false
+      },
+      "geometry_stage39_bilateral_clearance_mm": [
+        13.383,
+        6.536
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 3,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "stage39_translation_offset_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.011300771559309496
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.21057263728499692,
+        -0.3385354522831579,
+        0.1275760907076998
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.3969806826539146,
+        0.5978454762756915,
+        -0.2850104661138375,
+        0.635418097241412
+      ],
+      "q_candidate_rad": [
+        -1.093762623939429,
+        -2.558114343073228,
+        2.995856945492174,
+        -3.1415929999999994,
+        -0.17712747401722886,
+        1.277910759463739
+      ],
+      "urdf_fk_position_error_mm": 1.85655,
+      "urdf_fk_orientation_error_deg": 1.80998,
+      "min_joint_limit_margin_deg": 0.0,
+      "ik_pose_match": false,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": null,
+      "geometry_stage39_bilateral_clearance_mm": [
+        13.388,
+        4.772
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 4,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "stage39_translation_offset_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.011300771559309496
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.21057263728499692,
+        -0.3285354522831579,
+        0.1275760907076998
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.3969806826539146,
+        0.5978454762756915,
+        -0.2850104661138375,
+        0.635418097241412
+      ],
+      "q_candidate_rad": [
+        -1.1245457333844318,
+        -1.1482929237849986,
+        2.144095918561504,
+        0.46169283410995565,
+        -1.4207212815640864,
+        -1.7677206476905103
+      ],
+      "urdf_fk_position_error_mm": 0.0,
+      "urdf_fk_orientation_error_deg": 0.0,
+      "min_joint_limit_margin_deg": 57.1524,
+      "ik_pose_match": true,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": {
+        "samples": 19,
+        "minimum_gripper_vertex_z_mm": 5.0,
+        "poses_below_5mm_table_clearance": 0,
+        "max_static_mesh_triangle_cube_hits": 2,
+        "poses_with_cube_surface_intersection": 1,
+        "gripper_only_discrete_screen_pass": false
+      },
+      "geometry_stage39_bilateral_clearance_mm": [
+        3.388,
+        14.772
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 5,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "stage39_translation_offset_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.011300771559309496
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.20208063649344948,
+        -0.30597189382149603,
+        0.12757609070769976
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.31554996432764176,
+        0.6445472022408448,
+        -0.3655108667669507,
+        0.592780676449221
+      ],
+      "q_candidate_rad": [
+        -1.1067916362744084,
+        -1.137509097352348,
+        2.417690671826058,
+        0.40254568473297825,
+        -1.4291632847514963,
+        -1.3471134935663955
+      ],
+      "urdf_fk_position_error_mm": 0.0,
+      "urdf_fk_orientation_error_deg": 0.0,
+      "min_joint_limit_margin_deg": 41.4765,
+      "ik_pose_match": true,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": {
+        "samples": 19,
+        "minimum_gripper_vertex_z_mm": 5.0,
+        "poses_below_5mm_table_clearance": 0,
+        "max_static_mesh_triangle_cube_hits": 0,
+        "poses_with_cube_surface_intersection": 0,
+        "gripper_only_discrete_screen_pass": true
+      },
+      "geometry_stage39_bilateral_clearance_mm": [
+        2.421,
+        15.599
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 6,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "stage39_translation_offset_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.0063007715593094964
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.20208063649344948,
+        -0.30597189382149603,
+        0.13257609070769977
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.31554996432764176,
+        0.6445472022408448,
+        -0.3655108667669507,
+        0.592780676449221
+      ],
+      "q_candidate_rad": [
+        -1.1067938870665066,
+        3.0972142915040455,
+        2.6916861634244174,
+        1.769670410197915,
+        -0.17653883945911447,
+        1.794481088624791
+      ],
+      "urdf_fk_position_error_mm": 0.0,
+      "urdf_fk_orientation_error_deg": 0.0,
+      "min_joint_limit_margin_deg": 2.5427,
+      "ik_pose_match": true,
+      "gravity_peak_estimate_path_nm": 68.7371,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": {
+        "samples": 19,
+        "minimum_gripper_vertex_z_mm": -1.137,
+        "poses_below_5mm_table_clearance": 2,
+        "max_static_mesh_triangle_cube_hits": 573,
+        "poses_with_cube_surface_intersection": 1,
+        "gripper_only_discrete_screen_pass": false
+      },
+      "geometry_stage39_bilateral_clearance_mm": [
+        11.901,
+        17.527
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 7,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -60.0
+      ],
+      "stage39_translation_offset_m": [
+        0.02000000000000001,
+        6.938893903907228e-18,
+        -0.011300771559309496
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.19208063649344947,
+        -0.31597189382149604,
+        0.12757609070769976
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.31554996432764176,
+        0.6445472022408448,
+        -0.3655108667669507,
+        0.592780676449221
+      ],
+      "q_candidate_rad": [
+        -0.7929837200285579,
+        -1.4918074735800886,
+        2.435811377584972,
+        0.5051412208800978,
+        -1.433605498019478,
+        -1.8850637915645678
+      ],
+      "urdf_fk_position_error_mm": 0.0,
+      "urdf_fk_orientation_error_deg": 0.0,
+      "min_joint_limit_margin_deg": 40.4383,
+      "ik_pose_match": true,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": {
+        "samples": 19,
+        "minimum_gripper_vertex_z_mm": 5.0,
+        "poses_below_5mm_table_clearance": 0,
+        "max_static_mesh_triangle_cube_hits": 178,
+        "poses_with_cube_surface_intersection": 2,
+        "gripper_only_discrete_screen_pass": false
+      },
+      "geometry_stage39_bilateral_clearance_mm": [
+        17.944,
+        12.097
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 8,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "stage39_translation_offset_m": [
+        0.02000000000000001,
+        0.010000000000000009,
+        -0.011300771559309496
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.2005726372849969,
+        -0.3385354522831579,
+        0.1275760907076998
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.3969806826539146,
+        0.5978454762756915,
+        -0.2850104661138375,
+        0.635418097241412
+      ],
+      "q_candidate_rad": [
+        -1.0013994148564507,
+        -2.7352958331651327,
+        3.04750654886015,
+        -3.1415929999999994,
+        -0.15154569691282568,
+        1.1244784931017322
+      ],
+      "urdf_fk_position_error_mm": 2.24801,
+      "urdf_fk_orientation_error_deg": 2.01074,
+      "min_joint_limit_margin_deg": 0.0,
+      "ik_pose_match": false,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": null,
+      "geometry_stage39_bilateral_clearance_mm": [
+        13.388,
+        18.332
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 9,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "stage39_translation_offset_m": [
+        0.030000000000000013,
+        0.02000000000000001,
+        -0.0063007715593094964
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.21057263728499692,
+        -0.3285354522831579,
+        0.1325760907076998
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.3969806826539146,
+        0.5978454762756915,
+        -0.2850104661138375,
+        0.635418097241412
+      ],
+      "q_candidate_rad": [
+        -1.1222832544307,
+        -2.587418252454742,
+        3.0206766916754235,
+        -3.1415929999999994,
+        -0.17893057097947004,
+        1.2905268662500615
+      ],
+      "urdf_fk_position_error_mm": 3.43986,
+      "urdf_fk_orientation_error_deg": 3.27291,
+      "min_joint_limit_margin_deg": 0.0,
+      "ik_pose_match": false,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": null,
+      "geometry_stage39_bilateral_clearance_mm": [
+        8.932,
+        18.796
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 10,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -60.0,
+        15.0,
+        -45.0
+      ],
+      "stage39_translation_offset_m": [
+        0.02000000000000001,
+        0.010000000000000009,
+        -0.0059308990807115875
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.22706499171156147,
+        -0.3220239562659428,
+        0.1592850336618617
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.49583844129922633,
+        0.6105589674287957,
+        -0.2790133524138525,
+        0.5509206264036771
+      ],
+      "q_candidate_rad": [
+        -1.4172971301469168,
+        -2.047963831145957,
+        2.9833641378023996,
+        -3.0668578015158987,
+        0.06167534085943773,
+        1.6955622322428308
+      ],
+      "urdf_fk_position_error_mm": 0.0,
+      "urdf_fk_orientation_error_deg": 0.0,
+      "min_joint_limit_margin_deg": 4.282,
+      "ik_pose_match": true,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": {
+        "samples": 19,
+        "minimum_gripper_vertex_z_mm": -101.812,
+        "poses_below_5mm_table_clearance": 13,
+        "max_static_mesh_triangle_cube_hits": 1048,
+        "poses_with_cube_surface_intersection": 7,
+        "gripper_only_discrete_screen_pass": false
+      },
+      "geometry_stage39_bilateral_clearance_mm": [
+        18.85,
+        18.835
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    },
+    {
+      "index": 11,
+      "source_seed_candidate": 8,
+      "stage39_world_angles_deg": [
+        -45.0,
+        15.0,
+        -45.0
+      ],
+      "stage39_translation_offset_m": [
+        0.030000000000000013,
+        0.010000000000000009,
+        -0.0063007715593094964
+      ],
+      "target_gripper_base_world_xyz_m": [
+        0.21057263728499692,
+        -0.3385354522831579,
+        0.1325760907076998
+      ],
+      "target_gripper_base_world_quat_xyzw": [
+        -0.3969806826539146,
+        0.5978454762756915,
+        -0.2850104661138375,
+        0.635418097241412
+      ],
+      "q_candidate_rad": [
+        -1.0953652676459464,
+        -2.5623177153919428,
+        3.012090366533334,
+        -3.1415929999999994,
+        -0.17749168927687356,
+        1.288587048023768
+      ],
+      "urdf_fk_position_error_mm": 1.54515,
+      "urdf_fk_orientation_error_deg": 1.48136,
+      "min_joint_limit_margin_deg": 0.0,
+      "ik_pose_match": false,
+      "gravity_peak_estimate_path_nm": 66.5613,
+      "gravity_estimate_under_85nm": true,
+      "gripper_discrete_mesh_path": null,
+      "geometry_stage39_bilateral_clearance_mm": [
+        18.932,
+        8.796
+      ],
+      "stage39_static_triangle_hits": 0,
+      "warning": "UNVALIDATED_WITH_PHYSX_AND_ARM_COLLISIONS"
+    }
+  ],
+  "arm_fk_physx_independently_validated": false,
+  "full_robot_collision_validated": false,
+  "physx_colliders_validated": false,
+  "whole_trajectory_collision_validated": false,
+  "force_closure_or_grasp_validated": false,
+  "physical_grasp_permission": false,
+  "disclaimer": "Offline URDF FK/IK and sampled frozen-gripper authored-mesh path tests only. NO physical motion authorized. Arm link/robot self collisions and PhysX convex decomposition absent; IK and sampled meshes alone cannot certify continuous motion, torque under dynamics or grasp."
+}

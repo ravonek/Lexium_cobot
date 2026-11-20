@@ -1,0 +1,61 @@
+% KBTU interim diploma thesis draft — 18 November 2026.
+% BASED ON the teacher-supplied Thesis_Template_RaM_2027.
+% Compiler: pdfLaTeX; bibliography: BibTeX (Overleaf selects these automatically).
+% IMPORTANT: administrative title-page signatories, official assignment and
+% Kazakh/Russian abstracts must be checked with the supervisor before final submission.
+\documentclass{trentthesis}
+\usepackage{kbtufront}
+\graphicspath{{figures/}}
+
+% Confirmed technical/project title and team from Project_Summary_Lexium_Agro.docx
+\title{Development of a Control System for an Autonomous Mobile Manipulator for Automating Agricultural Operations in Hydroponic Greenhouses}
+\author{Sestrevatovskiy Ratmir, Jumashev Tair, Kaldybekov Adilkhan, Maytan Yerassyl}
+\program{Robotics and Mechatronics}
+\degree{Bachelor of Engineering}
+\copyrightyear{2027}
+\date{2027}
+
+\kbtuministry{MINISTRY OF SCIENCE AND HIGHER EDUCATION OF THE REPUBLIC OF KAZAKHSTAN}
+\kbtuuniversity{Kazakh-British Technical University}
+\kbtuschool{School of Information Technology and Engineering}
+\kbtuprogram{6B07114}{Robotics and Mechatronics}
+% Unconfirmed administrative fields deliberately left blank:
+\kbtudean{}
+\kbtustudent{Sestrevatovskiy Ratmir Aleksandrovich; Jumashev Tair Salavatovich; Kaldybekov Adilkhan Yerbolatuly; Maytan Yerassyl Melsuly}{Project team}
+\kbtuteamlist{Sestrevatovskiy Ratmir Aleksandrovich\\
+Jumashev Tair Salavatovich\\
+Kaldybekov Adilkhan Yerbolatuly\\
+Maytan Yerassyl Melsuly}
+\kbtusupervisor{Tolengutov Rasul}{}
+\kbtunormcontroller{}{}
+\kbtucity{Almaty}
+\kbtuyear{2027}
+
+\begin{document}
+\kbtubegin
+\kbtutitlepage
+% INTERIM WRITING PROGRESS ONLY: these original KBTU front-matter files are
+% RETAINED in the project but excluded until official dates, approvals and
+% translations can be confirmed. Do not restore the unrelated sample text.
+% \input{frontmatter/assignment}
+% \input{frontmatter/project_sheet}
+% \input{frontmatter/abstract_kk}
+\input{frontmatter/abstract}
+% \input{frontmatter/abstract_ru}
+\kbtucontents
+\input{frontmatter/abbreviations}
+\kbtuend
+\doublespacing
+
+\include{chapters/01_introduction}
+% Future chapters are retained as brief planning files and are not yet
+% presented as written sections; uncomment once original research is drafted.
+% \include{chapters/02_related_work}
+% \include{chapters/03_citations_equations_tables}
+% \include{chapters/04_figures_and_plots}
+% \include{chapters/05_conclusion}
+
+\bibliographyheading
+\bibliographystyle{IEEEtranN}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-17",
+  "phase": "10",
+  "source_type": "user_pasted_terminal_log_not_raw_json",
+  "backend": "physx",
+  "suite_overall_pass": true,
+  "simulation_not_physical": true,
+  "tests": [
+    {
+      "id": "A",
+      "name": "startup",
+      "success": true,
+      "duration_s": 4.53,
+      "urdf_model_torque_nm": 47.58,
+      "hardware_oriented_model_torque_nm": 20.45
+    },
+    {
+      "id": "B",
+      "name": "single_tomato_tinyunet_4finger",
+      "success": true,
+      "localization_error_mm": 1.97,
+      "placement_error_mm": 12.81,
+      "urdf_model_torque_nm": 50.08,
+      "hardware_oriented_model_torque_nm": 22.9
+    },
+    {
+      "id": "C",
+      "name": "three_tomatoes",
+      "success": true,
+      "handled": 3,
+      "attempted": 3,
+      "localization_error_mm": 3.1,
+      "urdf_model_torque_nm": 62.72,
+      "hardware_oriented_model_torque_nm": 22.96,
+      "simulated_contact_force_n": 2.32
+    },
+    {
+      "id": "D",
+      "name": "randomized_reachable_positions",
+      "success": true,
+      "placement_errors_mm": [
+        9.65,
+        17.64
+      ],
+      "urdf_model_torque_nm": 53.3
+    },
+    {
+      "id": "E",
+      "name": "safe_rejection_recovery",
+      "success": true,
+      "unsafe_request_rejected": true,
+      "recovery_error_rad": 0.002
+    }
+  ],
+  "motion_validation": {
+    "valid": true,
+    "trajectory_samples": 10717,
+    "max_joint_velocity_rad_s": 0.593,
+    "max_urdf_model_torque_nm": 62.71,
+    "max_hardware_oriented_model_torque_nm": 22.96,
+    "min_joint_margin_deg": 29.98,
+    "plots_reported": 6
+  },
+  "unit_tests_reported": {
+    "passed": 20,
+    "failed": 0
+  },
+  "deliverables_reported": {
+    "verified_pass": true,
+    "sha256_matches": 21,
+    "sha256_total": 21,
+    "missing": 0,
+    "screenshots_reported": 8
+  },
+  "original_paths_reported": {
+    "validation": "results/hardware_constrained_autonomous_validation.json",
+    "audit": "results/hardware_fidelity_audit.json",
+    "compatibility": "results/real_robot_compatibility_matrix.json",
+    "manifest": "results/deliverables_manifest.json"
+  },
+  "note": "Not rerun here. Max torque 62.71 (audit) differs slightly from 62.72 (Test C) and is preserved as reported. Original source files absent."
+}

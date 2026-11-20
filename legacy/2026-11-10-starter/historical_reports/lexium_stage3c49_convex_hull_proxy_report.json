@@ -1,0 +1,531 @@
+{
+  "stage": "3C49",
+  "mode": "offline_conservative_full_source_mesh_convex_hull_proxy",
+  "uses_physx_cooked_collision_geometry": false,
+  "uses_authoring_mesh_convex_hulls": true,
+  "no_robot_motion": true,
+  "no_isaac_lab": true,
+  "assets_modified": false,
+  "source_stage39_may_be_example": true,
+  "cube_center_world_m": [
+    0.29999902844429016,
+    -0.3000020980834961,
+    0.019998935982584953
+  ],
+  "table_bounds_m": [
+    [
+      0.17,
+      1.07
+    ],
+    [
+      -0.6,
+      0.6
+    ],
+    [
+      -0.4,
+      0.0
+    ]
+  ],
+  "self_collisions_enabled_physx": false,
+  "home_q_rad": [
+    0.0,
+    -0.7854,
+    1.5708,
+    -0.7854,
+    1.5708,
+    0.0
+  ],
+  "target_q_rad": [
+    0.5116462574036054,
+    1.6679322364615043,
+    2.3215496095643826,
+    1.4630436610150346,
+    1.4414003069368027,
+    0.26596198934162374
+  ],
+  "hull_geometries": {
+    "base_link": {
+      "hull_points": 328,
+      "hull_planes": 652
+    },
+    "link1_1": {
+      "hull_points": 1011,
+      "hull_planes": 2018
+    },
+    "link2_1": {
+      "hull_points": 1137,
+      "hull_planes": 2270
+    },
+    "link3_1": {
+      "hull_points": 1440,
+      "hull_planes": 2876
+    },
+    "link4_1": {
+      "hull_points": 1439,
+      "hull_planes": 2874
+    },
+    "LINK5_1": {
+      "hull_points": 2321,
+      "hull_planes": 4638
+    },
+    "gripper_base_1": {
+      "hull_points": 163,
+      "hull_planes": 322
+    },
+    "gripper_finger_1_1": {
+      "hull_points": 163,
+      "hull_planes": 322
+    },
+    "gripper_finger_2_1": {
+      "hull_points": 168,
+      "hull_planes": 332
+    },
+    "gripper_finger_3_1": {
+      "hull_points": 162,
+      "hull_planes": 320
+    },
+    "gripper_finger_4_1": {
+      "hull_points": 165,
+      "hull_planes": 326
+    }
+  },
+  "hull_home_overlap_pairs": [
+    "base_link / link2_1",
+    "link1_1 / gripper_finger_1_1",
+    "link1_1 / gripper_finger_2_1",
+    "link3_1 / LINK5_1",
+    "link3_1 / gripper_base_1"
+  ],
+  "hull_endpoint_overlap_pairs": [],
+  "hull_endpoint_new_vs_home": [],
+  "frames_with_any_hull_self_overlap": 13,
+  "frames_with_new_hull_self_pairs_vs_home": 0,
+  "frames_with_hull_table_overlap": 0,
+  "frames_with_hull_cube_overlap": 0,
+  "inconclusive_lp_queries": 0,
+  "pair_frame_frequency": {
+    "base_link / link2_1": 3,
+    "link1_1 / gripper_finger_1_1": 2,
+    "link1_1 / gripper_finger_2_1": 8,
+    "link3_1 / LINK5_1": 13,
+    "link3_1 / gripper_base_1": 5
+  },
+  "frames": [
+    {
+      "index": 0,
+      "fraction": 0.0,
+      "proxy_hull_overlap_pairs": [
+        "base_link / link2_1",
+        "link1_1 / gripper_finger_1_1",
+        "link1_1 / gripper_finger_2_1",
+        "link3_1 / LINK5_1",
+        "link3_1 / gripper_base_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 1,
+      "fraction": 0.025,
+      "proxy_hull_overlap_pairs": [
+        "base_link / link2_1",
+        "link1_1 / gripper_finger_1_1",
+        "link1_1 / gripper_finger_2_1",
+        "link3_1 / LINK5_1",
+        "link3_1 / gripper_base_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 2,
+      "fraction": 0.05,
+      "proxy_hull_overlap_pairs": [
+        "base_link / link2_1",
+        "link1_1 / gripper_finger_2_1",
+        "link3_1 / LINK5_1",
+        "link3_1 / gripper_base_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 3,
+      "fraction": 0.075,
+      "proxy_hull_overlap_pairs": [
+        "link1_1 / gripper_finger_2_1",
+        "link3_1 / LINK5_1",
+        "link3_1 / gripper_base_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 4,
+      "fraction": 0.1,
+      "proxy_hull_overlap_pairs": [
+        "link1_1 / gripper_finger_2_1",
+        "link3_1 / LINK5_1",
+        "link3_1 / gripper_base_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 5,
+      "fraction": 0.125,
+      "proxy_hull_overlap_pairs": [
+        "link1_1 / gripper_finger_2_1",
+        "link3_1 / LINK5_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 6,
+      "fraction": 0.15,
+      "proxy_hull_overlap_pairs": [
+        "link1_1 / gripper_finger_2_1",
+        "link3_1 / LINK5_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 7,
+      "fraction": 0.175,
+      "proxy_hull_overlap_pairs": [
+        "link1_1 / gripper_finger_2_1",
+        "link3_1 / LINK5_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 8,
+      "fraction": 0.2,
+      "proxy_hull_overlap_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 9,
+      "fraction": 0.225,
+      "proxy_hull_overlap_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 10,
+      "fraction": 0.25,
+      "proxy_hull_overlap_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 11,
+      "fraction": 0.275,
+      "proxy_hull_overlap_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 12,
+      "fraction": 0.3,
+      "proxy_hull_overlap_pairs": [
+        "link3_1 / LINK5_1"
+      ],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 13,
+      "fraction": 0.325,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 14,
+      "fraction": 0.35,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 15,
+      "fraction": 0.375,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 16,
+      "fraction": 0.4,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 17,
+      "fraction": 0.425,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 18,
+      "fraction": 0.45,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 19,
+      "fraction": 0.475,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 20,
+      "fraction": 0.5,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 21,
+      "fraction": 0.525,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 22,
+      "fraction": 0.55,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 23,
+      "fraction": 0.575,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 24,
+      "fraction": 0.6,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 25,
+      "fraction": 0.625,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 26,
+      "fraction": 0.65,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 27,
+      "fraction": 0.675,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 28,
+      "fraction": 0.7,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 29,
+      "fraction": 0.725,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 30,
+      "fraction": 0.75,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 31,
+      "fraction": 0.775,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 32,
+      "fraction": 0.8,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 33,
+      "fraction": 0.825,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 34,
+      "fraction": 0.85,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 35,
+      "fraction": 0.875,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 36,
+      "fraction": 0.9,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 37,
+      "fraction": 0.925,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 38,
+      "fraction": 0.95,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 39,
+      "fraction": 0.975,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    },
+    {
+      "index": 40,
+      "fraction": 1.0,
+      "proxy_hull_overlap_pairs": [],
+      "proxy_hull_table_overlap_bodies": [],
+      "proxy_hull_cube_overlap_bodies": [],
+      "inconclusive": [],
+      "proxy_hull_new_pairs_vs_home": []
+    }
+  ],
+  "simulation_motion_authorized": false,
+  "grasp_authorized": false,
+  "disclaimer": "This test builds exact convex hulls enclosing AUTHORED mesh vertices. USD convexHull typically undergoes PhysX cooking, vertex reduction, filtering; these are NOT actual runtime colliders. Hull overlap can be a false-positive; hull separation is stronger evidence but NOT continuous swept path proof. HOME already has authored surface intersections and PhysX self collisions disabled. No sim or physical motion permission."
+}

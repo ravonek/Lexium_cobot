@@ -1,0 +1,638 @@
+{
+  "stage": "3C34",
+  "mode": "static_virtual_fk_only",
+  "no_finger_motion": true,
+  "no_arm_descent": true,
+  "self_collision_enabled": false,
+  "grasp_validated": false,
+  "opening_40mm_validated": false,
+  "sampled_baseline_projected_gap_m": 0.034676015946335015,
+  "cube_full_projection_width_current_orientation_m": 0.05655615845348366,
+  "virtual_hinge_model": {
+    "gripper_Revolute_1": {
+      "pivot_world_xyz_m": [
+        0.30690855042889803,
+        -0.40392761906283725,
+        0.19021664163266608
+      ],
+      "axis_world_xyz": [
+        -0.02433844287010989,
+        -0.21253120641201578,
+        0.9768511281150837
+      ]
+    },
+    "gripper_Revolute_2": {
+      "pivot_world_xyz_m": [
+        0.30773587990632084,
+        -0.39670094355544827,
+        0.1570038608390214
+      ],
+      "axis_world_xyz": [
+        -0.02433844287010989,
+        -0.21253120641201578,
+        0.9768511281150837
+      ]
+    },
+    "gripper_Revolute_5": {
+      "pivot_world_xyz_m": [
+        0.24272157084824061,
+        -0.3717570682943754,
+        0.19561630130398633
+      ],
+      "axis_world_xyz": [
+        0.02433844287010989,
+        0.21253120641201578,
+        -0.9768511281150837
+      ]
+    },
+    "gripper_Revolute_6": {
+      "pivot_world_xyz_m": [
+        0.24354911513755995,
+        -0.3645312572194549,
+        0.16240397505666104
+      ],
+      "axis_world_xyz": [
+        0.02433844287010989,
+        0.21253120641201578,
+        -0.9768511281150837
+      ]
+    }
+  },
+  "actual_finger_joint_q_rad": [
+    -0.5500022768974304,
+    -0.3401786684989929,
+    -0.3405815064907074,
+    -0.34035176038742065
+  ],
+  "joint_limits_rad": [
+    [
+      -1.780236005783081,
+      0.13089999556541443
+    ],
+    [
+      -1.570796012878418,
+      0.3403390049934387
+    ],
+    [
+      -0.34906598925590515,
+      1.570796012878418
+    ],
+    [
+      -0.3403390049934387,
+      1.570796012878418
+    ]
+  ],
+  "single_joint_virtual_samples": [
+    {
+      "joint": "gripper_Revolute_1",
+      "delta_rad": -0.004,
+      "target_rad": -0.5540022850036621,
+      "predicted_projected_gap_m": 0.03469346953901403,
+      "predicted_gap_change_m": 1.7453592679017582e-05,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02849921430305863,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.027667325998670778,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_1",
+      "delta_rad": 0.004,
+      "target_rad": -0.5460022687911987,
+      "predicted_projected_gap_m": 0.03465000975315613,
+      "predicted_gap_change_m": -2.600619317888464e-05,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.028407852287883617,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.027575963983495766,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_1",
+      "delta_rad": -0.02,
+      "target_rad": -0.5700022578239441,
+      "predicted_projected_gap_m": 0.03469346953901403,
+      "predicted_gap_change_m": 1.7453592679017582e-05,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02868468004589997,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.027852791741512117,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_1",
+      "delta_rad": 0.02,
+      "target_rad": -0.5300022959709167,
+      "predicted_projected_gap_m": 0.034548976618558935,
+      "predicted_gap_change_m": -0.00012703932777607951,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.028225081651948647,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.027393193347560796,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_1",
+      "delta_rad": -0.05,
+      "target_rad": -0.6000022888183594,
+      "predicted_projected_gap_m": 0.03469346953901403,
+      "predicted_gap_change_m": 1.7453592679017582e-05,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.029042136410799946,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.028210248106412095,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_1",
+      "delta_rad": 0.05,
+      "target_rad": -0.5000022649765015,
+      "predicted_projected_gap_m": 0.034372512145079304,
+      "predicted_gap_change_m": -0.0003035038012557112,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02787547828400816,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02704358997962031,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_1",
+      "delta_rad": -0.1,
+      "target_rad": -0.6500023007392883,
+      "predicted_projected_gap_m": 0.03469346953901403,
+      "predicted_gap_change_m": 1.7453592679017582e-05,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02966526637174982,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02883337806736197,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_1",
+      "delta_rad": 0.1,
+      "target_rad": -0.4500022828578949,
+      "predicted_projected_gap_m": 0.03411637273241269,
+      "predicted_gap_change_m": -0.0005596432139223229,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02732282231287292,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.026490934008485068,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "delta_rad": -0.004,
+      "target_rad": -0.3441786766052246,
+      "predicted_projected_gap_m": 0.034676015946335015,
+      "predicted_gap_change_m": 0.0,
+      "predicted_lowest_finger_z_world_m": 0.13432186509421468,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029530433443976156,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.028490110015882475,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "delta_rad": 0.004,
+      "target_rad": -0.33617866039276123,
+      "predicted_projected_gap_m": 0.034667494712144475,
+      "predicted_gap_change_m": -8.521234190539406e-06,
+      "predicted_lowest_finger_z_world_m": 0.13432636158137914,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.02942884074082753,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.028398797321043112,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "delta_rad": -0.02,
+      "target_rad": -0.360178679227829,
+      "predicted_projected_gap_m": 0.034676015946335015,
+      "predicted_gap_change_m": 0.0,
+      "predicted_lowest_finger_z_world_m": 0.13431321367333277,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029737388951932314,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.028675477993870102,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "delta_rad": 0.02,
+      "target_rad": -0.32017865777015686,
+      "predicted_projected_gap_m": 0.034566587410928606,
+      "predicted_gap_change_m": -0.0001094285354064084,
+      "predicted_lowest_finger_z_world_m": 0.1343356946703053,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.02922633997392564,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.028215832359532123,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "delta_rad": -0.05,
+      "target_rad": -0.3901786804199219,
+      "predicted_projected_gap_m": 0.034676015946335015,
+      "predicted_gap_change_m": 0.0,
+      "predicted_lowest_finger_z_world_m": 0.134298226310517,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.03013893694138901,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.029032754272711514,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "delta_rad": 0.05,
+      "target_rad": -0.29017865657806396,
+      "predicted_projected_gap_m": 0.0343903603720534,
+      "predicted_gap_change_m": -0.00028565557428161803,
+      "predicted_lowest_finger_z_world_m": 0.134352765339538,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.028843868911214137,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.027866418857633024,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "delta_rad": -0.1,
+      "target_rad": -0.44017866253852844,
+      "predicted_projected_gap_m": 0.034676015946335015,
+      "predicted_gap_change_m": 0.0,
+      "predicted_lowest_finger_z_world_m": 0.13427685532603914,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.030847044175258475,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.029655593813939785,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "delta_rad": 0.1,
+      "target_rad": -0.2401786744594574,
+      "predicted_projected_gap_m": 0.034134620515303304,
+      "predicted_gap_change_m": -0.0005413954310317104,
+      "predicted_lowest_finger_z_world_m": 0.13438210205755982,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.02824586917640107,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.0273140882453336,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "delta_rad": -0.004,
+      "target_rad": -0.3445815145969391,
+      "predicted_projected_gap_m": 0.034676015946335015,
+      "predicted_gap_change_m": 0.0,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.028529942286725674,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.02955496386053412,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "delta_rad": 0.004,
+      "target_rad": -0.3365814983844757,
+      "predicted_projected_gap_m": 0.03467176339812916,
+      "predicted_gap_change_m": -4.252548205851969e-06,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.028377228242203845,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.02940433535455841,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "delta_rad": 0.02,
+      "target_rad": -0.32058149576187134,
+      "predicted_projected_gap_m": 0.03457058831207355,
+      "predicted_gap_change_m": -0.00010542763426146795,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.028075828131384872,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.02910717682732864,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "delta_rad": 0.05,
+      "target_rad": -0.29058149456977844,
+      "predicted_projected_gap_m": 0.03439385570004899,
+      "predicted_gap_change_m": -0.0002821602462860229,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02727747080238363,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.028318923308758754,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "delta_rad": 0.1,
+      "target_rad": -0.24058151245117188,
+      "predicted_projected_gap_m": 0.034137264225413744,
+      "predicted_gap_change_m": -0.0005387517209212711,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.022854379214415743,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.02762153014016544,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.02392465316812919,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02844433878138014,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_6",
+      "delta_rad": 0.004,
+      "target_rad": -0.33635175228118896,
+      "predicted_projected_gap_m": 0.03464999125158302,
+      "predicted_gap_change_m": -2.602469475199154e-05,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.027545358941220066,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.028368167582434767,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_6",
+      "delta_rad": 0.02,
+      "target_rad": -0.3203517496585846,
+      "predicted_projected_gap_m": 0.03454888385102661,
+      "predicted_gap_change_m": -0.00012713209530840208,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.027244035530472388,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02806684417168709,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_6",
+      "delta_rad": 0.05,
+      "target_rad": -0.2903517484664917,
+      "predicted_projected_gap_m": 0.03437227906255824,
+      "predicted_gap_change_m": -0.0003037368837767729,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.026429505764067718,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02725231440528242,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "joint": "gripper_Revolute_6",
+      "delta_rad": 0.1,
+      "target_rad": -0.24035176634788513,
+      "predicted_projected_gap_m": 0.0341159030009206,
+      "predicted_gap_change_m": -0.0005601129454144149,
+      "predicted_lowest_finger_z_world_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.0220066909699978,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.0228294996112125,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    }
+  ],
+  "previous_probe_comparison": [
+    {
+      "joint": "gripper_Revolute_1",
+      "sign": 1,
+      "observed_gap_delta_m": -3.064582205603017e-05,
+      "predicted_gap_delta_m": -2.5979659887098716e-05,
+      "difference_m": 4.666162168931454e-06
+    },
+    {
+      "joint": "gripper_Revolute_1",
+      "sign": -1,
+      "observed_gap_delta_m": 1.2122770863542964e-05,
+      "predicted_gap_delta_m": 1.7453592679017582e-05,
+      "difference_m": 5.330821815474618e-06
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "sign": 1,
+      "observed_gap_delta_m": -1.3920667848665857e-05,
+      "predicted_gap_delta_m": -9.302739265193427e-06,
+      "difference_m": 4.61792858347243e-06
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "sign": -1,
+      "observed_gap_delta_m": -4.60407101793292e-06,
+      "predicted_gap_delta_m": 0.0,
+      "difference_m": 4.60407101793292e-06
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "sign": 1,
+      "observed_gap_delta_m": -4.581025862093746e-06,
+      "predicted_gap_delta_m": -2.424589782834552e-06,
+      "difference_m": 2.156436079259194e-06
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "sign": -1,
+      "observed_gap_delta_m": -4.6845028063846605e-06,
+      "predicted_gap_delta_m": 0.0,
+      "difference_m": 4.6845028063846605e-06
+    },
+    {
+      "joint": "gripper_Revolute_6",
+      "sign": 1,
+      "observed_gap_delta_m": -3.0558319465523454e-05,
+      "predicted_gap_delta_m": -2.4001694847675115e-05,
+      "difference_m": 6.556624617848339e-06
+    }
+  ],
+  "model_roughly_consistent_with_prior_tiny_probes": true,
+  "virtual_combination_grid_count": 18,
+  "best_virtual_combinations_up_to_5": [
+    {
+      "delta_rad": [
+        -0.05,
+        -0.05,
+        0.0,
+        0.05
+      ],
+      "projected_gap_m": 0.034690591517312463,
+      "gap_change_m": 1.457557097744866e-05,
+      "lowest_finger_world_z_m": 0.134298226310517,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.029042136410799946,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.027018223730314372,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.03013893694138901,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02784072989661379,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "delta_rad": [
+        -0.05,
+        -0.05,
+        0.05,
+        0.05
+      ],
+      "projected_gap_m": 0.034690591517312463,
+      "gap_change_m": 1.457557097744866e-05,
+      "lowest_finger_world_z_m": 0.134298226310517,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.027866188768630284,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.027018223730314372,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.028982084195808683,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02784072989661379,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "delta_rad": [
+        -0.05,
+        0.0,
+        0.0,
+        0.05
+      ],
+      "projected_gap_m": 0.03438973265523726,
+      "gap_change_m": -0.0002862832910977553,
+      "lowest_finger_world_z_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.029042136410799946,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.027018223730314372,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.029479479850233553,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02725231440528242,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "delta_rad": [
+        -0.05,
+        0.0,
+        0.05,
+        0.05
+      ],
+      "projected_gap_m": 0.03438973265523726,
+      "gap_change_m": -0.0002862832910977553,
+      "lowest_finger_world_z_m": 0.13432409913590593,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.027866188768630284,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.027018223730314372,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.028318923308758754,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02725231440528242,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    },
+    {
+      "delta_rad": [
+        0.0,
+        -0.05,
+        0.0,
+        0.05
+      ],
+      "projected_gap_m": 0.03437227906255824,
+      "gap_change_m": -0.0003037368837767729,
+      "lowest_finger_world_z_m": 0.134298226310517,
+      "pair_aabb_separations_m": {
+        "gripper_finger_1_1__gripper_finger_3_1": 0.02845341844455329,
+        "gripper_finger_1_1__gripper_finger_4_1": 0.026429505764067718,
+        "gripper_finger_2_1__gripper_finger_3_1": 0.03013893694138901,
+        "gripper_finger_2_1__gripper_finger_4_1": 0.02784072989661379,
+        "gripper_finger_1_1__gripper_finger_2_1": 0.0,
+        "gripper_finger_3_1__gripper_finger_4_1": 0.0
+      }
+    }
+  ],
+  "disclaimer": "VIRTUAL RIGID-HINGE KINEMATIC PROXIES ONLY. Does not move fingers, validate actual geometry, continuous mesh surface/swept collisions, finger-base collisions, TCP calibration, object fit or grasp. Same-side finger AABB separations are not exact collision checks. No permission for actual simultaneous finger motion."
+}

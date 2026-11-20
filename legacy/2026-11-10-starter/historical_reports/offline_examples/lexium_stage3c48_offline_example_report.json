@@ -1,0 +1,690 @@
+{
+  "stage": "3C48",
+  "mode": "offline_orientation_ik_mesh_search",
+  "no_isaac_lab": true,
+  "no_robot_motion": true,
+  "assets_modified": false,
+  "orientation_grid_count": 75,
+  "distinct_ik_solutions_tested": 123,
+  "clean_mesh_endpoints": 6,
+  "stage45_reference_lift_mm": 100.0,
+  "stage39_reference_may_be_example": true,
+  "stage47_home_finger_mesh_reference_verified": true,
+  "stage47_physx_self_collisions_enabled": false,
+  "urdf_home_mesh_surface_intersections": [
+    "link1_1 / gripper_finger_1_1",
+    "link1_1 / gripper_finger_2_1",
+    "link3_1 / LINK5_1",
+    "link3_1 / gripper_base_1"
+  ],
+  "home_table_hit_bodies": [],
+  "home_cube_hit_bodies": [],
+  "endpoint_clear_candidates": [
+    {
+      "orientation_world_xyz_deg": [
+        0,
+        15,
+        30
+      ],
+      "q_ik_rad": [
+        -1.3228453698318179,
+        -0.626314584732057,
+        2.1273656647796577,
+        0.9919563516319293,
+        -1.6891000380063041,
+        -1.8015869110582203
+      ],
+      "endpoint": {
+        "self_intersection_pairs": [],
+        "unresolved_budget_pairs": [],
+        "table_hit_bodies": [],
+        "cube_hit_bodies": [],
+        "min_arm_z_mm": 23.613,
+        "min_gripper_z_mm": 26.393
+      }
+    },
+    {
+      "orientation_world_xyz_deg": [
+        0,
+        15,
+        30
+      ],
+      "q_ik_rad": [
+        0.24891458038835343,
+        1.8305848929682857,
+        2.0851083910137946,
+        0.793135785571915,
+        0.8945015277822609,
+        -0.1280129112601981
+      ],
+      "endpoint": {
+        "self_intersection_pairs": [],
+        "unresolved_budget_pairs": [],
+        "table_hit_bodies": [],
+        "cube_hit_bodies": [],
+        "min_arm_z_mm": 100.0,
+        "min_gripper_z_mm": 26.393
+      }
+    },
+    {
+      "orientation_world_xyz_deg": [
+        15,
+        0,
+        30
+      ],
+      "q_ik_rad": [
+        0.3902535854664201,
+        1.7402847819668703,
+        2.1839804552937565,
+        1.073180316716507,
+        1.1655591920844055,
+        0.015004971003680279
+      ],
+      "endpoint": {
+        "self_intersection_pairs": [],
+        "unresolved_budget_pairs": [],
+        "table_hit_bodies": [],
+        "cube_hit_bodies": [],
+        "min_arm_z_mm": 100.0,
+        "min_gripper_z_mm": 43.26
+      }
+    },
+    {
+      "orientation_world_xyz_deg": [
+        30,
+        -30,
+        30
+      ],
+      "q_ik_rad": [
+        0.5178783745729185,
+        1.5562733710014913,
+        2.511182305228701,
+        1.8525147127258585,
+        1.4573379852322292,
+        0.3629734977306173
+      ],
+      "endpoint": {
+        "self_intersection_pairs": [],
+        "unresolved_budget_pairs": [],
+        "table_hit_bodies": [],
+        "cube_hit_bodies": [],
+        "min_arm_z_mm": 100.0,
+        "min_gripper_z_mm": 150.339
+      }
+    },
+    {
+      "orientation_world_xyz_deg": [
+        30,
+        -15,
+        30
+      ],
+      "q_ik_rad": [
+        0.5116462574023722,
+        1.6679322364613482,
+        2.3215496095642707,
+        1.4630436610171298,
+        1.4414003069364174,
+        0.26596198934261295
+      ],
+      "endpoint": {
+        "self_intersection_pairs": [],
+        "unresolved_budget_pairs": [],
+        "table_hit_bodies": [],
+        "cube_hit_bodies": [],
+        "min_arm_z_mm": 100.0,
+        "min_gripper_z_mm": 84.349
+      }
+    },
+    {
+      "orientation_world_xyz_deg": [
+        30,
+        0,
+        30
+      ],
+      "q_ik_rad": [
+        0.49221309551320597,
+        1.804591273822365,
+        2.15418667986316,
+        1.136402733757722,
+        1.3931025414026785,
+        0.19222376961520837
+      ],
+      "endpoint": {
+        "self_intersection_pairs": [],
+        "unresolved_budget_pairs": [],
+        "table_hit_bodies": [],
+        "cube_hit_bodies": [],
+        "min_arm_z_mm": 100.0,
+        "min_gripper_z_mm": 27.705
+      }
+    }
+  ],
+  "sampled_full_path_candidates": [
+    {
+      "orientation_world_xyz_deg": [
+        30,
+        -15,
+        30
+      ],
+      "q_ik_rad": [
+        0.5116462574023722,
+        1.6679322364613482,
+        2.3215496095642707,
+        1.4630436610171298,
+        1.4414003069364174,
+        0.26596198934261295
+      ],
+      "endpoint": {
+        "self_intersection_pairs": [],
+        "unresolved_budget_pairs": [],
+        "table_hit_bodies": [],
+        "cube_hit_bodies": [],
+        "min_arm_z_mm": 100.0,
+        "min_gripper_z_mm": 84.349
+      },
+      "path_samples": 41,
+      "path_frames_with_any_surface_intersection": 8,
+      "path_frames_with_new_surface_intersection": 0,
+      "path_frames_with_table_hit": 0,
+      "path_frames_with_cube_hit": 0,
+      "path_frames_with_budget_unresolved": 0,
+      "path_results": [
+        {
+          "self_intersection_pairs": [
+            "link1_1 / gripper_finger_1_1",
+            "link1_1 / gripper_finger_2_1",
+            "link3_1 / LINK5_1",
+            "link3_1 / gripper_base_1"
+          ],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 0.21,
+          "min_gripper_z_mm": 85.453,
+          "sample_index": 0,
+          "fraction": 0.0,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [
+            "link1_1 / gripper_finger_1_1",
+            "link1_1 / gripper_finger_2_1",
+            "link3_1 / LINK5_1",
+            "link3_1 / gripper_base_1"
+          ],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 8.64,
+          "min_gripper_z_mm": 105.906,
+          "sample_index": 1,
+          "fraction": 0.025,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [
+            "link1_1 / gripper_finger_2_1"
+          ],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 17.844,
+          "min_gripper_z_mm": 126.284,
+          "sample_index": 2,
+          "fraction": 0.05,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [
+            "link1_1 / gripper_finger_2_1"
+          ],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 27.703,
+          "min_gripper_z_mm": 146.412,
+          "sample_index": 3,
+          "fraction": 0.075,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [
+            "link1_1 / gripper_finger_2_1"
+          ],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 38.321,
+          "min_gripper_z_mm": 166.214,
+          "sample_index": 4,
+          "fraction": 0.1,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [
+            "link1_1 / gripper_finger_2_1"
+          ],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 49.495,
+          "min_gripper_z_mm": 185.559,
+          "sample_index": 5,
+          "fraction": 0.125,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [
+            "link1_1 / gripper_finger_2_1"
+          ],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 61.326,
+          "min_gripper_z_mm": 204.32,
+          "sample_index": 6,
+          "fraction": 0.15,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [
+            "link1_1 / gripper_finger_2_1"
+          ],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 73.679,
+          "min_gripper_z_mm": 222.427,
+          "sample_index": 7,
+          "fraction": 0.175,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 86.551,
+          "min_gripper_z_mm": 239.737,
+          "sample_index": 8,
+          "fraction": 0.2,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 99.886,
+          "min_gripper_z_mm": 256.186,
+          "sample_index": 9,
+          "fraction": 0.225,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 271.695,
+          "sample_index": 10,
+          "fraction": 0.25,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 286.14,
+          "sample_index": 11,
+          "fraction": 0.275,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 299.5,
+          "sample_index": 12,
+          "fraction": 0.3,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 311.693,
+          "sample_index": 13,
+          "fraction": 0.325,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 322.646,
+          "sample_index": 14,
+          "fraction": 0.35,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 332.349,
+          "sample_index": 15,
+          "fraction": 0.375,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 340.739,
+          "sample_index": 16,
+          "fraction": 0.4,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 347.785,
+          "sample_index": 17,
+          "fraction": 0.425,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 353.495,
+          "sample_index": 18,
+          "fraction": 0.45,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 357.83,
+          "sample_index": 19,
+          "fraction": 0.475,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 360.793,
+          "sample_index": 20,
+          "fraction": 0.5,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 362.414,
+          "sample_index": 21,
+          "fraction": 0.525,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 362.68,
+          "sample_index": 22,
+          "fraction": 0.55,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 361.62,
+          "sample_index": 23,
+          "fraction": 0.575,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 356.695,
+          "sample_index": 24,
+          "fraction": 0.6,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 347.8,
+          "sample_index": 25,
+          "fraction": 0.625,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 337.469,
+          "sample_index": 26,
+          "fraction": 0.65,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 325.111,
+          "sample_index": 27,
+          "fraction": 0.675,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 310.675,
+          "sample_index": 28,
+          "fraction": 0.7,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 295.239,
+          "sample_index": 29,
+          "fraction": 0.725,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 278.877,
+          "sample_index": 30,
+          "fraction": 0.75,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 261.681,
+          "sample_index": 31,
+          "fraction": 0.775,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 243.73,
+          "sample_index": 32,
+          "fraction": 0.8,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 225.121,
+          "sample_index": 33,
+          "fraction": 0.825,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 205.946,
+          "sample_index": 34,
+          "fraction": 0.85,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 186.293,
+          "sample_index": 35,
+          "fraction": 0.875,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 166.265,
+          "sample_index": 36,
+          "fraction": 0.9,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 145.96,
+          "sample_index": 37,
+          "fraction": 0.925,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 125.475,
+          "sample_index": 38,
+          "fraction": 0.95,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 104.906,
+          "sample_index": 39,
+          "fraction": 0.975,
+          "new_relative_to_home_intersection_pairs": []
+        },
+        {
+          "self_intersection_pairs": [],
+          "unresolved_budget_pairs": [],
+          "table_hit_bodies": [],
+          "cube_hit_bodies": [],
+          "min_arm_z_mm": 100.0,
+          "min_gripper_z_mm": 84.349,
+          "sample_index": 40,
+          "fraction": 1.0,
+          "new_relative_to_home_intersection_pairs": []
+        }
+      ]
+    }
+  ],
+  "preferred_orientation_world_xyz_deg": [
+    30,
+    -15,
+    30
+  ],
+  "preferred_q_ik_rad": [
+    0.5116462574023722,
+    1.6679322364613482,
+    2.3215496095642707,
+    1.4630436610171298,
+    1.4414003069364174,
+    0.26596198934261295
+  ],
+  "preferred_path_frames_with_any_surface_intersection": 8,
+  "preferred_path_frames_with_new_surface_intersection": 0,
+  "physx_narrowphase_validated": false,
+  "continuous_motion_collision_validated": false,
+  "gripper_opening_40mm_validated": false,
+  "grasp_force_closure_validated": false,
+  "robot_motion_permission": false,
+  "grasp_permission": false,
+  "disclaimer": "Every candidate is OFFLINE, discrete, authored mesh only. HOME has existing authored surface intersections. Filtering home pairs from the NEW pair metric does not mean the remaining path is collision-free. PhysX has self collisions disabled, so absence of self contacts is not proof of clearance. Target orientation derives from Stage39 example geometry. No motion/grasp permission."
+}

@@ -1,0 +1,3 @@
+# Isaac Lab / reinforcement learning — experimental and unverified
+
+The available video shows an Isaac Lab robot scene but does **not** establish a trained RL policy. After collecting current workspace files, audit: environment registration, observation/action/reward configs, vectorized envs, PPO training code, checkpoints, TensorBoard histories, seed/evaluation rollouts and comparison with scripted baseline. Keep status `training_evidence_pending` until artifacts exist. An older `legacy/original_isaaclab_prototype/` contains draft PPO config and scripts that may require substantial API updates.

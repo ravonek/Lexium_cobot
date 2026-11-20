@@ -1,0 +1,474 @@
+{
+  "stage": "3C32B",
+  "mode": "probe",
+  "robot_joint_names": [
+    "joint_1",
+    "joint_2",
+    "joint_3",
+    "joint_4",
+    "joint_5",
+    "joint_6_gripper_rotation",
+    "gripper_Revolute_1",
+    "gripper_Revolute_2",
+    "gripper_Revolute_5",
+    "gripper_Revolute_6"
+  ],
+  "finger_names": [
+    "gripper_Revolute_1",
+    "gripper_Revolute_2",
+    "gripper_Revolute_5",
+    "gripper_Revolute_6"
+  ],
+  "finger_q_start_rad": [
+    -0.5500022768974304,
+    -0.3401786684989929,
+    -0.3405815064907074,
+    -0.34035176038742065
+  ],
+  "finger_default_q_rad": [
+    -0.550000011920929,
+    -0.3402999937534332,
+    -0.3402999937534332,
+    -0.3402999937534332
+  ],
+  "finger_joint_pos_limits_rad": [
+    [
+      -1.780236005783081,
+      0.13089999556541443
+    ],
+    [
+      -1.570796012878418,
+      0.3403390049934387
+    ],
+    [
+      -0.34906598925590515,
+      1.570796012878418
+    ],
+    [
+      -0.3403390049934387,
+      1.570796012878418
+    ]
+  ],
+  "finger_joint_stiffness": [
+    2000.0,
+    2000.0,
+    2000.0,
+    2000.0
+  ],
+  "finger_joint_damping": [
+    100.0,
+    100.0,
+    100.0,
+    100.0
+  ],
+  "finger_joint_effort_limits_nm": [
+    100.0,
+    100.0,
+    100.0,
+    100.0
+  ],
+  "finger_urdf_metadata": {
+    "gripper_Revolute_1": {
+      "type": "revolute",
+      "parent": "gripper_base_1",
+      "child": "gripper_finger_1_1",
+      "axis_xyz": [
+        -0.577921,
+        -0.622515,
+        0.527715
+      ],
+      "origin_xyz_m": [
+        0.025359,
+        0.013037,
+        0.094693
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "urdf_home_rad": -0.55
+    },
+    "gripper_Revolute_2": {
+      "type": "revolute",
+      "parent": "gripper_base_1",
+      "child": "gripper_finger_2_1",
+      "axis_xyz": [
+        -0.577921,
+        -0.622515,
+        0.527715
+      ],
+      "origin_xyz_m": [
+        0.045008,
+        0.034203,
+        0.076751
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "urdf_home_rad": -0.3403
+    },
+    "gripper_Revolute_5": {
+      "type": "revolute",
+      "parent": "gripper_base_1",
+      "child": "gripper_finger_3_1",
+      "axis_xyz": [
+        0.577921,
+        0.622515,
+        -0.527715
+      ],
+      "origin_xyz_m": [
+        -0.032557,
+        0.05218,
+        0.077441
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "urdf_home_rad": -0.3403
+    },
+    "gripper_Revolute_6": {
+      "type": "revolute",
+      "parent": "gripper_base_1",
+      "child": "gripper_finger_4_1",
+      "axis_xyz": [
+        0.577921,
+        0.622515,
+        -0.527715
+      ],
+      "origin_xyz_m": [
+        -0.012908,
+        0.073345,
+        0.059499
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "urdf_home_rad": -0.3403
+    }
+  },
+  "micro_probe_eligible": false,
+  "limit_aware_eligible": true,
+  "limit_aware_probe_plan": [
+    {
+      "joint": "gripper_Revolute_1",
+      "sign": 1,
+      "target_rad": -0.5460022687911987,
+      "planned": true
+    },
+    {
+      "joint": "gripper_Revolute_1",
+      "sign": -1,
+      "target_rad": -0.5540022850036621,
+      "planned": true
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "sign": 1,
+      "target_rad": -0.33617866039276123,
+      "planned": true
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "sign": -1,
+      "target_rad": -0.3441786766052246,
+      "planned": true
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "sign": 1,
+      "target_rad": -0.3365814983844757,
+      "planned": true
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "sign": -1,
+      "target_rad": -0.3445815145969391,
+      "planned": true
+    },
+    {
+      "joint": "gripper_Revolute_6",
+      "sign": 1,
+      "target_rad": -0.3353390097618103,
+      "planned": true
+    },
+    {
+      "joint": "gripper_Revolute_6",
+      "sign": -1,
+      "target_rad": -0.3433390259742737,
+      "planned": false
+    }
+  ],
+  "limit_aware_hold_rad": [
+    -0.5500022768974304,
+    -0.3401786684989929,
+    -0.3405815064907074,
+    -0.339339017868042
+  ],
+  "audit_warnings": [
+    "FINGER_POSITION_TOO_CLOSE_TO_JOINT_LIMIT"
+  ],
+  "start_geometry_proxy": {
+    "fixed_axis_projected_gap_m": 0.03467601594633507,
+    "min_finger_z_m": 0.13432409913590593,
+    "min_sampled_finger_vertex_cube_sdf_m": 0.10944302728200882,
+    "cube_xyz_m": [
+      0.29999902844429016,
+      -0.3000020980834961,
+      0.019998935982584953
+    ],
+    "finger_colliders_world_centroid_xyz_m": {
+      "gripper_finger_1_1": [
+        0.3181655410363559,
+        -0.3881571002727871,
+        0.1834866469337839
+      ],
+      "gripper_finger_2_1": [
+        0.3189491381739528,
+        -0.38099825977083174,
+        0.15025801214740098
+      ],
+      "gripper_finger_3_1": [
+        0.24774156948235004,
+        -0.35288578820295,
+        0.18940588917240964
+      ],
+      "gripper_finger_4_1": [
+        0.2485730109393366,
+        -0.345660868073037,
+        0.15619282725247274
+      ]
+    }
+  },
+  "cube_size_m": 0.04,
+  "cube_is_dynamic": true,
+  "max_arm_effort_prior_nm": [
+    0.41567277908325195,
+    67.33087921142578,
+    24.10087013244629,
+    7.462327003479004,
+    2.3117923736572266,
+    0.09773516654968262
+  ],
+  "self_collisions_enabled": false,
+  "fingertip_tcp_calibrated": false,
+  "grasp_validated": false,
+  "note": "Projection and sampled vertices are PROXIES; not swept collision nor valid grasp.",
+  "probes": [
+    {
+      "joint": "gripper_Revolute_1",
+      "sign": 1,
+      "status": "PASS",
+      "command_delta_rad": 0.004,
+      "actual_joint_delta_rad": 0.0039958953857421875,
+      "actual_all_finger_delta_rad": [
+        0.0039958953857421875,
+        0.0001214146614074707,
+        -0.00028127431869506836,
+        0.000700831413269043
+      ],
+      "fixed_axis_gap_at_probe_m": 0.03464537012427904,
+      "fixed_axis_gap_change_m": -3.064582205603017e-05,
+      "min_finger_z_m": 0.1343242040576967,
+      "min_sampled_finger_vertex_cube_sdf_m": 0.1094417959086362,
+      "max_finger_effort_nm": [
+        0.1311129927635193,
+        0.24351400136947632,
+        0.5636499524116516,
+        0.6244728565216064
+      ],
+      "max_robot_contact_n": 0.0
+    },
+    {
+      "joint": "gripper_Revolute_1",
+      "sign": -1,
+      "status": "PASS",
+      "command_delta_rad": -0.004,
+      "actual_joint_delta_rad": -0.0040018558502197266,
+      "actual_all_finger_delta_rad": [
+        -0.0040018558502197266,
+        0.00012186169624328613,
+        -0.00028204917907714844,
+        0.0007004737854003906
+      ],
+      "fixed_axis_gap_at_probe_m": 0.03468813871719861,
+      "fixed_axis_gap_change_m": 1.2122770863542964e-05,
+      "min_finger_z_m": 0.13432406534121225,
+      "min_sampled_finger_vertex_cube_sdf_m": 0.1094417294587336,
+      "max_finger_effort_nm": [
+        0.13106215000152588,
+        0.24518348276615143,
+        0.5656751394271851,
+        0.6258706450462341
+      ],
+      "max_robot_contact_n": 0.0
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "sign": 1,
+      "status": "PASS",
+      "command_delta_rad": 0.004,
+      "actual_joint_delta_rad": 0.004121065139770508,
+      "actual_all_finger_delta_rad": [
+        -4.0531158447265625e-06,
+        0.004121065139770508,
+        -0.00028139352798461914,
+        0.0007009506225585938
+      ],
+      "fixed_axis_gap_at_probe_m": 0.034662095278486404,
+      "fixed_axis_gap_change_m": -1.3920667848665857e-05,
+      "min_finger_z_m": 0.13432645056890416,
+      "min_sampled_finger_vertex_cube_sdf_m": 0.10944181523278954,
+      "max_finger_effort_nm": [
+        0.0066686528734862804,
+        0.37206023931503296,
+        0.5636602640151978,
+        0.6245898604393005
+      ],
+      "max_robot_contact_n": 0.0
+    },
+    {
+      "joint": "gripper_Revolute_2",
+      "sign": -1,
+      "status": "PASS",
+      "command_delta_rad": -0.004,
+      "actual_joint_delta_rad": -0.0038777291774749756,
+      "actual_all_finger_delta_rad": [
+        -4.0531158447265625e-06,
+        -0.0038777291774749756,
+        -0.00028192996978759766,
+        0.0007004141807556152
+      ],
+      "fixed_axis_gap_at_probe_m": 0.03467141187531714,
+      "fixed_axis_gap_change_m": -4.60407101793292e-06,
+      "min_finger_z_m": 0.13432183388894126,
+      "min_sampled_finger_vertex_cube_sdf_m": 0.10944170871973506,
+      "max_finger_effort_nm": [
+        0.0065536582842469215,
+        0.36843740940093994,
+        0.5651843547821045,
+        0.626399040222168
+      ],
+      "max_robot_contact_n": 0.0
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "sign": 1,
+      "status": "PASS",
+      "command_delta_rad": 0.004,
+      "actual_joint_delta_rad": 0.0037177205085754395,
+      "actual_all_finger_delta_rad": [
+        -4.0531158447265625e-06,
+        0.00012168288230895996,
+        0.0037177205085754395,
+        0.0007004141807556152
+      ],
+      "fixed_axis_gap_at_probe_m": 0.03467143492047298,
+      "fixed_axis_gap_change_m": -4.581025862093746e-06,
+      "min_finger_z_m": 0.13432403541948784,
+      "min_sampled_finger_vertex_cube_sdf_m": 0.10944172480096519,
+      "max_finger_effort_nm": [
+        0.0065542603842914104,
+        0.2434253692626953,
+        0.688413143157959,
+        0.6262065172195435
+      ],
+      "max_robot_contact_n": 0.0
+    },
+    {
+      "joint": "gripper_Revolute_5",
+      "sign": -1,
+      "status": "PASS",
+      "command_delta_rad": -0.004,
+      "actual_joint_delta_rad": -0.0042810142040252686,
+      "actual_all_finger_delta_rad": [
+        -4.0531158447265625e-06,
+        0.00012168288230895996,
+        -0.0042810142040252686,
+        0.0007009208202362061
+      ],
+      "fixed_axis_gap_at_probe_m": 0.034671331443528686,
+      "fixed_axis_gap_change_m": -4.6845028063846605e-06,
+      "min_finger_z_m": 0.13432416202477235,
+      "min_sampled_finger_vertex_cube_sdf_m": 0.10944174001332876,
+      "max_finger_effort_nm": [
+        0.006675470620393753,
+        0.2433491200208664,
+        0.6969616413116455,
+        0.6244986653327942
+      ],
+      "max_robot_contact_n": 0.0
+    },
+    {
+      "joint": "gripper_Revolute_6",
+      "sign": 1,
+      "status": "PASS",
+      "command_delta_rad": 0.004,
+      "actual_joint_delta_rad": 0.0036874115467071533,
+      "actual_all_finger_delta_rad": [
+        -4.0531158447265625e-06,
+        0.00012168288230895996,
+        -0.0002821385860443115,
+        0.004700154066085815
+      ],
+      "fixed_axis_gap_at_probe_m": 0.03464545762686955,
+      "fixed_axis_gap_change_m": -3.0558319465523454e-05,
+      "min_finger_z_m": 0.13432406952192577,
+      "min_sampled_finger_vertex_cube_sdf_m": 0.10943510183625874,
+      "max_finger_effort_nm": [
+        0.006554541178047657,
+        0.24343256652355194,
+        0.563727080821991,
+        0.7491381168365479
+      ],
+      "max_robot_contact_n": 0.0
+    },
+    {
+      "joint": "gripper_Revolute_6",
+      "sign": -1,
+      "status": "SKIPPED_LIMIT"
+    }
+  ],
+  "end_geometry_proxy": {
+    "fixed_axis_projected_gap_m": 0.03467139515660095,
+    "min_finger_z_m": 0.13432414400483722,
+    "min_sampled_finger_vertex_cube_sdf_m": 0.10944175655549501,
+    "cube_xyz_m": [
+      0.29999902844429016,
+      -0.3000020980834961,
+      0.019998935982584953
+    ],
+    "finger_colliders_world_centroid_xyz_m": {
+      "gripper_finger_1_1": [
+        0.31816554706699207,
+        -0.3881572731155356,
+        0.18348660123719954
+      ],
+      "gripper_finger_2_1": [
+        0.318947453290266,
+        -0.38099707453851,
+        0.1502582184173357
+      ],
+      "gripper_finger_3_1": [
+        0.2477367801552471,
+        -0.35288451942095533,
+        0.1894059251235802
+      ],
+      "gripper_finger_4_1": [
+        0.2485850035413946,
+        -0.3456643046282045,
+        0.15619224874778098
+      ]
+    }
+  },
+  "probe_complete": true,
+  "expected_passes": 7,
+  "actual_passes": 7,
+  "skipped_limit": 1
+}

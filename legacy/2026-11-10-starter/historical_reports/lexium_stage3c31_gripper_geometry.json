@@ -1,0 +1,156 @@
+{
+  "stage": "3C31",
+  "source": "runtime_physx_pose_usd_sampled_collision_mesh",
+  "cube_center_xyz_m": [
+    0.29999902844429016,
+    -0.3000020980834961,
+    0.019998935982584953
+  ],
+  "cube_quat_xyzw": [
+    5.2907533245161176e-05,
+    -2.563936504884623e-05,
+    5.1580663296135754e-08,
+    1.0
+  ],
+  "cube_top_world_z_m": 0.04000207772029875,
+  "actual_tcp_world_xyz_m": [
+    0.30004824285467957,
+    -0.2999579338804156,
+    0.19986460732783992
+  ],
+  "cube_center_relative_tcp_tool_xyz_m": [
+    0.10739593184677981,
+    0.08172967376123852,
+    -0.11890348334114377
+  ],
+  "gripper_tool_local_z_axis_world": [
+    0.5694385250386564,
+    0.4889715804619522,
+    0.660792372612109
+  ],
+  "collider_geometry": {
+    "gripper_base_1": {
+      "mesh_count": 5,
+      "total_vertices": 12139,
+      "sampled_vertices": 9499,
+      "aabb_world_min_m": [
+        0.20889584307686784,
+        -0.4741121229764348,
+        0.11794552031720912
+      ],
+      "aabb_world_max_m": [
+        0.3489005881231397,
+        -0.2825609126047242,
+        0.2109777097985749
+      ],
+      "sampled_vertex_mean_world_m": [
+        0.27350563861534144,
+        -0.38540499210647994,
+        0.16551236586081386
+      ],
+      "nearest_sampled_vertex_to_cube_surface_m": 0.10930930532462985,
+      "min_signed_vertex_cube_sdf_m": 0.10930930532462985,
+      "sampled_vertices_inside_cube_count": 0,
+      "sampled_vertices_within_10mm_cube_count": 0
+    },
+    "gripper_finger_1_1": {
+      "mesh_count": 1,
+      "total_vertices": 1620,
+      "sampled_vertices": 1620,
+      "aabb_world_min_m": [
+        0.2925278263554602,
+        -0.41248573607311295,
+        0.16753613685999116
+      ],
+      "aabb_world_max_m": [
+        0.3723353679923926,
+        -0.334637603478403,
+        0.20331740245658075
+      ],
+      "sampled_vertex_mean_world_m": [
+        0.3181655410363559,
+        -0.3881571002727871,
+        0.1834866469337839
+      ],
+      "nearest_sampled_vertex_to_cube_surface_m": 0.14546322629487535,
+      "min_signed_vertex_cube_sdf_m": 0.14546322629487535,
+      "sampled_vertices_inside_cube_count": 0,
+      "sampled_vertices_within_10mm_cube_count": 0
+    },
+    "gripper_finger_2_1": {
+      "mesh_count": 1,
+      "total_vertices": 1629,
+      "sampled_vertices": 1629,
+      "aabb_world_min_m": [
+        0.2933506349966749,
+        -0.40526629683287363,
+        0.13432409913590593
+      ],
+      "aabb_world_max_m": [
+        0.37313856356153463,
+        -0.32738803791975035,
+        0.1701089181125204
+      ],
+      "sampled_vertex_mean_world_m": [
+        0.3189491381739528,
+        -0.38099825977083174,
+        0.15025801214740098
+      ],
+      "nearest_sampled_vertex_to_cube_surface_m": 0.1121378590436911,
+      "min_signed_vertex_cube_sdf_m": 0.1121378590436911,
+      "sampled_vertices_inside_cube_count": 0,
+      "sampled_vertices_within_10mm_cube_count": 0
+    },
+    "gripper_finger_3_1": {
+      "mesh_count": 1,
+      "total_vertices": 1625,
+      "sampled_vertices": 1625,
+      "aabb_world_min_m": [
+        0.22961055521608048,
+        -0.37756171060176597,
+        0.17356467560732103
+      ],
+      "aabb_world_max_m": [
+        0.2640744079109069,
+        -0.2800903319297614,
+        0.2124734121236623
+      ],
+      "sampled_vertex_mean_world_m": [
+        0.24774156948235004,
+        -0.35288578820295,
+        0.18940588917240964
+      ],
+      "nearest_sampled_vertex_to_cube_surface_m": 0.14322548088811743,
+      "min_signed_vertex_cube_sdf_m": 0.14322548088811743,
+      "sampled_vertices_inside_cube_count": 0,
+      "sampled_vertices_within_10mm_cube_count": 0
+    },
+    "gripper_finger_4_1": {
+      "mesh_count": 1,
+      "total_vertices": 1625,
+      "sampled_vertices": 1625,
+      "aabb_world_min_m": [
+        0.23043939586343762,
+        -0.3703390489032682,
+        0.14035202850019257
+      ],
+      "aabb_world_max_m": [
+        0.26490629621529477,
+        -0.2728684037924219,
+        0.17926014549663025
+      ],
+      "sampled_vertex_mean_world_m": [
+        0.2485730109393366,
+        -0.345660868073037,
+        0.15619282725247274
+      ],
+      "nearest_sampled_vertex_to_cube_surface_m": 0.10944302728200882,
+      "min_signed_vertex_cube_sdf_m": 0.10944302728200882,
+      "sampled_vertices_inside_cube_count": 0,
+      "sampled_vertices_within_10mm_cube_count": 0
+    }
+  },
+  "opposing_group_projected_gap_m": 0.03467601594633507,
+  "contact_motion_verified": true,
+  "disclaimer": "Vertex-to-box and projected gaps are PROXIES; do not establish exact mesh clearance or grasp feasibility."
+}

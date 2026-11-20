@@ -1,0 +1,19 @@
+project: lexium_agro
+mode: offline_dry_run
+simulator:
+  backend: none
+  stage6_reference_force_ceiling_per_finger_n: 2.80  # historical simulation ONLY
+hardware:
+  enabled: false
+  allow_motion: false
+  controller_endpoint: null
+  stop_on_unknown_state: true
+camera:
+  exact_model: verify_D435_or_D435i
+  calibration_file: null
+  calibrated: false
+ros2:
+  use_live_controller: false
+rl:
+  trained_policy_verified: false
+  checkpoint: null

@@ -1,0 +1,404 @@
+{
+  "stage": "3C37",
+  "mode": "static_authored_usd_collision_mesh_export_and_table_gate",
+  "no_finger_motion": true,
+  "no_arm_descent": true,
+  "self_collisions_enabled": false,
+  "cube_center_world_m": [
+    0.29999902844429016,
+    -0.3000020980834961,
+    0.019998935982584953
+  ],
+  "table_bounds_xyz_m": [
+    0.16999999999999998,
+    1.07,
+    -0.6,
+    0.6,
+    -0.4,
+    0.0
+  ],
+  "mesh_geometry_source": "USD authored collision mesh vertices/triangles transformed by runtime PhysX rigid-body pose",
+  "per_body_mesh": {
+    "gripper_base_1": {
+      "vertices": 12139,
+      "triangles": 25200,
+      "min_world_z_m": 0.11785555118958606,
+      "mesh_count": 5,
+      "part_metadata": [
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_1_1/gripper_finger_1_1_1/gripper_finger_1_1",
+          "vertex_count": 1620,
+          "triangle_count": 3412
+        },
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_2_1/gripper_finger_2_1_1/gripper_finger_2_1",
+          "vertex_count": 1629,
+          "triangle_count": 3430
+        },
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_3_1/gripper_finger_3_1_1/gripper_finger_3_1",
+          "vertex_count": 1625,
+          "triangle_count": 3422
+        },
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_4_1/gripper_finger_4_1_1/gripper_finger_4_1",
+          "vertex_count": 1625,
+          "triangle_count": 3422
+        },
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_base_1_1/gripper_base_1",
+          "vertex_count": 5640,
+          "triangle_count": 11514
+        }
+      ]
+    },
+    "gripper_finger_1_1": {
+      "vertices": 1620,
+      "triangles": 3412,
+      "min_world_z_m": 0.16753613685999116,
+      "mesh_count": 1,
+      "part_metadata": [
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_1_1/gripper_finger_1_1_1/gripper_finger_1_1",
+          "vertex_count": 1620,
+          "triangle_count": 3412
+        }
+      ]
+    },
+    "gripper_finger_2_1": {
+      "vertices": 1629,
+      "triangles": 3430,
+      "min_world_z_m": 0.13432409913590593,
+      "mesh_count": 1,
+      "part_metadata": [
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_2_1/gripper_finger_2_1_1/gripper_finger_2_1",
+          "vertex_count": 1629,
+          "triangle_count": 3430
+        }
+      ]
+    },
+    "gripper_finger_3_1": {
+      "vertices": 1625,
+      "triangles": 3422,
+      "min_world_z_m": 0.17356467560732103,
+      "mesh_count": 1,
+      "part_metadata": [
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_3_1/gripper_finger_3_1_1/gripper_finger_3_1",
+          "vertex_count": 1625,
+          "triangle_count": 3422
+        }
+      ]
+    },
+    "gripper_finger_4_1": {
+      "vertices": 1625,
+      "triangles": 3422,
+      "min_world_z_m": 0.14035202850019257,
+      "mesh_count": 1,
+      "part_metadata": [
+        {
+          "path": "/World/envs/env_0/Robot/Geometry/base_link/link1_1/link2_1/link3_1/link4_1/LINK5_1/gripper_base_1/gripper_finger_4_1/gripper_finger_4_1_1/gripper_finger_4_1",
+          "vertex_count": 1625,
+          "triangle_count": 3422
+        }
+      ]
+    }
+  },
+  "candidate_table_gates": [
+    {
+      "candidate_index": 0,
+      "candidate_center_world_m": [
+        0.3141268480976449,
+        -0.3089179528947616,
+        0.18997944604152323
+      ],
+      "hypothetical_rigid_translation_m": [
+        -0.014127819653354745,
+        0.0089158548112655,
+        -0.16998051005893827
+      ],
+      "min_translated_z_per_body_m": {
+        "gripper_base_1": -0.052124958869352214,
+        "gripper_finger_1_1": -0.0024443731989471085,
+        "gripper_finger_2_1": -0.035656410923032344,
+        "gripper_finger_3_1": 0.003584165548382756,
+        "gripper_finger_4_1": -0.0296284815587457
+      },
+      "authored_mesh_vertices_inside_table_per_body": {
+        "gripper_base_1": 7701,
+        "gripper_finger_1_1": 105,
+        "gripper_finger_2_1": 1628,
+        "gripper_finger_3_1": 0,
+        "gripper_finger_4_1": 1546
+      },
+      "table_5mm_clearance_precheck": false,
+      "table_gate": "REJECT_AUTHORED_MESH_VERTEX_INSIDE_TABLE"
+    },
+    {
+      "candidate_index": 1,
+      "candidate_center_world_m": [
+        0.3118637881541331,
+        -0.3132625254806469,
+        0.18897782298964882
+      ],
+      "hypothetical_rigid_translation_m": [
+        -0.011864759709842965,
+        0.013260427397150831,
+        -0.16897888700706387
+      ],
+      "min_translated_z_per_body_m": {
+        "gripper_base_1": -0.051123335817477814,
+        "gripper_finger_1_1": -0.0014427501470727078,
+        "gripper_finger_2_1": -0.034654787871157944,
+        "gripper_finger_3_1": 0.004585788600257157,
+        "gripper_finger_4_1": -0.0286268585068713
+      },
+      "authored_mesh_vertices_inside_table_per_body": {
+        "gripper_base_1": 7463,
+        "gripper_finger_1_1": 64,
+        "gripper_finger_2_1": 1623,
+        "gripper_finger_3_1": 0,
+        "gripper_finger_4_1": 1538
+      },
+      "table_5mm_clearance_precheck": false,
+      "table_gate": "REJECT_AUTHORED_MESH_VERTEX_INSIDE_TABLE"
+    },
+    {
+      "candidate_index": 2,
+      "candidate_center_world_m": [
+        0.31400515588329436,
+        -0.30998060892682167,
+        0.19486370168209863
+      ],
+      "hypothetical_rigid_translation_m": [
+        -0.014006127439004201,
+        0.009978510843325572,
+        -0.17486476569951367
+      ],
+      "min_translated_z_per_body_m": {
+        "gripper_base_1": -0.057009214509927617,
+        "gripper_finger_1_1": -0.007328628839522511,
+        "gripper_finger_2_1": -0.04054066656360775,
+        "gripper_finger_3_1": -0.0013000900921926462,
+        "gripper_finger_4_1": -0.0345127371993211
+      },
+      "authored_mesh_vertices_inside_table_per_body": {
+        "gripper_base_1": 8840,
+        "gripper_finger_1_1": 518,
+        "gripper_finger_2_1": 1629,
+        "gripper_finger_3_1": 108,
+        "gripper_finger_4_1": 1603
+      },
+      "table_5mm_clearance_precheck": false,
+      "table_gate": "REJECT_AUTHORED_MESH_VERTEX_INSIDE_TABLE"
+    },
+    {
+      "candidate_index": 3,
+      "candidate_center_world_m": [
+        0.3117420959397825,
+        -0.31432518151270694,
+        0.19386207863022423
+      ],
+      "hypothetical_rigid_translation_m": [
+        -0.011743067495492365,
+        0.014323083429210848,
+        -0.17386314264763927
+      ],
+      "min_translated_z_per_body_m": {
+        "gripper_base_1": -0.056007591458053216,
+        "gripper_finger_1_1": -0.00632700578764811,
+        "gripper_finger_2_1": -0.039539043511733346,
+        "gripper_finger_3_1": -0.00029846704031824545,
+        "gripper_finger_4_1": -0.0335111141474467
+      },
+      "authored_mesh_vertices_inside_table_per_body": {
+        "gripper_base_1": 8543,
+        "gripper_finger_1_1": 455,
+        "gripper_finger_2_1": 1629,
+        "gripper_finger_3_1": 12,
+        "gripper_finger_4_1": 1593
+      },
+      "table_5mm_clearance_precheck": false,
+      "table_gate": "REJECT_AUTHORED_MESH_VERTEX_INSIDE_TABLE"
+    },
+    {
+      "candidate_index": 4,
+      "candidate_center_world_m": [
+        0.31376174464404,
+        -0.3121059454067724,
+        0.2046322069831642
+      ],
+      "hypothetical_rigid_translation_m": [
+        -0.013762716199749836,
+        0.012103847323276296,
+        -0.18463327100057925
+      ],
+      "min_translated_z_per_body_m": {
+        "gripper_base_1": -0.06677771981099319,
+        "gripper_finger_1_1": -0.017097134140588083,
+        "gripper_finger_2_1": -0.05030917186467332,
+        "gripper_finger_3_1": -0.011068595393258218,
+        "gripper_finger_4_1": -0.044281242500386675
+      },
+      "authored_mesh_vertices_inside_table_per_body": {
+        "gripper_base_1": 10045,
+        "gripper_finger_1_1": 796,
+        "gripper_finger_2_1": 1629,
+        "gripper_finger_3_1": 580,
+        "gripper_finger_4_1": 1625
+      },
+      "table_5mm_clearance_precheck": false,
+      "table_gate": "REJECT_AUTHORED_MESH_VERTEX_INSIDE_TABLE"
+    },
+    {
+      "candidate_index": 5,
+      "candidate_center_world_m": [
+        0.3114986847005282,
+        -0.31645051799265767,
+        0.20363058393128983
+      ],
+      "hypothetical_rigid_translation_m": [
+        -0.011499656256238056,
+        0.01644841990916157,
+        -0.18363164794870487
+      ],
+      "min_translated_z_per_body_m": {
+        "gripper_base_1": -0.06577609675911882,
+        "gripper_finger_1_1": -0.01609551108871371,
+        "gripper_finger_2_1": -0.049307548812798946,
+        "gripper_finger_3_1": -0.010066972341383845,
+        "gripper_finger_4_1": -0.0432796194485123
+      },
+      "authored_mesh_vertices_inside_table_per_body": {
+        "gripper_base_1": 10007,
+        "gripper_finger_1_1": 748,
+        "gripper_finger_2_1": 1629,
+        "gripper_finger_3_1": 573,
+        "gripper_finger_4_1": 1625
+      },
+      "table_5mm_clearance_precheck": false,
+      "table_gate": "REJECT_AUTHORED_MESH_VERTEX_INSIDE_TABLE"
+    },
+    {
+      "candidate_index": 6,
+      "candidate_center_world_m": [
+        0.31364005242968945,
+        -0.31316860143883246,
+        0.20951646262373963
+      ],
+      "hypothetical_rigid_translation_m": [
+        -0.013641023985399292,
+        0.013166503355336368,
+        -0.18951752664115468
+      ],
+      "min_translated_z_per_body_m": {
+        "gripper_base_1": -0.07166197545156862,
+        "gripper_finger_1_1": -0.021981389781163513,
+        "gripper_finger_2_1": -0.05519342750524875,
+        "gripper_finger_3_1": -0.015952851033833648,
+        "gripper_finger_4_1": -0.049165498140962105
+      },
+      "authored_mesh_vertices_inside_table_per_body": {
+        "gripper_base_1": 10498,
+        "gripper_finger_1_1": 964,
+        "gripper_finger_2_1": 1629,
+        "gripper_finger_3_1": 756,
+        "gripper_finger_4_1": 1625
+      },
+      "table_5mm_clearance_precheck": false,
+      "table_gate": "REJECT_AUTHORED_MESH_VERTEX_INSIDE_TABLE"
+    },
+    {
+      "candidate_index": 7,
+      "candidate_center_world_m": [
+        0.3113769924861776,
+        -0.3175131740247178,
+        0.20851483957186523
+      ],
+      "hypothetical_rigid_translation_m": [
+        -0.011377964041887456,
+        0.0175110759412217,
+        -0.18851590358928028
+      ],
+      "min_translated_z_per_body_m": {
+        "gripper_base_1": -0.07066035239969422,
+        "gripper_finger_1_1": -0.020979766729289112,
+        "gripper_finger_2_1": -0.05419180445337435,
+        "gripper_finger_3_1": -0.014951227981959248,
+        "gripper_finger_4_1": -0.048163875089087704
+      },
+      "authored_mesh_vertices_inside_table_per_body": {
+        "gripper_base_1": 10364,
+        "gripper_finger_1_1": 909,
+        "gripper_finger_2_1": 1629,
+        "gripper_finger_3_1": 702,
+        "gripper_finger_4_1": 1625
+      },
+      "table_5mm_clearance_precheck": false,
+      "table_gate": "REJECT_AUTHORED_MESH_VERTEX_INSIDE_TABLE"
+    },
+    {
+      "candidate_index": 8,
+      "candidate_center_world_m": [
+        0.3148543056548446,
+        -0.3025344221557812,
+        0.16067549736111839
+      ],
+      "hypothetical_rigid_translation_m": [
+        -0.014855277210554463,
+        0.002532324072285097,
+        -0.14067656137853343
+      ],
+      "min_translated_z_per_body_m": {
+        "gripper_base_1": -0.022821010188947374,
+        "gripper_finger_1_1": 0.02685957548145773,
+        "gripper_finger_2_1": -0.006352462242627505,
+        "gripper_finger_3_1": 0.032888114228787596,
+        "gripper_finger_4_1": -0.00032453287834086075
+      },
+      "authored_mesh_vertices_inside_table_per_body": {
+        "gripper_base_1": 1628,
+        "gripper_finger_1_1": 0,
+        "gripper_finger_2_1": 457,
+        "gripper_finger_3_1": 0,
+        "gripper_finger_4_1": 16
+      },
+      "table_5mm_clearance_precheck": false,
+      "table_gate": "REJECT_AUTHORED_MESH_VERTEX_INSIDE_TABLE"
+    },
+    {
+      "candidate_index": 9,
+      "candidate_center_world_m": [
+        0.31259124571133284,
+        -0.30687899474166647,
+        0.15967387430924398
+      ],
+      "hypothetical_rigid_translation_m": [
+        -0.012592217267042682,
+        0.006876896658170373,
+        -0.13967493832665903
+      ],
+      "min_translated_z_per_body_m": {
+        "gripper_base_1": -0.021819387137072974,
+        "gripper_finger_1_1": 0.027861198533332132,
+        "gripper_finger_2_1": -0.005350839190753104,
+        "gripper_finger_3_1": 0.033889737280662,
+        "gripper_finger_4_1": 0.00067709017353354
+      },
+      "authored_mesh_vertices_inside_table_per_body": {
+        "gripper_base_1": 1371,
+        "gripper_finger_1_1": 0,
+        "gripper_finger_2_1": 353,
+        "gripper_finger_3_1": 0,
+        "gripper_finger_4_1": 0
+      },
+      "table_5mm_clearance_precheck": false,
+      "table_gate": "REJECT_AUTHORED_MESH_VERTEX_INSIDE_TABLE"
+    }
+  ],
+  "all_top10_pass_table_gate": false,
+  "npz_path": "/tmp/lexium_stage3c37_full_collision_triangles.npz",
+  "no_grasp_permission": true,
+  "disclaimer": "Only hypothetical rigid translations at fixed orientation are considered. A mesh vertex inside the table is direct evidence of interference in the authored collision geometry. No triangle-vs-cube, swept-path, robot-arm, IK, actual PhysX convex collider or self-collision clearance has been validated. The physical gripper never moves or descends in this audit."
+}

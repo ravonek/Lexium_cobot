@@ -1,0 +1,1 @@
+Use `collect_workspace.py` on the real Ubuntu workstation to capture the **latest** sources and reports for Codex. It does not run Isaac or command any robot. The archive includes only selected file types, skips hidden credentials and caches, logs omissions. Inspect before uploading/publishing.

@@ -1,0 +1,326 @@
+%% kbtufront.sty
+%% The KBTU starting pages for trentthesis.cls: title page, diploma project assignment
+%% (consultations, work schedule, signatures), project sheet, the three abstracts
+%% (Kazakh, English, Russian), CONTENT and the list of abbreviations.
+%%
+%% These pages copy the layout of the KBTU 6B07114 reference diploma and follow the
+%% attestation rules (section 9.1): A4, Times 14 pt, single spacing, margins
+%% left 30 mm, right 15 mm, top 20 mm, bottom 20 mm, arabic page numbers counted from
+%% the title page, with the number hidden on the title page only.
+%% Between \kbtubegin and \kbtuend these settings are in force; \kbtuend puts the
+%% template's own layout back for the chapters.
+%%
+%% You normally only edit main.tex (your details) and the files in frontmatter/.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{kbtufront}[2026/11/17 v1.0 KBTU starting pages]
+
+%% ---------------------------------------------------------------- fonts and languages
+% Tempora is a Times clone for pdfLaTeX with Cyrillic in T2A, which holds every Kazakh
+% letter (Ә Ғ Қ Ң Ө Ұ Ү Һ І). It makes itself the roman font, so the template's body
+% font is put back here and Tempora is switched on only on the starting pages.
+\let\kbtu@bodyrm\rmdefault
+\RequirePackage{tempora}
+\let\rmdefault\kbtu@bodyrm
+% Russian and Kazakh text is set in T2A. Kazakh uses the Russian language settings with
+% hyphenation switched off, because babel's Kazakh module is too new to rely on.
+\def\cyrillicencoding{T2A}
+\RequirePackage[russian,english]{babel}
+
+\RequirePackage{longtable}
+\RequirePackage{lastpage}
+\RequirePackage[normalem]{ulem}
+
+%% ---------------------------------------------------------------- your details
+%% Set these in main.tex. \title is used for the theme on the title page and the assignment.
+\newcommand\kbtuministry[1]{\gdef\kbtu@ministry{#1}}
+\newcommand\kbtuuniversity[1]{\gdef\kbtu@university{#1}}
+\newcommand\kbtuschool[1]{\gdef\kbtu@school{#1}}
+\newcommand\kbtuprogram[2]{\gdef\kbtu@programcode{#1}\gdef\kbtu@programname{#2}}
+\newcommand\kbtudean[1]{\gdef\kbtu@dean{#1}}
+\newcommand\kbtustudent[2]{\gdef\kbtu@student{#1}\gdef\kbtu@studentshort{#2}}
+\newcommand\kbtuteamlist[1]{\gdef\kbtu@teamlist{#1}}
+\newcommand\kbtusupervisor[2]{\gdef\kbtu@supervisor{#1}\gdef\kbtu@supervisortitle{#2}}
+\newcommand\kbtunormcontroller[2]{\gdef\kbtu@normcontroller{#1}\gdef\kbtu@normcontrollertitle{#2}}
+\newcommand\kbtucity[1]{\gdef\kbtu@city{#1}}
+\newcommand\kbtuyear[1]{\gdef\kbtu@year{#1}}
+\kbtuministry{MINISTRY OF SCIENCE AND HIGHER EDUCATION OF THE REPUBLIC OF KAZAKHSTAN}
+\kbtuuniversity{Kazakh-British Technical University}
+\kbtuschool{School of Information Technology and Engineering}
+\kbtuprogram{6B00000}{Programme name}
+\kbtudean{Dean's name}
+\kbtustudent{Student Full Name}{S. Name}
+\kbtuteamlist{Team members to be confirmed}
+\kbtusupervisor{Supervisor's name}{Title}
+\kbtunormcontroller{Monitor's name}{Title}
+\kbtucity{Almaty}
+\kbtuyear{\the\year}
+
+% Total number of pages of the document, for the project sheet.
+\newcommand\kbtutotalpages{\pageref*{LastPage}}
+
+%% ---------------------------------------------------------------- page set-up
+\newlength\kbtu@savedparindent
+\newlength\kbtu@savedtabcolsep
+\newlength\kbtu@savedarrayrulewidth
+
+% Start of the starting pages: KBTU margins, Times 14 pt on a 16.1 pt line (Word's
+% "single" spacing for 14 pt Times), 12.5 mm paragraph indent, page counting from 1.
+\newcommand\kbtubegin{%
+  \clearpage
+  \newgeometry{left=30mm,right=15mm,top=20mm,bottom=20mm,footskip=10mm}%
+  \let\kbtu@savednormalsize\normalsize
+  \let\kbtu@savedarraystretch\arraystretch
+  \setlength\kbtu@savedparindent{\parindent}%
+  \setlength\kbtu@savedtabcolsep{\tabcolsep}%
+  \setlength\kbtu@savedarrayrulewidth{\arrayrulewidth}%
+  \renewcommand*\rmdefault{Tempora-TLF}%
+  \renewcommand\normalsize{\@setfontsize\normalsize{14}{16.1}}%
+  \singlespacing
+  \normalfont\normalsize
+  \setlength\parindent{12.5mm}%
+  \setlength\parskip{0pt}%
+  \setlength\tabcolsep{1.5mm}%
+  \setlength\arrayrulewidth{0.5pt}%
+  \renewcommand\arraystretch{1}%
+  \frenchspacing% one space after a full stop, as in Word
+  \pagenumbering{arabic}}
+
+% End of the starting pages: the template's margins, font and spacing come back.
+% Page numbers carry on, so the Introduction keeps its place in the count.
+\newcommand\kbtuend{%
+  \clearpage
+  \restoregeometry
+  \let\rmdefault\kbtu@bodyrm
+  \let\normalsize\kbtu@savednormalsize
+  \let\arraystretch\kbtu@savedarraystretch
+  \setlength\parindent{\kbtu@savedparindent}%
+  \setlength\tabcolsep{\kbtu@savedtabcolsep}%
+  \setlength\arrayrulewidth{\kbtu@savedarrayrulewidth}%
+  \nonfrenchspacing
+  \normalfont\normalsize}
+
+%% ---------------------------------------------------------------- building blocks
+% A blank to sign or fill in by hand.
+\newcommand\kbtublank[1]{\rule[-2pt]{#1}{0.5pt}}
+% “___” __________ 2027
+\newcommand\kbtu@dateline{``\kbtublank{10mm}''\kbtublank{22mm} \kbtu@year}
+% Centred heading of a starting page: #1 is \bfseries or \mdseries.
+\newcommand\kbtu@heading[2]{%
+  \par{\centering\normalfont\normalsize#1#2\par}\vspace{14pt}}
+% Columns of a given total width (padding and rule included): N centred, E left.
+\newcolumntype{N}[1]{>{\centering\arraybackslash}p{\dimexpr#1-2\tabcolsep-\arrayrulewidth\relax}}
+\newcolumntype{E}[1]{>{\raggedright\arraybackslash}p{\dimexpr#1-2\tabcolsep-\arrayrulewidth\relax}}
+
+% Ministry, university, school and programme, at the top of pages 1 and 2.
+\newcommand\kbtu@header{%
+  \vspace*{\baselineskip}%
+  {\centering\bfseries
+   \kbtu@ministry\par
+   \vspace{\baselineskip}%
+   ``\kbtu@university'' JSC\par
+   \kbtu@school\par
+   Educational program \kbtu@programcode{} ``\kbtu@programname''\par}}
+
+% The dean's approval block on the right.
+\newcommand\kbtu@admitted{%
+  \par\vspace{2\baselineskip}%
+  \noindent\hfill
+  \begin{minipage}[t]{62.5mm}
+    \raggedright
+    \textbf{ADMITTED TO DEFENCE}\\
+    Dean of SITE,\\
+    \kbtublank{20mm} \kbtu@dean\\
+    \kbtu@dateline
+  \end{minipage}\par}
+
+%% ---------------------------------------------------------------- page 1: title page
+\newcommand\kbtutitlepage{%
+  \clearpage
+  \thispagestyle{empty}%
+  \pdfbookmark[0]{Title page}{kbtu-title}%
+  \kbtu@header
+  \kbtu@admitted
+  \vspace{\baselineskip}%
+  {\centering\bfseries EXPLANATORY NOTE\\ TO GRADUATION PROJECT (work)\par}%
+  \vspace{\baselineskip}%
+  {\centering\advance\leftskip 12.75mm\advance\rightskip 18mm
+   \textbf{Theme:} ``\@title''\par}%
+  \vspace{2\baselineskip}%
+  \noindent
+  \begin{tabular}{@{}p{86.5mm}@{\hspace{5mm}}p{71.5mm}@{}}
+    \textbf{Authors:} & \textbf{Supervisor:}\\
+    \begin{minipage}[t]{86mm}\raggedright\fontsize{10.4pt}{12pt}\selectfont
+    \kbtu@teamlist\end{minipage} & \kbtu@supervisortitle\\
+    & \kbtublank{30mm} \kbtu@supervisor\\
+    & \\
+    & \\
+    \kbtu@dateline~y. & \kbtu@dateline~y.\\[8pt]
+    \textbf{Educational program:} & \textbf{Norms Compliance Monitor:}\\
+    \textbf{\kbtu@programcode{} --} ``\kbtu@programname'' & \kbtu@normcontrollertitle\\
+    & \kbtublank{30mm} \kbtu@normcontroller\\
+    & \kbtu@dateline~y.
+  \end{tabular}\par
+  \vfill
+  {\centering\bfseries\kbtu@city, \kbtu@year\par}%
+  \clearpage}
+
+%% ---------------------------------------------------------------- pages 2-3: assignment
+% The body of the environment is the list of issues: one \item each.
+\newenvironment{kbtuassignment}{%
+  \clearpage
+  \pdfbookmark[0]{Diploma project assignment}{kbtu-assignment}%
+  \kbtu@header
+  \kbtu@admitted
+  \vspace{\baselineskip}%
+  {\centering\bfseries DIPLOMA PROJECT ASSIGNMENT\par}%
+  \vspace{\baselineskip}%
+  {\parindent\z@
+   Student: \kbtu@student\par
+   Project title: ``\expandafter\uline\expandafter{\@title''.}\par
+   Approved by the KBTU order: \textnumero\kbtublank{20mm}dated
+     ``\kbtublank{10mm}''\kbtublank{30mm}\par
+   Submission deadline: \kbtublank{45mm}\par
+   List of issues addressed in the diploma project or its brief content:\par}%
+  \vspace{\baselineskip}%
+  \begin{enumerate}[label=\arabic*., leftmargin=11.3mm, labelsep=1.5mm,
+                    itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]}
+  {\end{enumerate}}
+
+% Consultations: one \kbtuconsultation row per section.
+\newenvironment{kbtuconsultations}{%
+  \clearpage
+  {\centering Consultations regarding the project with indication of respective reasons:\par}%
+  \vspace{\baselineskip}%
+  \renewcommand\arraystretch{1.15}%
+  \noindent
+  \begin{tabular}{|E{54.5mm}|E{50mm}|E{33mm}|E{27mm}|}
+    \hline
+    \multicolumn{1}{|N{54.5mm}|}{Section} &
+    \multicolumn{1}{N{50mm}|}{Consultant\newline (academic degree, title)} &
+    \multicolumn{1}{N{33mm}|}{Timeline} &
+    \multicolumn{1}{N{27mm}|}{Signature}\\
+    \hline}
+  {\end{tabular}\par}
+% \kbtuconsultation{section}{consultant, line 1}{consultant, line 2}{from}{to}
+\newcommand\kbtuconsultation[5]{#1 & #2\newline #3 & #4 --\newline #5 & \\ \hline}
+
+% Work schedule: one \kbtuscheduleitem row per section.
+\newenvironment{kbtuschedule}{%
+  \par\vspace{\baselineskip}%
+  {\centering\bfseries DIPLOMA PROJECT WORK SCHEDULE\par}%
+  \renewcommand\arraystretch{1.15}%
+  \noindent
+  \begin{tabular}{|E{75mm}|E{38mm}|E{51.5mm}|}
+    \hline
+    \multicolumn{1}{|N{75mm}|}{Sections, issues addressed} &
+    \multicolumn{1}{N{38mm}|}{Submission deadline} &
+    \multicolumn{1}{N{51.5mm}|}{Notes}\\
+    \hline}
+  {\end{tabular}\par}
+% \kbtuscheduleitem[note]{section}{deadline}
+\newcommand\kbtuscheduleitem[3][]{#2 & #3 & #1\\ \hline}
+
+% Signatures of the dean, the supervisor and the author, then the date line.
+\newcommand\kbtu@siglabel{\makebox[55mm]{\fontsize{9pt}{10pt}\selectfont(signature)}}
+\newcommand\kbtusignatures{%
+  \par\vspace{\baselineskip}%
+  \noindent\hspace*{10mm}%
+  \begin{tabular}{@{}l@{\hspace{3mm}}l@{}}
+    Dean of SITE & \kbtublank{55mm} \kbtu@dean\\
+    & \kbtu@siglabel\\
+    Project Supervisor & \kbtublank{55mm} \kbtu@supervisor\\
+    & \kbtu@siglabel\\
+    Author & \kbtublank{55mm} \kbtu@studentshort\\
+    & \kbtu@siglabel
+  \end{tabular}\par
+  \vspace{\baselineskip}%
+  \noindent Date \guillemotleft\kbtublank{12mm}\guillemotright\kbtublank{42mm}\kbtu@year\par}
+
+%% ---------------------------------------------------------------- page 4: project sheet
+% One \kbtusheetrow per item.
+\newenvironment{kbtuprojectsheet}{%
+  \clearpage
+  \pdfbookmark[0]{Project sheet}{kbtu-projectsheet}%
+  {\centering\bfseries Project sheet\par}%
+  \vspace{\baselineskip}%
+  \renewcommand\arraystretch{1.3}%
+  \noindent
+  \begin{tabular}{|N{9.3mm}|N{26.5mm}|N{30mm}|N{42.4mm}|N{24.4mm}|N{29.4mm}|}
+    \hline
+    \textnumero & Format & Designation & Denomination & Quantity & Note\\
+    \hline}
+  {\end{tabular}\par}
+% \kbtusheetrow{no.}{format}{designation}{denomination}{quantity}{note}
+\newcommand\kbtusheetrow[6]{#1 & #2 & #3 & #4 & #5 & #6\\ \hline}
+
+%% ---------------------------------------------------------------- abstracts
+% \begin{kbtuabstract}[language]{HEADING} ... \end{kbtuabstract}, one per page.
+% language is english (default), russian or kazakh.
+\def\kbtu@kazakh{kazakh}
+\def\kbtu@russian{russian}
+\newenvironment{kbtuabstract}[2][english]{%
+  \clearpage
+  \def\kbtu@lang{#1}%
+  \ifx\kbtu@lang\kbtu@kazakh
+    \pdfbookmark[0]{Andatpa (Kazakh abstract)}{kbtu-abstract-kk}%
+    \begin{otherlanguage*}{russian}%
+    % Without hyphenation some justified lines are loose; that is expected, so it is not reported.
+    \hyphenpenalty\@M\exhyphenpenalty\@M\emergencystretch 3em\hbadness\@M\relax
+  \else
+    \ifx\kbtu@lang\kbtu@russian
+      \pdfbookmark[0]{Annotatsiya (Russian abstract)}{kbtu-abstract-ru}%
+    \else
+      \pdfbookmark[0]{Abstract}{kbtu-abstract-#1}%
+    \fi
+    \begin{otherlanguage*}{#1}%
+  \fi
+  \kbtu@heading\bfseries{#2}}
+  {\par\end{otherlanguage*}}
+
+%% ---------------------------------------------------------------- CONTENT
+% Built by LaTeX from the chapter headings (run twice to update it). As in the reference
+% diploma: plain heading, entries flush left, no bold, dot leaders on every level.
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+\renewcommand{\cftchapleader}{\normalfont\cftdotfill{\cftchapdotsep}}
+\renewcommand{\cftdotsep}{1.5}
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+\setlength{\cftbeforechapskip}{0pt}
+\setlength{\cftchapindent}{0pt}
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{0pt}
+\setlength{\cftchapnumwidth}{1.6em}
+\setlength{\cftsecnumwidth}{2.5em}
+\setlength{\cftsubsecnumwidth}{3.3em}
+\newcommand\kbtucontents{%
+  \clearpage
+  \pdfbookmark[0]{Content}{kbtu-content}%
+  \kbtu@heading\mdseries{CONTENT}%
+  \begingroup
+    \parindent\z@ \parskip\z@
+    \@starttoc{toc}%
+  \endgroup}
+
+%% ---------------------------------------------------------------- listed pages
+% A starting page that is listed in CONTENT, such as the list of abbreviations.
+\newcommand\kbtuchapter[1]{%
+  \clearpage
+  \phantomsection
+  \addcontentsline{toc}{chapter}{#1}%
+  \kbtu@heading\bfseries{#1}}
+
+% Abbreviations table, 12 pt, header repeated on every page: one \kbtuabbr per row.
+\newenvironment{kbtuabbreviations}{%
+  \par
+  \fontsize{12pt}{13.8pt}\selectfont
+  \renewcommand\arraystretch{1.1}%
+  \begin{longtable}{|E{82.25mm}|E{82.25mm}|}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Abbreviation}} & \multicolumn{1}{c|}{\textbf{Meaning}}\\
+    \hline
+    \endhead}
+  {\end{longtable}}
+% \kbtuabbr{abbreviation}{meaning}
+\newcommand\kbtuabbr[2]{#1 & #2\\ \hline}
+
+\endinput

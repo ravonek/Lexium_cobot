@@ -1,0 +1,149 @@
+{
+  "stage": "3C50",
+  "mode": "physx_full_scene_home_contact_positive_control",
+  "sim_only": true,
+  "home_only": true,
+  "pregrasp_motion_executed": false,
+  "finger_motion_executed": false,
+  "usd_modified": false,
+  "self_collision_policy_modified": false,
+  "physx_self_collisions_enabled": false,
+  "stage49_proxy_only": true,
+  "stage49_path_target_q_rad": [
+    0.5116462574036054,
+    1.6679322364615043,
+    2.3215496095643826,
+    1.4630436610150346,
+    1.4414003069368027,
+    0.26596198934162374
+  ],
+  "home_q_rad": [
+    0.0,
+    -0.7854,
+    1.5708,
+    -0.7854,
+    1.5708,
+    0.0
+  ],
+  "final_arm_q_rad": [
+    -0.0002729145635385066,
+    -0.7866011261940002,
+    1.5701602697372437,
+    -0.7861527800559998,
+    1.5717605352401733,
+    3.879025098285638e-05
+  ],
+  "warmup_steps": 150,
+  "contact_reporter_prims": 11,
+  "robot_contact_sensor_shape": [
+    1,
+    11,
+    3
+  ],
+  "cube_contact_sensor_shape": [
+    1,
+    1,
+    3
+  ],
+  "cube_settled_xyz_m": [
+    0.29999902844429016,
+    -0.3000020980834961,
+    0.019998935982584953
+  ],
+  "cube_table_contact_positive_control_n": 0.9810002446174622,
+  "max_robot_external_contact_n": 0.0,
+  "max_home_joint_tracking_error_rad": 0.0012797447204589973,
+  "max_applied_effort_nm": 61.42584991455078,
+  "max_home_joint_velocity_rad_s": 0.010421116836369038,
+  "final_gripper_base_pose_xyzw": [
+    -0.11758819967508316,
+    -0.46442851424217224,
+    0.11342835426330566,
+    -0.25163328647613525,
+    -0.018010422587394714,
+    0.1308523267507553,
+    0.9587668776512146
+  ],
+  "sample_summaries": [
+    {
+      "step": 1,
+      "robot_contact_max_n": 0.0,
+      "cube_contact_n": 0.0,
+      "cube_xyz_m": [
+        0.30000001192092896,
+        -0.30000001192092896,
+        0.11855234205722809
+      ],
+      "max_q_home_error_rad": 0.00012344760894777984,
+      "max_applied_effort_nm": 60.233497619628906
+    },
+    {
+      "step": 30,
+      "robot_contact_max_n": 0.0,
+      "cube_contact_n": 0.9809995293617249,
+      "cube_xyz_m": [
+        0.29999902844429016,
+        -0.3000020980834961,
+        0.019998935982584953
+      ],
+      "max_q_home_error_rad": 0.0011983843803405891,
+      "max_applied_effort_nm": 61.19254684448242
+    },
+    {
+      "step": 60,
+      "robot_contact_max_n": 0.0,
+      "cube_contact_n": 0.9810000061988831,
+      "cube_xyz_m": [
+        0.29999902844429016,
+        -0.3000020980834961,
+        0.019998935982584953
+      ],
+      "max_q_home_error_rad": 0.001201126194000257,
+      "max_applied_effort_nm": 61.19529724121094
+    },
+    {
+      "step": 90,
+      "robot_contact_max_n": 0.0,
+      "cube_contact_n": 0.9810003638267517,
+      "cube_xyz_m": [
+        0.29999902844429016,
+        -0.3000020980834961,
+        0.019998935982584953
+      ],
+      "max_q_home_error_rad": 0.001201126194000257,
+      "max_applied_effort_nm": 61.19529724121094
+    },
+    {
+      "step": 120,
+      "robot_contact_max_n": 0.0,
+      "cube_contact_n": 0.9810001254081726,
+      "cube_xyz_m": [
+        0.29999902844429016,
+        -0.3000020980834961,
+        0.019998935982584953
+      ],
+      "max_q_home_error_rad": 0.001201126194000257,
+      "max_applied_effort_nm": 61.19529724121094
+    },
+    {
+      "step": 150,
+      "robot_contact_max_n": 0.0,
+      "cube_contact_n": 0.9810002446174622,
+      "cube_xyz_m": [
+        0.29999902844429016,
+        -0.3000020980834961,
+        0.019998935982584953
+      ],
+      "max_q_home_error_rad": 0.001201126194000257,
+      "max_applied_effort_nm": 61.19529724121094
+    }
+  ],
+  "home_contact_positive_control_passed": true,
+  "pregrasp_motion_validated": false,
+  "self_collision_geometry_validated": false,
+  "gripper_cube_opening_validated": false,
+  "grasp_validated": false,
+  "robot_motion_permission": false,
+  "grasp_permission": false,
+  "disclaimer": "Full scene, real PhysX sensor positive control for cube on table, and HOME tracking only. No pregrasp movement. Self-collisions remain disabled; robot contact sensor cannot certify absence of self-collision. This stage alone does not authorize new movement or grasp."
+}

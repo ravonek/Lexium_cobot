@@ -1,0 +1,22 @@
+{
+  "stage": "Stage 6",
+  "source_type": "screenshot_transcription_not_raw_sim_report",
+  "simulated": true,
+  "scene_total_objects": 5,
+  "detected": 5,
+  "sorted": 5,
+  "remaining": 0,
+  "state": "COMPLETE",
+  "grasp_contact": "VALID",
+  "slip_state": "STABLE_GRASP",
+  "peak_force_overlay_n": 1.91,
+  "sim_per_finger_force_ceiling_n": 2.8,
+  "benchmark_categories_displaying_100_percent": [
+    "Stage 5C regression",
+    "Color classification",
+    "Size classification",
+    "Per-tomato sorting",
+    "Complete scenes"
+  ],
+  "limitations": "single supplied image/graph; denominator and independent scene count for each category unknown; not physical or field trial"
+}

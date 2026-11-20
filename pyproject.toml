@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lexium-agro"
+version = "0.1.0"
+description = "Offline-safe domain layer and Codex handoff for a Lexium Cobot agricultural mobile manipulator"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary/academic project - review before redistribution" }
+authors = [{name = "Lexium Agro Diploma Team"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.6"]
+
+[project.scripts]
+lexium-agro-dry-run = "lexium_agro.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 99

@@ -1,0 +1,26 @@
+DIPLOMA PROJECT & THESIS PROGRESS — PRESENTATION SCRIPT
+18 November 2026 | KBTU | Approx. 3 minutes
+
+Hello. Our diploma project is the development of a control system for an autonomous mobile manipulator for agricultural operations in hydroponic greenhouses. The main idea is to combine a mobile platform, a Schneider Electric Lexium Cobot, a four-finger adaptive gripper and RGB-D perception into a single robotic system.
+
+Previously, we designed the mechanical frame, assembled the omnidirectional mobile base and prepared the manipulator and gripper models. We imported the robot model into a physics-based simulator and began testing kinematics, collision geometry and grasp behavior. We also investigated camera-based object localization and calibration methods.
+
+Our latest work focuses on autonomous handling in simulation and physical integration. The real Lexium robot is now mounted on the mobile platform, and we have tested gripper hardware. In a Stage 6 simulation, the sorting scene finished with five tomatoes detected and five sorted. The benchmark chart reports 100 percent for its defined test cases. This is a result for the demonstrated test scene, not a general real-world success rate.
+
+We also recorded modeled contact forces for all four fingers. The chart shows the changing force values during sequential simulated grasps and a configured simulation ceiling of 2.8 newtons per finger. These force estimates still need experimental validation with the physical gripper.
+
+For software validation, we ran a five-part suite. All five scenarios passed: safe startup, handling one tomato, sorting three tomatoes, randomized reachable positions, and safe rejection and recovery. The single-tomato scenario reported a localization error of 1.97 millimeters and a placement error of 12.81 millimeters. A separate trajectory audit covered 10,717 samples and the automated unit tests passed 20 out of 20 checks.
+
+The next two slides are reserved for demonstrations of the Isaac Sim workflow and an Isaac Lab robot-learning experiment. For the Isaac Lab demonstration, we will report training-specific results only after the corresponding training logs are verified.
+
+For thesis writing, we have adapted the provided LaTeX template into an Overleaf-ready project. We have written the English Abstract and Chapter 1, Introduction, including the problem statement, research objectives, architecture, methodology, current progress and limitations. We have also added academic references and checked that the document compiles into a PDF.
+
+Our next steps are to complete the camera-to-robot calibration, validate grasp forces and repeatability on real fruit, and integrate manipulation with navigation. Thank you.
+
+PRESENTATION NOTES
+- Stage 6: 5/5 simulated tomato sorting — not 5 independent field trials.
+- Phase 10: 5/5 validation scenarios PASS; the 3/3 target count is a separate experiment.
+- Torque values from the motion audit are model-based estimates, not real motor measurements.
+- Real-world autonomous harvesting and RL-policy training metrics have not yet been established by the supplied artifacts.
+- Video slide 10: Isaac Sim. Video slide 11: Isaac Lab/RL (user inserts footage in PowerPoint).
+- Overleaf: upload ZIP; show main.tex, frontmatter/abstract.tex, chapters/01_introduction.tex, and the compiled PDF.
