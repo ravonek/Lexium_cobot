@@ -40,6 +40,26 @@
 
 **RL adapter contract** (future): normalized observations/actions and safety wrapper; no checkpoint => no learned-policy demo, fallback scripted baseline explicitly labelled.
 
+## Implemented offline contracts (20 Nov 2026)
+
+- `config.py` accepts only the offline mode, `simulator.backend: none`, and a
+  fail-closed hardware section. Configuration cannot opt into physical motion.
+- `adapters/hardware.py` is deliberately a non-driver: connect, arm, and mobile
+  base commands all raise `HardwareAccessDenied`.
+- `domain/state_machine.py` validates timestamped transitions and latches ESTOP.
+- `perception/rgbd.py` rejects stale/out-of-range depth and performs only the
+  documented pinhole deprojection in metres.
+- `calibration/transforms.py` makes `T_parent_child` and quaternion `[x,y,z,w]`
+  explicit and tests inverse/composition consistency. It contains no guessed
+  Lexium hand-eye calibration.
+- `domain/metrics.py` preserves evidence source plus every rate's numerator and
+  denominator; `reproducibility.py` derives deterministic namespaced seed streams.
+- `protocols.py` defines simulation and read-only RGB-D boundaries without
+  importing Isaac, ROS, or a vendor controller.
+
+These contracts are not simulator integration and are not evidence that any
+camera, planner, gripper, ROS graph, or physical actuator has been run.
+
 ## Metrics schema
 
 Store `run_id`, `stage`, `source_type` (`terminal_transcription`, `raw_sim_report`, `real_sensor`, etc.), code git SHA, asset revision SHA, simulator version, seed, targets, detected, handled, placed, retries, failures, type and units of pose/force/torque. Different torque models need **distinct** keys.

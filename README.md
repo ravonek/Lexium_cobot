@@ -7,7 +7,17 @@ This project researches the control architecture for an autonomous mobile robot 
 ## Start here
 
 1. **For Codex:** read [`CODEX_IMPLEMENTATION_PROMPT.md`](CODEX_IMPLEMENTATION_PROMPT.md), then [`PROJECT_SPEC.md`](PROJECT_SPEC.md), [`docs/STATUS_AND_PROVENANCE.md`](docs/STATUS_AND_PROVENANCE.md), and [`docs/SAFETY.md`](docs/SAFETY.md).
-2. Run the **offline scaffold only** (`python -m pip install -e '.[dev]' && python -m pytest -q`). It has **no hardware adapter**.
+2. Run the **offline scaffold only**. Its hardware backend always raises and cannot connect:
+
+   ```bash
+   python3 -m venv .venv
+   .venv/bin/python -m pip install -e '.[dev]'
+   .venv/bin/python scripts/verify_handoff.py
+   .venv/bin/python -m ruff check src tests scripts
+   .venv/bin/python -m mypy src/lexium_agro
+   .venv/bin/python -m pytest -q
+   .venv/bin/lexium-agro-dry-run
+   ```
 3. Inspect `legacy/2026-11-10-starter/`, `legacy/original_isaaclab_prototype/`, `legacy/extra_sources/`, and `assets/robot/references/` before migration; these are historical, not certified/current.
 4. On the actual Ubuntu workstation, run [`scripts/collect_workspace.py`](scripts/collect_workspace.py) to collect current source files and raw JSON reports, then merge them without overwriting proven local work.
 5. The two embedded presentation clips and the earlier raw video records are under `media/videos/`; the formatted thesis is in `thesis/`.
@@ -16,7 +26,7 @@ This project researches the control architecture for an autonomous mobile robot 
 
 | Directory | Contents |
 |---|---|
-| `src/lexium_agro/` | Small dependency-light, **offline-only** skeleton with actual runnable tests |
+| `src/lexium_agro/` | Dependency-light, **offline-only** domain, RGB-D/TF contracts, metrics, config validation and permanently disabled hardware backend |
 | `tests/` | Unit tests for pure sorting/safety logic (not reproduction of the recorded 20 tests) |
 | `ros2/`, `isaac_sim/`, `isaac_lab/` | Detailed integration guidance/placeholders, not live drivers |
 | `configs/` | Reference simulation/safety configuration; hardware explicitly disabled |
@@ -45,6 +55,7 @@ This project researches the control architecture for an autonomous mobile robot 
 - [Migration and current workspace capture](docs/MIGRATION.md)
 - [Architecture and interfaces](docs/ARCHITECTURE.md)
 - [Sources and inventory](docs/FILES_AND_SOURCES.md)
+- [Phase 0 hash inventory](docs/INVENTORY.md)
 
 ## Project participants
 

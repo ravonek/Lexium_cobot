@@ -1,12 +1,36 @@
 # Implementation log (for Codex)
 
-No agent migration to the latest Ubuntu workspace has been performed by this handoff package. Add a dated entry after each real command/test. Distinguish **historical claims** vs **actually executed commands**.
+No migration to the latest Ubuntu workspace has been performed. Entries below
+distinguish **historical claims** from commands actually executed on the macOS
+handoff copy.
+
+## 20 November 2026 — Phase 0 and offline contracts
+
+- Verified handoff ZIP SHA-256
+  `438c009d22c69d0269bed45adbd8de1f38642bc6ae6d25c2da43f9da2edb4a58`.
+- Compared 214/214 extracted files with `SOURCE_MANIFEST.json`: zero missing or
+  changed files before edits. All four nested ZIPs passed `ZipFile.testzip()`.
+- Text-only high-risk credential-pattern scan found no candidate assignments;
+  public publication is still not cleared.
+- Created local Git repository and immutable import commit `c74cca5`; no remote
+  repository was created and nothing was pushed.
+- Initial plain `python3 -m pytest -q` could not run because the host interpreter
+  had no pytest. Created `.venv` and ran
+  `.venv/bin/python -m pip install -e '.[dev]'` successfully.
+- Baseline handoff suite: `.venv/bin/python -m pytest -q` → `7 passed`.
+- Baseline lint: `.venv/bin/python -m ruff check src tests scripts` → four
+  issues (three import-order, one non-executable shebang); corrected in scaffold.
+- Implemented offline-only configuration, state/metrics, RGB-D deprojection,
+  transform, deterministic seed, structured log, simulation protocol, and
+  disabled hardware contracts. No Isaac, ROS, camera, or robot process ran.
+- Current final offline commands and outputs are recorded by the latest Git
+  revision and must be rerun after every change.
 
 ## Checklist
 
-- [ ] New repo git initialized only when requested
-- [ ] Source manifest and archive checksums reviewed
-- [ ] Offline scaffold tests run
+- [x] New local repo git initialized under the repository implementation request
+- [x] Source manifest and archive checksums reviewed
+- [x] Offline scaffold tests run (separate from historical 20-test claim)
 - [ ] Original Ubuntu workspace imported
 - [ ] Model/config revisions reconciled
 - [ ] Stage 6 code & raw report found
@@ -14,4 +38,4 @@ No agent migration to the latest Ubuntu workspace has been performed by this han
 - [ ] Isaac Sim physical checks rerun
 - [ ] RL training artifacts audited
 - [ ] ROS 2 simulation bridge run
-- [ ] Hardware remains disabled
+- [x] Hardware remains disabled
