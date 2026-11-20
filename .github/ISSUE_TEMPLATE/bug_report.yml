@@ -1,0 +1,55 @@
+name: Bug report
+description: Report a reproducible offline or simulation software defect
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, controller endpoints, or instructions that command physical hardware.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Git revision
+      placeholder: Full commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest safe, offline reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Actual output
+      render: shell
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Evidence source
+      options:
+        - Synthetic offline test
+        - Raw simulation report
+        - Terminal transcription
+        - Real sensor data (no motion command)
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: This report does not require or authorize physical robot motion.
+          required: true

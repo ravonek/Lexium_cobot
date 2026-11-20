@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use Lexium Agro in academic work, please cite this repository."
+title: "Lexium Agro: Control System for an Autonomous Mobile Manipulator in Hydroponic Greenhouses"
+type: software
+authors:
+  - family-names: Sestrevatovskiy
+    given-names: Ratmir Aleksandrovich
+  - family-names: Jumashev
+    given-names: Tair Salavatovich
+  - family-names: Kaldybekov
+    given-names: Adilkhan Yerbolatuly
+  - family-names: Maytan
+    given-names: Yerassyl Melsuly
+repository-code: "https://github.com/ravonek/Lexium_cobot"
+url: "https://github.com/ravonek/Lexium_cobot"
+version: 0.1.0
+date-released: 2026-11-20
+keywords:
+  - agricultural robotics
+  - mobile manipulation
+  - hydroponic greenhouse
+  - RGB-D perception
+  - Isaac Sim
+  - ROS 2
+license: LicenseRef-Proprietary
