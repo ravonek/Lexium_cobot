@@ -21,7 +21,7 @@ class TomatoObservation:
     confidence: float
     source: str = "synthetic_test"
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         if not self.object_id.strip():
             raise ValueError("object_id must be a non-empty string")
         if not 0.0 <= self.confidence <= 1.0:

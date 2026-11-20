@@ -14,7 +14,7 @@ class SafetyGate:
         # A programmatic gate is insufficient for real hardware: this starter ALWAYS rejects.
         return False
 
-    def report(self) -> dict:
+    def report(self) -> dict[str, object]:
         return {
             "hardware_enabled": self.hardware_enabled,
             "motion_authorized": self.motion_authorized,
