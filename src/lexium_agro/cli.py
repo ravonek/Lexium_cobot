@@ -1,8 +1,9 @@
 """Synthetic offline example, deliberately *not* Isaac Sim / Isaac Lab or hardware."""
 import json
+
 from .domain.models import TargetColor, TomatoObservation
-from .domain.sorting import decide_batch
 from .domain.safety import SafetyGate
+from .domain.sorting import decide_batch
 
 
 def main():

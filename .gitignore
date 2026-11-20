@@ -27,6 +27,12 @@ Kit/
 *.npy
 *.npz
 
+# Preserve supplied evidence/history even when it uses array formats.
+!evidence/**/*.npy
+!evidence/**/*.npz
+!legacy/**/*.npy
+!legacy/**/*.npz
+
 # Copy of local workspace (should be reviewed, not committed indiscriminately)
 imports/current_workspace_snapshot/
 current_workspace.zip

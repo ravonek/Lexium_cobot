@@ -1,6 +1,7 @@
+import pytest
+
 from lexium_agro.domain.models import Bin, TargetColor, TomatoObservation
 from lexium_agro.domain.sorting import choose_bin, decide_batch
-import pytest
 
 
 def test_red_green_route_to_distinct_bins():

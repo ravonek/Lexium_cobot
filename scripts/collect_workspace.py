@@ -11,7 +11,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-from zipfile import ZipFile, ZIP_DEFLATED
+from zipfile import ZIP_DEFLATED, ZipFile
 
 INCLUDE_EXT={'.py','.json','.yaml','.yml','.toml','.md','.txt','.csv','.sh','.urdf','.xrdf','.usd','.usda','.usdc','.stl','.obj','.dae','.mtl','.png','.jpg','.jpeg','.npz','.npy','.xml','.ini','.cfg','.log'}
 SKIP_DIR={'.git','.venv','venv','__pycache__','.cache','.pytest_cache','.mypy_cache','.ruff_cache','.idea','.vscode','node_modules','wandb','checkpoints','model_checkpoints'}
