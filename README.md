@@ -1,109 +1,253 @@
 <div align="center">
 
-# Lexium Agro
+# 🍅 LEXIUM AGRO
 
-### Autonomous Mobile Manipulator for Hydroponic Greenhouses
+### Autonomous Mobile Manipulation for Hydroponic Greenhouses
 
-**RGB-D perception · collision-aware manipulation · adaptive four-finger grasping · simulation-first validation**
+**See · understand · reach · grasp · sort**
+
+<br />
+
+<a href="media/videos/Isaac_Sim_2x.mp4">
+  <img src="media/previews/isaac_sim_motion.gif" alt="Lexium Agro motion in Isaac Sim" width="900" />
+</a>
+
+<br />
+
+<sub>Recorded project footage · click the animation to open the full Isaac Sim video</sub>
+
+<br /><br />
 
 [![Offline validation](https://github.com/ravonek/Lexium_cobot/actions/workflows/offline.yml/badge.svg)](https://github.com/ravonek/Lexium_cobot/actions/workflows/offline.yml)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Isaac Sim](https://img.shields.io/badge/Isaac%20Sim-integration%20pending-76B900?logo=nvidia&logoColor=white)](isaac_sim/README.md)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![NVIDIA Isaac](https://img.shields.io/badge/NVIDIA-Isaac%20Sim%20%2F%20Lab-76B900?logo=nvidia&logoColor=white)](isaac_sim/README.md)
 [![ROS 2](https://img.shields.io/badge/ROS%202-Jazzy%20planned-22314E?logo=ros&logoColor=white)](ros2/README.md)
-[![Hardware](https://img.shields.io/badge/real%20hardware-disabled-critical)](docs/SAFETY.md)
-[![Status](https://img.shields.io/badge/status-research%20prototype-orange)](docs/STATUS_AND_PROVENANCE.md)
+[![Hardware](https://img.shields.io/badge/live%20hardware-disabled-DC3545)](docs/SAFETY.md)
+[![Status](https://img.shields.io/badge/status-research%20prototype-F59E0B)](docs/STATUS_AND_PROVENANCE.md)
 
-[Project specification](PROJECT_SPEC.md) ·
-[Architecture](docs/ARCHITECTURE.md) ·
-[Validation report](docs/VALIDATION_REPORT.md) ·
-[Safety](docs/SAFETY.md) ·
-[Thesis](thesis/README.md)
+[**Demos**](#-demos) ·
+[**Platform**](#-physical-platform) ·
+[**Results**](#-recorded-evidence) ·
+[**Architecture**](#-system-architecture) ·
+[**Quick start**](#-quick-start) ·
+[**Roadmap**](#-roadmap)
 
 </div>
 
 ---
 
-## Overview
+## The project in one minute
 
-Lexium Agro is a KBTU diploma research project exploring a control system for an
-autonomous mobile manipulator in hydroponic greenhouses. The target platform
-combines a six-axis Schneider Electric Lexium Cobot, an eight-wheel omnidirectional
-base, an RGB-D camera, and a four-finger adaptive gripper.
+Lexium Agro is a KBTU diploma research project for selective harvesting and
+produce sorting in hydroponic greenhouses. The platform combines a **6-axis
+Schneider Electric Lexium Cobot**, an **8-wheel omnidirectional mobile base**,
+an **RGB-D perception pipeline**, and a **four-finger adaptive gripper**.
 
-The intended pipeline is:
+The long-term goal is an evidence-driven autonomous cycle:
 
 ```text
-RGB-D acquisition → fruit detection → metric 3D localization → constrained planning
-        → gentle grasp → lift and transfer → classification and sorting → metrics
+observe → detect → localize in 3D → plan → approach → grasp → transfer → sort → log
 ```
 
-This repository is deliberately evidence-driven. Historical screenshots, terminal
-transcriptions, source archives, and newly executed offline tests are kept separate.
-A simulation demo is not presented as a physical-robot result, and scripted motion
-is not presented as reinforcement learning.
+<table>
+  <tr>
+    <td align="center"><strong>6 DOF</strong><br /><sub>Lexium arm</sub></td>
+    <td align="center"><strong>8 wheels</strong><br /><sub>omnidirectional base</sub></td>
+    <td align="center"><strong>4 fingers</strong><br /><sub>adaptive gripper</sub></td>
+    <td align="center"><strong>30 tests</strong><br /><sub>offline suite</sub></td>
+    <td align="center"><strong>5 / 5</strong><br /><sub>one recorded Stage 6 scene</sub></td>
+  </tr>
+</table>
+
+> [!IMPORTANT]
+> The repository separates verified offline checks, historical simulation evidence,
+> and physical prototype media. A video is not treated as proof of autonomous field
+> operation, and an Isaac Lab recording is not treated as proof of a trained policy.
+
+## 🎬 Demos
+
+The previews below are generated directly from the supplied project recordings.
+Click any preview to open the original video.
+
+<table>
+  <tr>
+    <th width="50%">Isaac Sim — scripted manipulation scene</th>
+    <th width="50%">Isaac Lab — application recording</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="media/videos/Isaac_Sim_2x.mp4">
+        <img src="media/previews/isaac_sim_motion.gif" alt="Isaac Sim demonstration" width="100%" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="media/videos/Isaac_Lab_2x.mp4">
+        <img src="media/previews/isaac_lab_motion.gif" alt="Isaac Lab demonstration" width="100%" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><a href="media/videos/Isaac_Sim_original_2026-11-18.mp4">▶ Original-speed video</a></td>
+    <td align="center"><a href="media/videos/Isaac_Lab_original_2026-11-18.mp4">▶ Original-speed video</a></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th width="38%">Physical prototype recording</th>
+    <th width="62%">Stage 6 recorded final scene</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="media/videos/real_robot_phone_video.mp4">
+        <img src="media/previews/real_robot_motion.gif" alt="Physical Lexium prototype demonstration" height="430" />
+      </a>
+    </td>
+    <td align="center">
+      <img src="evidence/screenshots/stage6_final_sorted.png" alt="Stage 6 autonomous multi-tomato sorting final scene" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><a href="media/videos/real_robot_phone_video.mp4">▶ Open phone recording</a><br /><sub>Prototype bench demo; not autonomous harvesting evidence</sub></td>
+    <td align="center"><sub>Supplied simulation screenshot: 5 detected, 5 sorted, 0 remaining</sub></td>
+  </tr>
+</table>
+
+More supplied recordings are available in [`media/videos`](media/videos/README.md).
+
+## 🤖 Physical platform
 
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="media/photos/upright_robot_mobile_base.jpeg" alt="Lexium Cobot mounted upright on the mobile platform" width="100%" />
-      <br /><sub><b>Physical prototype:</b> upright Lexium Cobot on the mobile platform</sub>
+      <img src="media/photos/upright_robot_mobile_base.jpeg" alt="Lexium Cobot mounted upright on the eight-wheel base" width="100%" />
+      <br /><sub><b>Mobile manipulator prototype</b><br />Upright arm on an aluminium-profile base</sub>
     </td>
     <td align="center" width="50%">
-      <img src="evidence/screenshots/stage6_final_sorted.png" alt="Stage 6 simulated sorting scene" width="100%" />
-      <br /><sub><b>Simulation evidence:</b> one recorded Stage 6 sorting scene</sub>
+      <img src="media/photos/real_lexium_gripper.jpeg" alt="Four-finger adaptive gripper installed on the Lexium Cobot" width="100%" />
+      <br /><sub><b>Four-finger end effector</b><br />Physical gripper integration on the wrist</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="media/photos/robot_mount_view.jpeg" alt="Lexium Cobot mounting view on the mobile platform" width="100%" />
+      <br /><sub><b>Mechanical integration</b><br />Arm mounting, frame, cabling, and omni wheels</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="media/photos/sim_display_workstation.jpeg" alt="Lexium simulation development workstation" width="100%" />
+      <br /><sub><b>Simulation workstation</b><br />Development and recorded simulator environment</sub>
     </td>
   </tr>
 </table>
 
-## Current status
-
-| Area | Evidence available | Status |
+| Subsystem | Current evidence | Next validation gate |
 |---|---|---|
-| Repository and offline domain layer | Hash inventory, CI, 30 offline tests, lint and strict typing | ✅ Reproducible |
-| Physical platform | Assembly photographs and gripper prototype media | 🟡 Assembled prototype |
-| Stage 6 sorting | One supplied simulated scene showing 5 targets / 5 sorted | 🟡 Historical evidence; raw report missing |
-| Phase 10 validation | Supplied terminal transcription of five passing scenarios | 🟡 Not yet rerun from source |
-| RGB-D perception | Earlier HSV/cube work; TinyUNet mentioned in historical log | 🟠 Current model and calibration missing |
-| Isaac Sim / Isaac Lab | Historical source and video artifacts | 🟠 Latest Ubuntu workspace required |
-| Reinforcement learning | No verified checkpoint, curves, or evaluation bundle | ⚪ Not evidenced |
-| ROS 2 and mobile integration | Architecture and adapter plan | ⚪ Planned |
-| Autonomous physical harvesting | No safety-approved end-to-end trial | ⛔ Not authorized |
+| Lexium arm + mobile base | Physically assembled and photographed | Controller, limits, stability, and E-stop review |
+| Four-finger gripper | CAD, installed prototype, bench media | Calibrated physical force and repeatability study |
+| RGB-D perception | Earlier HSV/cube experiments and historical TinyUNet mention | Camera intrinsics, aligned depth, fruit dataset |
+| Eye-in-hand calibration | Workflow defined | Lexium-specific transform and held-out residuals |
+| Mobile navigation | Platform and architecture exist | Drivers, odometry, localization, and safe stop |
 
-See [status and provenance](docs/STATUS_AND_PROVENANCE.md) for the precise evidence
-boundary and [validation report](docs/VALIDATION_REPORT.md) for commands actually run.
+## 📊 Recorded evidence
 
-## System architecture
+### Stage 6 — one supplied simulation scene
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="evidence/screenshots/stage6_benchmark.png" alt="Stage 6 quantitative benchmark chart" width="100%" />
+    </td>
+    <td align="center" width="50%">
+      <img src="evidence/screenshots/stage6_contact_forces.png" alt="Stage 6 per-finger contact forces" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Displayed benchmark categories and acceptance targets</sub></td>
+    <td align="center"><sub>Simulated per-finger force traces and 2.80 N simulation ceiling</sub></td>
+  </tr>
+</table>
+
+| Recorded overlay | Value | Evidence boundary |
+|---|---:|---|
+| Objects detected / sorted | **5 / 5** | One supplied simulation scene |
+| Remaining objects | **0** | Screenshot transcription |
+| Peak force shown | **1.91 N** | Simulated contact overlay |
+| Contact / slip state | **VALID / STABLE_GRASP** | Simulated state display |
+
+### Phase 10 — historical terminal transcription
+
+<table>
+  <tr>
+    <td align="center"><strong>5 / 5</strong><br /><sub>reported validation scenarios</sub></td>
+    <td align="center"><strong>10,717</strong><br /><sub>reported trajectory samples</sub></td>
+    <td align="center"><strong>0.593 rad/s</strong><br /><sub>reported maximum joint velocity</sub></td>
+    <td align="center"><strong>29.98°</strong><br /><sub>reported minimum joint margin</sub></td>
+  </tr>
+</table>
+
+The Phase 10 source scripts and original raw JSON were not included in the handoff,
+so those numbers remain **historical terminal-reported values**, not a fresh rerun.
+See [status and provenance](docs/STATUS_AND_PROVENANCE.md) and the
+[validation report](docs/VALIDATION_REPORT.md) for the exact distinctions.
+
+## 🧠 System architecture
 
 ```mermaid
 flowchart LR
-    RGBD[RGB-D camera] --> PER[Perception]
-    PER --> TF[Calibration and TF]
-    TF --> PLAN[Constrained planner]
-    PLAN --> GRIP[Gripper supervisor]
-    GRIP --> SORT[Sorting state machine]
-    SAFE[Safety monitor] --> PLAN
-    SAFE --> GRIP
-    SAFE --> SORT
-    SIM[Isaac Sim adapter] <--> PLAN
-    SIM <--> GRIP
-    ROS[ROS 2 simulation adapter] <--> SORT
-    RL[Isaac Lab experiment] -. optional .-> SIM
-    HW[Physical hardware backend]:::disabled
-    SORT -. blocked .-> HW
+    CAM[RGB-D camera] -->|RGB + aligned depth| PER[Perception]
+    PER -->|class, mask, pose, confidence| TF[Calibration + TF]
+    TF -->|target in arm base| PLAN[Constrained planning]
+    PLAN -->|approach + transfer path| GRIP[Gripper supervisor]
+    GRIP -->|contact + slip state| FSM[Sorting state machine]
+    FSM -->|red / green / reject| BIN[Destination bin]
 
-    classDef disabled fill:#3b0b0b,stroke:#ff5a5f,color:#fff;
+    SAFE[Safety monitor] -. gates .-> TF
+    SAFE -. gates .-> PLAN
+    SAFE -. gates .-> GRIP
+    SAFE -. gates .-> FSM
+
+    SIM[Isaac Sim / PhysX] <--> PLAN
+    SIM <--> GRIP
+    LAB[Isaac Lab experiment] -. optional .-> SIM
+    ROS[ROS 2 simulation adapters] <--> FSM
+    HW[Physical backend: disabled]:::blocked
+    FSM -. no default route .-> HW
+
+    classDef blocked fill:#4a1111,stroke:#ef4444,color:#ffffff;
 ```
 
-Implemented today is the dependency-light offline layer: fail-closed configuration,
-sorting decisions, state transitions, RGB-D pinhole projection, rigid transforms,
-metrics, deterministic seeds, structured logging, and a permanently disabled
-hardware backend. Isaac/ROS adapters remain integration boundaries until the current
-Ubuntu source and installed API versions are inspected.
+```mermaid
+stateDiagram-v2
+    [*] --> SAFE_START
+    SAFE_START --> READY
+    READY --> ACQUIRE
+    ACQUIRE --> LOCALIZE
+    LOCALIZE --> PLAN
+    PLAN --> APPROACH
+    APPROACH --> GRASP
+    GRASP --> LIFT
+    LIFT --> TRANSPORT
+    TRANSPORT --> PLACE
+    PLACE --> VERIFY
+    VERIFY --> COMPLETE
+    ACQUIRE --> REJECT
+    LOCALIZE --> REJECT
+    PLAN --> REJECT
+    REJECT --> RECOVER
+    RECOVER --> READY
+    COMPLETE --> READY
+    SAFE_START --> FAULT
+    state ESTOP <<choice>>
+```
 
-## Quick start
+The implemented dependency-light layer contains fail-closed configuration, sorting
+decisions, state transitions, RGB-D pinhole geometry, rigid transforms, metrics,
+deterministic seeds, structured logging, and a permanently disabled hardware backend.
 
-Requirements: Python 3.10 or newer. The commands below run offline only and do not
-import Isaac, ROS, or any physical controller driver.
+## 🚀 Quick start
+
+The following workflow is offline-only. It does not import Isaac, ROS, a camera
+driver, or a physical robot controller.
 
 ```bash
 git clone https://github.com/ravonek/Lexium_cobot.git
@@ -119,56 +263,55 @@ python3 -m venv .venv
 .venv/bin/lexium-agro-dry-run
 ```
 
-Expected offline test result at the current revision:
+Expected test result at the current revision:
 
 ```text
 30 passed
 ```
 
-These are new scaffold tests, not the missing historical suite described as 20/20
-in the Phase 10 terminal transcription.
+> These are the new offline repository tests, not the missing historical suite
+> described as 20/20 in the Phase 10 transcription.
 
-## Repository map
+## 🗺️ Roadmap
+
+| Milestone | State |
+|---|---|
+| Freeze and hash the supplied handoff | ✅ Complete |
+| Offline package, safety gates, tests, typing, and CI | ✅ Complete |
+| Import current Ubuntu Stage 6 / Phase 10 workspace | ⏳ Awaiting snapshot |
+| Validate latest USD/URDF, meshes, frames, and mounting | ⏳ Pending |
+| Reproduce deterministic Isaac Sim baselines | ⏳ Pending |
+| Validate RGB-D and eye-in-hand calibration | ⏳ Pending |
+| Multi-seed manipulation and sorting benchmark | ⏳ Pending |
+| Audit or train a reproducible learned policy | ⏳ Conditional |
+| Read-only ROS 2 simulation integration | ⏳ Planned |
+| Safety-reviewed physical pilot | 🔒 Separate authorization required |
+
+<details>
+<summary><strong>📁 Repository map</strong></summary>
 
 | Path | Purpose |
 |---|---|
-| [`src/lexium_agro`](src/lexium_agro) | Offline-safe domain layer and typed integration contracts |
-| [`tests`](tests) | Dependency-light tests runnable without a GPU |
-| [`configs`](configs) | Fail-closed default configuration; hardware disabled |
-| [`assets/robot`](assets/robot) | Older robot references pending revision validation |
-| [`isaac_sim`](isaac_sim) | Simulator integration plan and compatibility boundary |
+| [`src/lexium_agro`](src/lexium_agro) | Offline-safe domain layer and typed contracts |
+| [`tests`](tests) | Tests runnable without GPU, Isaac, or ROS |
+| [`configs`](configs) | Fail-closed defaults; live hardware disabled |
+| [`assets/robot`](assets/robot) | Historical robot references awaiting revision validation |
+| [`isaac_sim`](isaac_sim) | Simulator integration boundary |
 | [`isaac_lab`](isaac_lab) | Experimental learning path; no verified policy claim |
 | [`ros2`](ros2) | Planned ROS 2 Jazzy simulation adapters |
-| [`legacy`](legacy) | Preserved historical source, reports, and original archives |
-| [`evidence`](evidence) | Screenshots and explicitly labelled transcriptions |
-| [`media`](media) | Project photographs, videos, presentation, and documents |
+| [`legacy`](legacy) | Preserved historical sources, reports, and archives |
+| [`evidence`](evidence) | Screenshots and labelled transcriptions |
+| [`media`](media) | Photographs, videos, presentations, and documents |
 | [`thesis`](thesis) | KBTU thesis draft and figures |
 | [`docs`](docs) | Architecture, migration, safety, provenance, and validation |
 
-## Evidence and reproducibility
+</details>
 
-The handoff inventory contains 214 declared source files plus its manifest. Run:
-
-```bash
-.venv/bin/python scripts/verify_handoff.py
-```
-
-The verifier checks every declared byte size and SHA-256 digest and validates all
-four nested ZIP archives. Integrity does not prove an experiment succeeded; it only
-proves the preserved artifact matches the supplied handoff.
-
-Key reporting rules:
-
-- Stage 6 `5/5` refers to one simulated five-object scene.
-- Phase 10 `5/5` refers to five validation scenarios; one scenario handled three objects.
-- Simulation force and torque values are not certified physical limits.
-- No checkpoint means no learned-policy claim.
-- Every percentage must retain its numerator, denominator, scenario, and seed.
-
-## Recovering the current Ubuntu workspace
+<details>
+<summary><strong>📦 Recover the current Ubuntu workspace</strong></summary>
 
 The latest Stage 6/Phase 10 sources and raw reports were not present in the handoff.
-On the original Ubuntu workstation, from this repository, run:
+On the original Ubuntu workstation, run from this repository:
 
 ```bash
 python3 scripts/collect_workspace.py \
@@ -176,59 +319,49 @@ python3 scripts/collect_workspace.py \
   --output "$HOME/Downloads/LEXIUM_CURRENT_WORKSPACE_CODEX.zip"
 ```
 
-Review `COLLECTION_MANIFEST.json` before sharing. Import must preserve the current
-USD/URDF/meshes, coordinate conventions, raw reports, and existing proven scripts;
-older reference geometry must never silently replace current assets.
+Review `COLLECTION_MANIFEST.json` before sharing. Current robot geometry must never
+be silently replaced by older reference assets.
 
-## Safety
+</details>
+
+## 🛡️ Safety boundary
 
 > [!CAUTION]
-> This repository is not approved for live arm or mobile-base control. Its hardware
-> backend is intentionally non-functional and rejects connection and motion commands.
+> This repository is **not approved for live arm or mobile-base control**. Its
+> hardware backend intentionally rejects connection and motion commands.
 
-Any future physical trial requires a separate reviewed procedure, confirmed robot
-and tool limits, validated frames, guarded workspace, independent emergency stop,
-competent supervision, and explicit authorization. The complete gate is documented
-in [docs/SAFETY.md](docs/SAFETY.md).
-
-## Roadmap
-
-- [x] Freeze and verify the supplied handoff
-- [x] Establish offline package, tests, linting, typing, and CI
-- [x] Add fail-closed safety and hardware boundaries
-- [ ] Import the current Ubuntu workspace and raw Phase 10 reports
-- [ ] Validate the latest robot model, joint map, meshes, frames, and upright mounting
-- [ ] Reproduce deterministic Isaac Sim Stage 6 and Phase 10 baselines
-- [ ] Validate RGB-D intrinsics, depth alignment, and eye-in-hand calibration
-- [ ] Add collision-aware manipulation and structured multi-seed benchmarks
-- [ ] Audit RL artifacts or establish an explicitly experimental baseline
-- [ ] Add read-only ROS 2 simulation integration
-- [ ] Design a separately authorized physical pilot
+A physical trial requires a separate reviewed procedure, verified robot/tool limits,
+validated frames, a guarded workspace, independent emergency stop, competent
+supervision, and explicit authorization. Read the complete
+[hardware safety policy](docs/SAFETY.md).
 
 ## Team
 
-- Sestrevatovskiy Ratmir Aleksandrovich
-- Jumashev Tair Salavatovich
-- Kaldybekov Adilkhan Yerbolatuly
-- Maytan Yerassyl Melsuly
+**Sestrevatovskiy Ratmir · Jumashev Tair · Kaldybekov Adilkhan · Maytan Yerassyl**
 
 Supervisor: **Tolengutov Rasul** · Kazakh-British Technical University (KBTU)
 
-## Contributing and citation
+## Documentation
 
-Before contributing, read [CONTRIBUTING.md](CONTRIBUTING.md) and the mandatory
-[safety policy](docs/SAFETY.md). Academic users can cite the project using
-[`CITATION.cff`](CITATION.cff).
+[Project specification](PROJECT_SPEC.md) ·
+[Architecture](docs/ARCHITECTURE.md) ·
+[Provenance](docs/STATUS_AND_PROVENANCE.md) ·
+[Validation](docs/VALIDATION_REPORT.md) ·
+[Contributing](CONTRIBUTING.md) ·
+[Citation](CITATION.cff)
 
-## Licensing and publication notice
+## Licensing notice
 
 No blanket open-source license is granted for bundled CAD, photographs, videos,
-historical archives, third-party templates, or vendor-related materials. See
-[LICENSE-NOTICE.md](LICENSE-NOTICE.md). Verify ownership and redistribution rights
-before copying project assets outside this repository.
+historical archives, third-party templates, or vendor-related materials. Review
+[LICENSE-NOTICE.md](LICENSE-NOTICE.md) before redistributing project assets.
 
 ---
 
 <div align="center">
-  <sub>Simulation first. Evidence before claims. Physical motion only after independent safety approval.</sub>
+
+### Simulation first · evidence before claims · safety before motion
+
+<sub>Lexium Agro — KBTU autonomous mobile manipulation research</sub>
+
 </div>

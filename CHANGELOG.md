@@ -5,6 +5,14 @@ results remain in their original provenance files and are not rewritten as relea
 
 ## [Unreleased]
 
+### Changed
+
+- Rebuilt the repository landing page around supplied project photography,
+  recorded simulator footage, physical prototype footage, benchmark charts,
+  architecture diagrams, and compact evidence/status cards.
+- Added lightweight, provenance-labelled GIF previews derived from the original
+  Isaac Sim, Isaac Lab, and physical prototype recordings.
+
 ### Pending
 
 - Import of the current Ubuntu Stage 6/Phase 10 workspace and raw reports.
